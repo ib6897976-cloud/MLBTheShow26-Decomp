@@ -11,9 +11,9 @@ excluded. Do not add game binaries or assets to the repository.
 ## Progress dashboard
 
 Run `python tools/progress_server.py` locally to serve the live dashboard on
-your LAN at port 8765. GitHub Pages cannot run the Python server, so the Pages
-workflow exports a static snapshot of the dashboard data whenever the tracked
-progress indexes are pushed. To update the public dashboard, push the updated
-indexes and timeline to `main`; the workflow publishes only `tools/progress_site`.
+your LAN at port 8765. GitHub Pages cannot run the Python server, so the public
+repository `ib6897976-cloud/mlb-the-show-progress` contains only the dashboard
+UI and exported progress snapshots. After updating annotations, run
+`tools/publish_progress_pages.ps1` to export and push the new snapshot to Pages.
 
 To generate the Pages data locally, run `python tools/export_progress_site.py`.
