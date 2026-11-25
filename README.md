@@ -1,5 +1,28 @@
-# MLB The Show recomp progress dashboard
+# MLB The Show recomp progress
 
-This public site shows aggregate indexing coverage, evidence-backed semantic labels, candidate types and a recent activity timeline for a private reverse-engineering workspace. It contains only the static dashboard and exported progress snapshots. It does not contain game files, assets or generated decomp source.
+A public, static dashboard for aggregate analysis progress in the independent
+MLB The Show recompilation and reverse-engineering project.
 
-The private workspace exports and updates these files with `tools/publish_progress_pages.ps1` after annotation batches are merged.
+## Status
+
+The dashboard reports indexed function coverage, evidence-backed semantic
+labels, candidate prototypes and fields, and recent work history. Values are
+snapshots exported from the private analysis workspace and update when a
+reviewed annotation batch is published.
+
+## Contents
+
+This repository contains the dashboard page and aggregate JSON snapshots only.
+It does not contain generated decomp source, game files, proprietary assets, or
+the private analysis workspace.
+
+## Publishing
+
+The private workspace exports this site with
+`tools/publish_progress_pages.ps1`. GitHub Pages serves the resulting static
+files; the Python live server runs separately in the workspace.
+
+## Disclaimer
+
+This is an independent research project and is not affiliated with or endorsed
+by Sony Interactive Entertainment, San Diego Studio, or Major League Baseball.
