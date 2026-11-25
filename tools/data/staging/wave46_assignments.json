@@ -1,0 +1,254 @@
+{
+  "wave": 46,
+  "method": "32 refreshed queue targets from ranks 101-320 with work<=100 and either observed caller or readable rodata cue; first 32 eligible by rank; greedy-largest-first across 4x8; bounded to reduce analysis usage. Cues remain leads for body/caller verification.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 398,
+      "targets": [
+        {
+          "rank": 109,
+          "address": "0x7000b135c0",
+          "estimate": 26,
+          "caller_count": 0,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 121,
+          "address": "0x7001610340",
+          "estimate": 58,
+          "caller_count": 24,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 154,
+          "address": "0x7000713450",
+          "estimate": 61,
+          "caller_count": 5,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 183,
+          "address": "0x7000722e00",
+          "estimate": 43,
+          "caller_count": 3,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 184,
+          "address": "0x70006f2410",
+          "estimate": 89,
+          "caller_count": 1,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 202,
+          "address": "0x7000ea5cb4",
+          "estimate": 31,
+          "caller_count": 2,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 207,
+          "address": "0x7000f57110",
+          "estimate": 51,
+          "caller_count": 1,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 213,
+          "address": "0x700048f440",
+          "estimate": 39,
+          "caller_count": 1,
+          "rodata_cues": 0
+        }
+      ]
+    },
+    {
+      "agent": "decomp_02",
+      "estimated_work": 399,
+      "targets": [
+        {
+          "rank": 103,
+          "address": "0x7000c746b8",
+          "estimate": 86,
+          "caller_count": 0,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 106,
+          "address": "0x70004b6a0c",
+          "estimate": 28,
+          "caller_count": 1,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 108,
+          "address": "0x7000bfe21c",
+          "estimate": 30,
+          "caller_count": 0,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 151,
+          "address": "0x7000773514",
+          "estimate": 51,
+          "caller_count": 6,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 174,
+          "address": "0x7001877570",
+          "estimate": 62,
+          "caller_count": 3,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 196,
+          "address": "0x700049a4a0",
+          "estimate": 45,
+          "caller_count": 2,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 197,
+          "address": "0x70004b4c74",
+          "estimate": 38,
+          "caller_count": 2,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 199,
+          "address": "0x700049a9d0",
+          "estimate": 59,
+          "caller_count": 1,
+          "rodata_cues": 0
+        }
+      ]
+    },
+    {
+      "agent": "decomp_03",
+      "estimated_work": 394,
+      "targets": [
+        {
+          "rank": 144,
+          "address": "0x700076ef98",
+          "estimate": 69,
+          "caller_count": 7,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 168,
+          "address": "0x7000cf64f4",
+          "estimate": 47,
+          "caller_count": 4,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 179,
+          "address": "0x7000491688",
+          "estimate": 19,
+          "caller_count": 12,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 187,
+          "address": "0x700138690c",
+          "estimate": 36,
+          "caller_count": 3,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 188,
+          "address": "0x70006f1f54",
+          "estimate": 85,
+          "caller_count": 1,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 205,
+          "address": "0x7000ded4e0",
+          "estimate": 45,
+          "caller_count": 9,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 212,
+          "address": "0x70006ac344",
+          "estimate": 57,
+          "caller_count": 8,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 215,
+          "address": "0x70004680f0",
+          "estimate": 36,
+          "caller_count": 1,
+          "rodata_cues": 0
+        }
+      ]
+    },
+    {
+      "agent": "decomp_04",
+      "estimated_work": 400,
+      "targets": [
+        {
+          "rank": 101,
+          "address": "0x70006fbc68",
+          "estimate": 70,
+          "caller_count": 1,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 102,
+          "address": "0x70006fbe24",
+          "estimate": 70,
+          "caller_count": 1,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 104,
+          "address": "0x70006f6d30",
+          "estimate": 34,
+          "caller_count": 1,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 110,
+          "address": "0x7000b18ca0",
+          "estimate": 26,
+          "caller_count": 0,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 120,
+          "address": "0x70004d76d0",
+          "estimate": 60,
+          "caller_count": 24,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 123,
+          "address": "0x70009a34ac",
+          "estimate": 40,
+          "caller_count": 23,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 145,
+          "address": "0x70018a3700",
+          "estimate": 53,
+          "caller_count": 15,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 208,
+          "address": "0x70007238d0",
+          "estimate": 47,
+          "caller_count": 1,
+          "rodata_cues": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "wave": 55,
+  "method": "One producer, six compact property-map readers with explicit queue keys and a shared lookup helper. Total estimated effort capped at 69 (<=100); root directly QA checks each row, no separate reviewer agents.",
+  "assignments": [
+    {
+      "agent": "wave55_one",
+      "estimated_work": 69,
+      "targets": [
+        {
+          "rank": 392,
+          "address": "0x7000916590",
+          "estimate": 16,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 487,
+          "address": "0x700090c8fc",
+          "estimate": 10,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 661,
+          "address": "0x7000c10ea0",
+          "estimate": 12,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 664,
+          "address": "0x7000c3505c",
+          "estimate": 11,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 666,
+          "address": "0x7000afe4f8",
+          "estimate": 10,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 667,
+          "address": "0x7000aff704",
+          "estimate": 10,
+          "rodata_cues": 1
+        }
+      ]
+    }
+  ]
+}

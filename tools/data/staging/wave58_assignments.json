@@ -1,0 +1,26 @@
+{
+  "wave": 58,
+  "method": "One low-overhead producer batch for two adjacent player-card navigation/context functions sharing the indexed hit-zone helper. Total estimated work <=100; root directly QA checks each body, callers and exact NSO cues before merge.",
+  "assignments": [
+    {
+      "agent": "wave58_one",
+      "estimated_work": 81,
+      "targets": [
+        {
+          "rank": 20,
+          "address": "0x7000c06474",
+          "estimate": 56,
+          "semantic_callees": "process_player_card_hit_zone",
+          "rodata_strings": "AmateurList;DraftQueue;PlayerCardNextAmateurPlayer;PlayerCardNextPickedPlayer;PlayerCardNextQueuePlayer;PlayerCardPrevAmateurPlayer;PlayerCardPrevPickedPlayer;PlayerCardPrevQueuePlayer;RoundPick"
+        },
+        {
+          "rank": 21,
+          "address": "0x7000bf266c",
+          "estimate": 25,
+          "semantic_callees": "process_player_card_hit_zone",
+          "rodata_strings": "PlayerCardNextOurPlayer;PlayerCardNextTheirPlayer;PlayerCardPrevOurPlayer;PlayerCardPrevTheirPlayer"
+        }
+      ]
+    }
+  ]
+}

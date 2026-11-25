@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "decompiled/type_symbols.tsv",
+  "unique_module_type_names": 1198,
+  "types_by_module": {
+    "main": 14,
+    "sdk": 1184
+  },
+  "types_by_module_and_role": {
+    "main:construction virtual table": 7,
+    "main:virtual-function table": 7,
+    "main:virtual-table table": 5,
+    "sdk:RTTI type-name object": 1142,
+    "sdk:RTTI type_info object": 1151,
+    "sdk:construction virtual table": 24,
+    "sdk:virtual-function table": 460,
+    "sdk:virtual-table table": 18
+  },
+  "class_method_associations": 2124,
+  "classes_with_named_methods": 264,
+  "class_field_candidate_rows": 1269,
+  "type_layouts_recovered": 0,
+  "note": "Names and RTTI/vtable evidence only; this catalog does not claim member layouts."
+}

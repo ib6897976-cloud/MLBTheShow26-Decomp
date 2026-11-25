@@ -1,0 +1,116 @@
+{
+  "wave": 52,
+  "method": "Ten-worker cap pilot: one compact target per worker; total estimated workload 120; selected from refreshed high-signal queue; parent directly QA reviews all outputs, no reviewer agents. Timing caveat: same batch-start timestamp used for each worker; individual durations are upper bounds because launches were sequential. Ten thread creations succeeded, but exact peak overlap was not measured.",
+  "assignments": [
+    {
+      "agent": "wave52_01",
+      "estimated_work": 5,
+      "targets": [
+        {
+          "rank": 940,
+          "address": "0x70007a1a5c",
+          "estimate": 5
+        }
+      ]
+    },
+    {
+      "agent": "wave52_02",
+      "estimated_work": 12,
+      "targets": [
+        {
+          "rank": 229,
+          "address": "0x7000f23194",
+          "estimate": 12
+        }
+      ]
+    },
+    {
+      "agent": "wave52_03",
+      "estimated_work": 12,
+      "targets": [
+        {
+          "rank": 584,
+          "address": "0x70008e8d34",
+          "estimate": 12
+        }
+      ]
+    },
+    {
+      "agent": "wave52_04",
+      "estimated_work": 12,
+      "targets": [
+        {
+          "rank": 591,
+          "address": "0x70015cc420",
+          "estimate": 12
+        }
+      ]
+    },
+    {
+      "agent": "wave52_05",
+      "estimated_work": 12,
+      "targets": [
+        {
+          "rank": 681,
+          "address": "0x7000cea6e4",
+          "estimate": 12
+        }
+      ]
+    },
+    {
+      "agent": "wave52_06",
+      "estimated_work": 12,
+      "targets": [
+        {
+          "rank": 917,
+          "address": "0x7001844340",
+          "estimate": 12
+        }
+      ]
+    },
+    {
+      "agent": "wave52_07",
+      "estimated_work": 13,
+      "targets": [
+        {
+          "rank": 579,
+          "address": "0x7001891a1c",
+          "estimate": 13
+        }
+      ]
+    },
+    {
+      "agent": "wave52_08",
+      "estimated_work": 14,
+      "targets": [
+        {
+          "rank": 680,
+          "address": "0x7000a84728",
+          "estimate": 14
+        }
+      ]
+    },
+    {
+      "agent": "wave52_09",
+      "estimated_work": 14,
+      "targets": [
+        {
+          "rank": 724,
+          "address": "0x7001844250",
+          "estimate": 14
+        }
+      ]
+    },
+    {
+      "agent": "wave52_10",
+      "estimated_work": 14,
+      "targets": [
+        {
+          "rank": 829,
+          "address": "0x70018442a0",
+          "estimate": 14
+        }
+      ]
+    }
+  ]
+}

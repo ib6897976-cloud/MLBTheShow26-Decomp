@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "functions_scanned": 135060,
+  "function_field_rows": 175430,
+  "unique_module_offsets": 3875,
+  "scope": "explicit x0 + constant memory accesses and accesses through callee-saved registers assigned once from x0",
+  "limitation": "x0 does not have one global type; alias recovery is conservative and frequencies are triage evidence, not proof of shared structure fields"
+}

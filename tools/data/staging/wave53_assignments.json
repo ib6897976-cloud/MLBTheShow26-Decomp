@@ -1,0 +1,48 @@
+{
+  "wave": 53,
+  "method": "One producer, six sibling property-map loaders selected by a shared helper and explicit queue keys. Hard cap total estimated workload at 100 (sum=96). Parent directly QA checks all outputs; no separate reviewer agents.",
+  "assignments": [
+    {
+      "agent": "wave53_one",
+      "estimated_work": 96,
+      "targets": [
+        {
+          "rank": 674,
+          "address": "0x7000b1ce4c",
+          "estimate": 15,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 677,
+          "address": "0x7000b1cdec",
+          "estimate": 15,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 651,
+          "address": "0x7000b321a0",
+          "estimate": 18,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 652,
+          "address": "0x7000b34d20",
+          "estimate": 18,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 675,
+          "address": "0x7000b6d4c0",
+          "estimate": 15,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 676,
+          "address": "0x7000b76214",
+          "estimate": 15,
+          "rodata_cues": 1
+        }
+      ]
+    }
+  ]
+}

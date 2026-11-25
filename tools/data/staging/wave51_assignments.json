@@ -1,0 +1,68 @@
+{
+  "wave": 51,
+  "method": "8 compact refreshed queue targets ranks37-120, workload<=100 and caller or rodata cue; one-producer usage-bounded flow, verify cues in bodies.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 452,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x7000be44ec",
+          "estimate": 9,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 38,
+          "address": "0x7000cb4494",
+          "estimate": 9,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 39,
+          "address": "0x7000cb44d0",
+          "estimate": 9,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 44,
+          "address": "0x70011679a0",
+          "estimate": 91,
+          "caller_count": 4,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 48,
+          "address": "0x70017b3e00",
+          "estimate": 92,
+          "caller_count": 2,
+          "rodata_cues": 0
+        },
+        {
+          "rank": 105,
+          "address": "0x70006f6e58",
+          "estimate": 86,
+          "caller_count": 1,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 106,
+          "address": "0x70006f70a8",
+          "estimate": 86,
+          "caller_count": 1,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 108,
+          "address": "0x70006f9a60",
+          "estimate": 70,
+          "caller_count": 1,
+          "rodata_cues": 1
+        }
+      ]
+    }
+  ]
+}

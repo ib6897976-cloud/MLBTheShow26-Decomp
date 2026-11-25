@@ -1,0 +1,14 @@
+*.c text eol=lf
+*.h text eol=lf
+*.py text eol=lf
+*.tsv text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.png binary
+*.ico binary
+*.bin binary

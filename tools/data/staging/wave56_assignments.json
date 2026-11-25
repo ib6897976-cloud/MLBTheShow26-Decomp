@@ -1,0 +1,30 @@
+{
+  "wave": 56,
+  "method": "One producer, three sibling online-status functions sharing the attribute-context status getter and explicit state-string cues. Total estimated work=74 (<=100); root directly QA checks all proposals; no separate reviewer agents.",
+  "assignments": [
+    {
+      "agent": "wave56_one",
+      "estimated_work": 74,
+      "targets": [
+        {
+          "rank": 242,
+          "address": "0x7000a49fe4",
+          "estimate": 23,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 344,
+          "address": "0x7000a4a1f0",
+          "estimate": 24,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 264,
+          "address": "0x7000a4a668",
+          "estimate": 27,
+          "rodata_cues": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "wave": 42,
+  "method": "40 highest-ranked compact queue entries within ranks 1-42 (excluding two >130-work outliers); largest-first greedy balance across 5×8 using loads + stores + 4×semantic callees; require direct rodata cue or observed caller so no target rests only on an accepted callee label. Estimates are a proxy, not runtime predictions.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 600,
+      "targets": [
+        {
+          "rank": 3,
+          "address": "0x7000c1ef80",
+          "estimate": 80,
+          "lifted_loads": 45,
+          "lifted_stores": 31,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 0,
+          "rodata_strings": "CURRENT_ROSTER;ROSTER;league_player"
+        },
+        {
+          "rank": 4,
+          "address": "0x7000b60fdc",
+          "estimate": 30,
+          "lifted_loads": 17,
+          "lifted_stores": 9,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 0,
+          "rodata_strings": "PITCHER1;PITCHER2;PITCHER3"
+        },
+        {
+          "rank": 12,
+          "address": "0x700159c780",
+          "estimate": 57,
+          "lifted_loads": 43,
+          "lifted_stores": 10,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 3,
+          "rodata_strings": "assertion failed: b <= sizeof(ctx->buf);c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/openssl/crypto/evp/evp_enc.c"
+        },
+        {
+          "rank": 18,
+          "address": "0x7000f5c6b8",
+          "estimate": 97,
+          "lifted_loads": 62,
+          "lifted_stores": 31,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "ACT_Exit_Sub_StandAlone;LineUp_Table"
+        },
+        {
+          "rank": 22,
+          "address": "0x7000007b54",
+          "estimate": 89,
+          "lifted_loads": 73,
+          "lifted_stores": 12,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "FRONTEND;PATCHING"
+        },
+        {
+          "rank": 26,
+          "address": "0x7000cad3f8",
+          "estimate": 111,
+          "lifted_loads": 82,
+          "lifted_stores": 25,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 0,
+          "rodata_strings": "%3.2fM;%s %s"
+        },
+        {
+          "rank": 34,
+          "address": "0x700119b314",
+          "estimate": 77,
+          "lifted_loads": 47,
+          "lifted_stores": 26,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "BinkCPU;BinkGraphics"
+        },
+        {
+          "rank": 41,
+          "address": "0x7001477a00",
+          "estimate": 59,
+          "lifted_loads": 46,
+          "lifted_stores": 9,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "false;true"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_02",
+      "estimated_work": 605,
+      "targets": [
+        {
+          "rank": 8,
+          "address": "0x7000eaba84",
+          "estimate": 110,
+          "lifted_loads": 20,
+          "lifted_stores": 86,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "Hot Stove, Trade Deadline expires today;The Future is Now, MLB Draft gets underway"
+        },
+        {
+          "rank": 19,
+          "address": "0x7000890a10",
+          "estimate": 45,
+          "lifted_loads": 16,
+          "lifted_stores": 25,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 3,
+          "rodata_strings": "ui\\art\\textures\\LeagueLogos;ui\\art\\textures\\LogoNormalMap"
+        },
+        {
+          "rank": 24,
+          "address": "0x7001adb310",
+          "estimate": 63,
+          "lifted_loads": 25,
+          "lifted_stores": 34,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 2,
+          "rodata_strings": "snd_InitHandlers;sndhand.cpp"
+        },
+        {
+          "rank": 25,
+          "address": "0x7001a27140",
+          "estimate": 87,
+          "lifted_loads": 56,
+          "lifted_stores": 27,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "%s_ZB;clockanalog"
+        },
+        {
+          "rank": 30,
+          "address": "0x7001bdb5e0",
+          "estimate": 82,
+          "lifted_loads": 61,
+          "lifted_stores": 17,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "C:/MLBPS3/SRC/TnT_Audio/NCA/trunk/project/external/wws_gattaca/dsp/src/wws_dsp_rvb.cpp;work"
+        },
+        {
+          "rank": 35,
+          "address": "0x70004cb934",
+          "estimate": 75,
+          "lifted_loads": 8,
+          "lifted_stores": 63,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "Joanna;Random"
+        },
+        {
+          "rank": 36,
+          "address": "0x7000de58c4",
+          "estimate": 98,
+          "lifted_loads": 73,
+          "lifted_stores": 21,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 0,
+          "rodata_strings": "Exit;Return to Clubhouse"
+        },
+        {
+          "rank": 40,
+          "address": "0x7000b1a404",
+          "estimate": 45,
+          "lifted_loads": 34,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 2,
+          "rodata_strings": "DD_LINEUP_DATA;position"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_03",
+      "estimated_work": 600,
+      "targets": [
+        {
+          "rank": 10,
+          "address": "0x70014538f8",
+          "estimate": 108,
+          "lifted_loads": 80,
+          "lifted_stores": 24,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "Hit reaction;Prepitch Clap"
+        },
+        {
+          "rank": 13,
+          "address": "0x700181dc30",
+          "estimate": 53,
+          "lifted_loads": 35,
+          "lifted_stores": 14,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 3,
+          "rodata_strings": "Frontend\\Stats\\rosters.bin;Frontend\\Stats\\rosters_INJ.bin"
+        },
+        {
+          "rank": 16,
+          "address": "0x7001ac9da0",
+          "estimate": 99,
+          "lifted_loads": 19,
+          "lifted_stores": 76,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "C:/MLBPS3/SRC/TnT_Audio/SCREAM/trunk/project/scream/src/common/layermixer.cpp;configData->PacketHeader.Size <= AP_STREAM_LAYER_CONFIG_MAX_SIZE"
+        },
+        {
+          "rank": 23,
+          "address": "0x700173a3f0",
+          "estimate": 63,
+          "lifted_loads": 28,
+          "lifted_stores": 31,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 2,
+          "rodata_strings": "kt=(%f,%f,%f,%f,%f,%f) tt=(%f,%f,%f,%f,%f,%f);kt=(-100,10,0,0,0.05,-0.2) tt=(-50,-10,0,0,0.1,0.05)"
+        },
+        {
+          "rank": 29,
+          "address": "0x7001a6c758",
+          "estimate": 33,
+          "lifted_loads": 14,
+          "lifted_stores": 15,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 3,
+          "rodata_strings": "Set-Cookie:;none"
+        },
+        {
+          "rank": 33,
+          "address": "0x7000eb31bc",
+          "estimate": 77,
+          "lifted_loads": 60,
+          "lifted_stores": 13,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "%d:%02d;:%02d"
+        },
+        {
+          "rank": 37,
+          "address": "0x700187dc80",
+          "estimate": 72,
+          "lifted_loads": 25,
+          "lifted_stores": 43,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "%s (%.2f sec);JUMP"
+        },
+        {
+          "rank": 38,
+          "address": "0x7000ab9118",
+          "estimate": 95,
+          "lifted_loads": 80,
+          "lifted_stores": 11,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 0,
+          "rodata_strings": "%d:%02d;:%02d"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_04",
+      "estimated_work": 595,
+      "targets": [
+        {
+          "rank": 11,
+          "address": "0x70006fe2a0",
+          "estimate": 107,
+          "lifted_loads": 36,
+          "lifted_stores": 67,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "%s %s;%s^n^^n^%s"
+        },
+        {
+          "rank": 15,
+          "address": "0x70012d10ec",
+          "estimate": 102,
+          "lifted_loads": 51,
+          "lifted_stores": 47,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "SeasonBasedMode :;UNSET LATITUDE LONGITUDE FOR STADIUM %d!! Tell BPinz or PHager"
+        },
+        {
+          "rank": 17,
+          "address": "0x70012cf458",
+          "estimate": 73,
+          "lifted_loads": 17,
+          "lifted_stores": 52,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 2,
+          "rodata_strings": "$(WORLD_PLATFORM)/Stadiums/common/Clouds/LLHorizonShadowMask;$(WORLD_PLATFORM)/Stadiums/common/Clouds/LLHorizonShadowMask.$(EXT_WORLD_TEX)"
+        },
+        {
+          "rank": 21,
+          "address": "0x7000a1eae0",
+          "estimate": 66,
+          "lifted_loads": 36,
+          "lifted_stores": 26,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 2,
+          "rodata_strings": "content_url;name"
+        },
+        {
+          "rank": 27,
+          "address": "0x7000549770",
+          "estimate": 85,
+          "lifted_loads": 38,
+          "lifted_stores": 43,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "1.2.12;Zip Heap Pool"
+        },
+        {
+          "rank": 28,
+          "address": "0x700175b740",
+          "estimate": 83,
+          "lifted_loads": 52,
+          "lifted_stores": 27,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "MLB Mascot Mem Pool;Mascot"
+        },
+        {
+          "rank": 39,
+          "address": "0x7000b178a4",
+          "estimate": 45,
+          "lifted_loads": 34,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 2,
+          "rodata_strings": "DD_LINEUP_DATA;position"
+        },
+        {
+          "rank": 42,
+          "address": "0x70015cd150",
+          "estimate": 34,
+          "lifted_loads": 17,
+          "lifted_stores": 13,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 2,
+          "rodata_strings": "Enter PEM pass phrase:;c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/openssl/crypto/pem/pem_lib.c"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_05",
+      "estimated_work": 599,
+      "targets": [
+        {
+          "rank": 1,
+          "address": "0x70017a4700",
+          "estimate": 66,
+          "lifted_loads": 35,
+          "lifted_stores": 27,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 12,
+          "rodata_strings": "%s %s %s%s;INVALID;advances to"
+        },
+        {
+          "rank": 5,
+          "address": "0x70013326a0",
+          "estimate": 29,
+          "lifted_loads": 17,
+          "lifted_stores": 8,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 0,
+          "rodata_strings": "%s%d;TeamColor;TeamColorFinal"
+        },
+        {
+          "rank": 6,
+          "address": "0x7000501b08",
+          "estimate": 66,
+          "lifted_loads": 29,
+          "lifted_stores": 29,
+          "semantic_callee_count": 2,
+          "caller_count_observed": 0,
+          "rodata_strings": "ACT_ClosedCaption_OFF;CC_Text"
+        },
+        {
+          "rank": 9,
+          "address": "0x7000dea57c",
+          "estimate": 58,
+          "lifted_loads": 30,
+          "lifted_stores": 24,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 3,
+          "rodata_strings": "Options;Texture"
+        },
+        {
+          "rank": 14,
+          "address": "0x7000c7b484",
+          "estimate": 102,
+          "lifted_loads": 82,
+          "lifted_stores": 16,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "TS_OptionsScrollerAway;TS_OptionsScrollerHome"
+        },
+        {
+          "rank": 20,
+          "address": "0x7000a3c390",
+          "estimate": 94,
+          "lifted_loads": 69,
+          "lifted_stores": 21,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "count;events"
+        },
+        {
+          "rank": 31,
+          "address": "0x7001055990",
+          "estimate": 105,
+          "lifted_loads": 55,
+          "lifted_stores": 46,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 0,
+          "rodata_strings": "CROWD_POS_03;CR_ANTIC_NEG_03"
+        },
+        {
+          "rank": 32,
+          "address": "0x7000256530",
+          "estimate": 79,
+          "lifted_loads": 42,
+          "lifted_stores": 33,
+          "semantic_callee_count": 1,
+          "caller_count_observed": 1,
+          "rodata_strings": "Working catch ring;Working throw ring"
+        }
+      ]
+    }
+  ]
+}

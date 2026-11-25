@@ -1,0 +1,86 @@
+{
+  "wave": 60,
+  "method": "Four independent producers, two related ranked targets each; capped at eight functions and estimated work 96. Each writes an isolated staging JSONL. Root inspects each body/caller and corrects/rejects names before serial merge.",
+  "assignments": [
+    {
+      "agent": "wave60_01",
+      "estimated_work": 24,
+      "targets": [
+        {
+          "rank": 6,
+          "address": "0x7000b2cfb8",
+          "estimate": 12,
+          "semantic_callees": "lookup_property_value_by_name",
+          "rodata_strings": "ButtonAction;CompleteDDSeasonWelcome;SznNum;ViewedFeat;click_through_action;duration_secs;season_number;viewed_featured_rewards"
+        },
+        {
+          "rank": 7,
+          "address": "0x7000b46610",
+          "estimate": 12,
+          "semantic_callees": "lookup_property_value_by_name",
+          "rodata_strings": "DATA_C;SINGLES_MOMENT_CRITERIA;episode;episode_number;response;side_quest"
+        }
+      ]
+    },
+    {
+      "agent": "wave60_02",
+      "estimated_work": 24,
+      "targets": [
+        {
+          "rank": 8,
+          "address": "0x7000c174f0",
+          "estimate": 12,
+          "semantic_callees": "load_roster_data",
+          "rodata_strings": "CC_FILTER;CURRENT_GAME;LG_GAMES;NO_STATS;SINGLE;has_winner;league_team;mlb_team_id;opp_mlb_team_id;opp_player_id;player_id"
+        },
+        {
+          "rank": 9,
+          "address": "0x700175481c",
+          "estimate": 12,
+          "semantic_callees": "populate_character_asset_path_set",
+          "rodata_strings": "$(PLATFORM)/Characters/Heads;%s/%s/%s-color;%s/%s/%s-normal;zzMissing_InGame"
+        }
+      ]
+    },
+    {
+      "agent": "wave60_03",
+      "estimated_work": 24,
+      "targets": [
+        {
+          "rank": 10,
+          "address": "0x7000cfd614",
+          "estimate": 12,
+          "semantic_callees": "process_player_card_hit_zone",
+          "rodata_strings": "PlayerCardNextLeftPlayer;PlayerCardNextOfferPlayer;PlayerCardNextRightPlayer;PlayerCardPrevAskPlayer;PlayerCardPrevLeftPlayer;PlayerCardPrevOfferPlayer;TRADES;Trade[%d].AskingPlayer[%d].database_index;Trade[%d].OfferedPlayer[%d].database_index"
+        },
+        {
+          "rank": 11,
+          "address": "0x70009a2f74",
+          "estimate": 12,
+          "semantic_callees": "load_live_roster_pack;load_roster_data",
+          "rodata_strings": "LIVE_ROSTER;LIVE_ROSTERS"
+        }
+      ]
+    },
+    {
+      "agent": "wave60_04",
+      "estimated_work": 24,
+      "targets": [
+        {
+          "rank": 12,
+          "address": "0x70009d9d5c",
+          "estimate": 12,
+          "semantic_callees": "load_roster_data;resolve_leagues_resource",
+          "rodata_strings": "Online;Online\\Leagues\\lg_Events"
+        },
+        {
+          "rank": 13,
+          "address": "0x7000888524",
+          "estimate": 12,
+          "semantic_callees": "initialize_asset_binder_memory_pool;register_named_pointer",
+          "rodata_strings": "%s\\%s.%s;GameColors"
+        }
+      ]
+    }
+  ]
+}

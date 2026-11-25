@@ -1,0 +1,15 @@
+# Pitch stamina and fatigue calculation
+
+`0x70003c5680` (`pitch_fatigue_per_pitch_calculation`, high confidence) computes a scalar consumed by the broader player update at `0x70003c4cb0`. The generated code constructs float bits `0x40066666` (2.1), optionally scales the base using a nested float at `+0x24` when a byte flag at `+0x35` is nonzero, then applies provider-derived factors. The parent stores the returned scalar for later processing.
+
+This matches the v1.0.15 code map's 2.1 fatigue-per-pitch sites at `0x3c56fc` and `0x3c5710`; that map says the fatigue slider scales the base. The current-build data flow also reads a float at pointee `+0xe0` from the object at context `+0x10` and performs a virtual/property call through the object at context `+0x20` (vtable slot `+0x10`). Subsequent branches make additional conditional adjustments using flag and property lookups. These observations establish access sites and control flow, but not source-level names or domain meanings. The full arithmetic and provider semantics remain under investigation. See [VERSION_CROSSWALK.md](VERSION_CROSSWALK.md).
+
+The context's `+0x08` pointer is also followed to a 32-bit field at pointee `+0x08`; the observed value gates the initial calculation. This nested pointee is not yet represented as a named type because the evidence does not establish its identity.
+
+Two nested data shapes now have explicit candidate types: the object referenced from context `+0x08` has a `uint32_t` gate at its `+0x08`; the object at context `+0x10` has a `float` at `+0xe0`, read into the divisor side of an FP division. These member widths and arithmetic roles are clear, but the objects' source-level identities and units are not.
+
+The object reached through context `+0x20` is now modeled as a minimal vtable-bearing provider candidate. `f_70003c5680` dispatches through vtable slots `+0x10`, `+0x18`, `+0x20`, `+0x28`, `+0x30`, `+0x38`, `+0x40`, `+0x48`, and `+0x50`. Slots `+0x18`, `+0x28`, and `+0x40` each return a low-bit gate whose set path exits the calculation with zero. Slots `+0x10`, `+0x20`, `+0x30`, and `+0x38` feed optional factor/branch checks; results from `+0x48` and `+0x50` are tested in upper 32-bit flag masks. The binary establishes dispatch offsets and consumption only; interface method names, source signatures, and meanings remain unknown.
+
+The partial layouts are in [`recovered/pitch_fatigue_types.h`](recovered/pitch_fatigue_types.h), and each observed field is documented in [`../tools/data/field_annotations.tsv`](../tools/data/field_annotations.tsv). Candidate source signature `float pitch_fatigue_per_pitch_calculation(void *fatigue_context)` is in [`../tools/data/function_prototype_candidates.tsv`](../tools/data/function_prototype_candidates.tsv). Both context pointer roles and the nested rate object's domain meaning remain uncertain.
+
+Evidence: `decompiled/main/main_0030.c`, functions `f_70003c5680` and `f_70003c4cb0`; external comparison [ModTheShowManager CODE_MODS.md](https://github.com/elripalda/ModTheShowManager/blob/main/docs/CODE_MODS.md), v1.0.15.

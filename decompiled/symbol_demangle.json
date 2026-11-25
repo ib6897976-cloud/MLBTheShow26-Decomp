@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source": "decompiled/elf_symbols.tsv",
+  "demangler": "D:\\RecompG\\mlbts-native\\llvm\\bin\\llvm-nm.exe",
+  "demangled_symbol_rows": 19579,
+  "functions_with_exact_exported_names": 18338,
+  "functions_with_demangled_cpp_names": 14640,
+  "symbol_role_counts": {
+    "mangled C++ function or data symbol": 16681,
+    "virtual thunk": 84,
+    "construction virtual table": 31,
+    "virtual-table table": 23,
+    "virtual-function table": 467,
+    "RTTI type-name object": 1142,
+    "RTTI type_info object": 1151
+  },
+  "type_claim_limit": "RTTI/vtable names are exact symbol evidence; this does not recover object field layouts or stripped function prototypes."
+}

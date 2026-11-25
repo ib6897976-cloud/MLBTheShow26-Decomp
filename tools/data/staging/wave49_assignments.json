@@ -1,0 +1,68 @@
+{
+  "wave": 49,
+  "method": "8 compact refreshed queue targets, ranks 37-120, workload <=100, with observed caller or cached rodata cues; selected by rank to keep analysis bounded; cues require verification.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 124,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x7000003378",
+          "estimate": 26,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 38,
+          "address": "0x7000c73c44",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 39,
+          "address": "0x7000ca01f8",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 40,
+          "address": "0x7000cae110",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 41,
+          "address": "0x7000cd0558",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 42,
+          "address": "0x7000cdcbe0",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 43,
+          "address": "0x7000cdd838",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 44,
+          "address": "0x7000ce59d4",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        }
+      ]
+    }
+  ]
+}

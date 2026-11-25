@@ -1,0 +1,106 @@
+{
+  "wave": 59,
+  "method": "Ten spawned producers each inspect one distinct queue target; bounded one-function tasks to test the configured agent ceiling while contributing real annotations. Root reviews every proposal and merges serially.",
+  "assignments": [
+    {
+      "agent": "wave59_01",
+      "targets": [
+        {
+          "rank": 6,
+          "address": "0x700173cac4",
+          "generated_name": "f_700173cac4"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_02",
+      "targets": [
+        {
+          "rank": 7,
+          "address": "0x7001740980",
+          "generated_name": "f_7001740980"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_03",
+      "targets": [
+        {
+          "rank": 8,
+          "address": "0x7001baae20",
+          "generated_name": "f_7001baae20"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_04",
+      "targets": [
+        {
+          "rank": 9,
+          "address": "0x7000b3a6e8",
+          "generated_name": "f_7000b3a6e8"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_05",
+      "targets": [
+        {
+          "rank": 10,
+          "address": "0x700168e750",
+          "generated_name": "f_700168e750"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_06",
+      "targets": [
+        {
+          "rank": 11,
+          "address": "0x70015aaae0",
+          "generated_name": "f_70015aaae0"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_07",
+      "targets": [
+        {
+          "rank": 12,
+          "address": "0x7000b03f98",
+          "generated_name": "f_7000b03f98"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_08",
+      "targets": [
+        {
+          "rank": 13,
+          "address": "0x70017560a4",
+          "generated_name": "f_70017560a4"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_09",
+      "targets": [
+        {
+          "rank": 14,
+          "address": "0x7000c32de8",
+          "generated_name": "f_7000c32de8"
+        }
+      ]
+    },
+    {
+      "agent": "wave59_10",
+      "targets": [
+        {
+          "rank": 15,
+          "address": "0x700097c808",
+          "generated_name": "f_700097c808"
+        }
+      ]
+    }
+  ]
+}

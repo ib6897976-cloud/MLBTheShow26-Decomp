@@ -1,0 +1,333 @@
+{
+ "module": "sdk",
+ "marker": "MLBTS_RECOMP_GENERATED_FROM_GAME_CODE",
+ "base": "0x7004c00000",
+ "text": [
+  "0x7004c00000",
+  "0x700524e230"
+ ],
+ "function_count": 40069,
+ "chunks": [
+  "sdk_0000.c",
+  "sdk_0001.c",
+  "sdk_0002.c",
+  "sdk_0003.c",
+  "sdk_0004.c",
+  "sdk_0005.c",
+  "sdk_0006.c",
+  "sdk_0007.c",
+  "sdk_0008.c",
+  "sdk_0009.c",
+  "sdk_0010.c",
+  "sdk_0011.c",
+  "sdk_0012.c",
+  "sdk_0013.c",
+  "sdk_0014.c",
+  "sdk_0015.c",
+  "sdk_0016.c",
+  "sdk_0017.c",
+  "sdk_0018.c",
+  "sdk_0019.c",
+  "sdk_0020.c",
+  "sdk_0021.c",
+  "sdk_0022.c",
+  "sdk_0023.c",
+  "sdk_0024.c",
+  "sdk_0025.c",
+  "sdk_0026.c",
+  "sdk_0027.c",
+  "sdk_0028.c",
+  "sdk_0029.c",
+  "sdk_0030.c",
+  "sdk_0031.c",
+  "sdk_0032.c",
+  "sdk_0033.c",
+  "sdk_0034.c",
+  "sdk_0035.c",
+  "sdk_0036.c",
+  "sdk_0037.c",
+  "sdk_0038.c",
+  "sdk_0039.c"
+ ],
+ "table": "sdk_table.c",
+ "chunk_info": [
+  {
+   "file": "sdk_0000.c",
+   "functions": 610,
+   "bytes": 3193114,
+   "seconds": 2.93
+  },
+  {
+   "file": "sdk_0001.c",
+   "functions": 463,
+   "bytes": 3085888,
+   "seconds": 3.02
+  },
+  {
+   "file": "sdk_0002.c",
+   "functions": 606,
+   "bytes": 3098000,
+   "seconds": 3.13
+  },
+  {
+   "file": "sdk_0003.c",
+   "functions": 1068,
+   "bytes": 3352450,
+   "seconds": 3.03
+  },
+  {
+   "file": "sdk_0004.c",
+   "functions": 976,
+   "bytes": 3384523,
+   "seconds": 2.69
+  },
+  {
+   "file": "sdk_0005.c",
+   "functions": 1017,
+   "bytes": 3463164,
+   "seconds": 2.58
+  },
+  {
+   "file": "sdk_0006.c",
+   "functions": 757,
+   "bytes": 3129290,
+   "seconds": 2.78
+  },
+  {
+   "file": "sdk_0007.c",
+   "functions": 1295,
+   "bytes": 3407143,
+   "seconds": 2.76
+  },
+  {
+   "file": "sdk_0008.c",
+   "functions": 1540,
+   "bytes": 3537751,
+   "seconds": 2.66
+  },
+  {
+   "file": "sdk_0009.c",
+   "functions": 1644,
+   "bytes": 3529949,
+   "seconds": 2.67
+  },
+  {
+   "file": "sdk_0010.c",
+   "functions": 1661,
+   "bytes": 3361597,
+   "seconds": 2.77
+  },
+  {
+   "file": "sdk_0011.c",
+   "functions": 838,
+   "bytes": 3472024,
+   "seconds": 3.43
+  },
+  {
+   "file": "sdk_0012.c",
+   "functions": 867,
+   "bytes": 3230114,
+   "seconds": 3.11
+  },
+  {
+   "file": "sdk_0013.c",
+   "functions": 524,
+   "bytes": 3336099,
+   "seconds": 3.07
+  },
+  {
+   "file": "sdk_0014.c",
+   "functions": 223,
+   "bytes": 3143635,
+   "seconds": 3.07
+  },
+  {
+   "file": "sdk_0015.c",
+   "functions": 457,
+   "bytes": 3138035,
+   "seconds": 3.01
+  },
+  {
+   "file": "sdk_0016.c",
+   "functions": 246,
+   "bytes": 3129341,
+   "seconds": 3.13
+  },
+  {
+   "file": "sdk_0017.c",
+   "functions": 198,
+   "bytes": 3167999,
+   "seconds": 3.77
+  },
+  {
+   "file": "sdk_0018.c",
+   "functions": 733,
+   "bytes": 3241801,
+   "seconds": 2.94
+  },
+  {
+   "file": "sdk_0019.c",
+   "functions": 448,
+   "bytes": 2511124,
+   "seconds": 2.34
+  },
+  {
+   "file": "sdk_0020.c",
+   "functions": 1,
+   "bytes": 232680,
+   "seconds": 0.26
+  },
+  {
+   "file": "sdk_0021.c",
+   "functions": 695,
+   "bytes": 3484071,
+   "seconds": 3.18
+  },
+  {
+   "file": "sdk_0022.c",
+   "functions": 1446,
+   "bytes": 3604900,
+   "seconds": 2.89
+  },
+  {
+   "file": "sdk_0023.c",
+   "functions": 1783,
+   "bytes": 3529104,
+   "seconds": 2.77
+  },
+  {
+   "file": "sdk_0024.c",
+   "functions": 1752,
+   "bytes": 3528664,
+   "seconds": 2.63
+  },
+  {
+   "file": "sdk_0025.c",
+   "functions": 991,
+   "bytes": 3192490,
+   "seconds": 2.71
+  },
+  {
+   "file": "sdk_0026.c",
+   "functions": 55,
+   "bytes": 742928,
+   "seconds": 0.7
+  },
+  {
+   "file": "sdk_0027.c",
+   "functions": 1,
+   "bytes": 261263,
+   "seconds": 0.25
+  },
+  {
+   "file": "sdk_0028.c",
+   "functions": 1159,
+   "bytes": 3330186,
+   "seconds": 2.8
+  },
+  {
+   "file": "sdk_0029.c",
+   "functions": 1520,
+   "bytes": 3486398,
+   "seconds": 3.16
+  },
+  {
+   "file": "sdk_0030.c",
+   "functions": 892,
+   "bytes": 3340024,
+   "seconds": 3.06
+  },
+  {
+   "file": "sdk_0031.c",
+   "functions": 1643,
+   "bytes": 3539988,
+   "seconds": 2.69
+  },
+  {
+   "file": "sdk_0032.c",
+   "functions": 844,
+   "bytes": 3108882,
+   "seconds": 2.86
+  },
+  {
+   "file": "sdk_0033.c",
+   "functions": 599,
+   "bytes": 3156572,
+   "seconds": 3.42
+  },
+  {
+   "file": "sdk_0034.c",
+   "functions": 500,
+   "bytes": 3185458,
+   "seconds": 2.97
+  },
+  {
+   "file": "sdk_0035.c",
+   "functions": 786,
+   "bytes": 3454691,
+   "seconds": 2.82
+  },
+  {
+   "file": "sdk_0036.c",
+   "functions": 762,
+   "bytes": 3294676,
+   "seconds": 2.79
+  },
+  {
+   "file": "sdk_0037.c",
+   "functions": 3000,
+   "bytes": 2960086,
+   "seconds": 2.49
+  },
+  {
+   "file": "sdk_0038.c",
+   "functions": 3000,
+   "bytes": 1091752,
+   "seconds": 0.77
+  },
+  {
+   "file": "sdk_0039.c",
+   "functions": 2469,
+   "bytes": 898536,
+   "seconds": 0.64
+  }
+ ],
+ "stats": {
+  "seeds": 32105,
+  "bl_targets": 9790,
+  "materialised_targets": 636,
+  "initial_starts": 38838,
+  "rounds": 2,
+  "functions": 40069,
+  "emitted_functions": 40069,
+  "instructions": 1652876,
+  "jump_tables": 574,
+  "jump_table_targets": 4079,
+  "all_label_fallbacks": 30,
+  "br_dispatch": 9780,
+  "traps": 26110,
+  "patched_sites": 0,
+  "local_flag_functions": 11037,
+  "flag_reads_direct": 88826,
+  "flag_reads_packed": 3362,
+  "flag_entry_functions": 26,
+  "flag_entry_reads": 0,
+  "flag_reads_after_call": 0,
+  "flag_publishing_exits": 1850,
+  "spin_gates": 0,
+  "unsupported": 0,
+  "external_branches": 0,
+  "external_calls": 0,
+  "c_bytes": 118336390,
+  "largest_chunk_bytes": 3604900,
+  "chunks_written": 41,
+  "stale_chunks_removed": 0
+ },
+ "unsupported_census": {},
+ "timings": {
+  "discover_s": 0.24,
+  "emit_wall_s": 35.7,
+  "emit_worker_s": 104.74,
+  "table_s": 0.04
+ }
+}
