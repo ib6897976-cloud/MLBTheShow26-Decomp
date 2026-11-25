@@ -47,7 +47,16 @@ def main() -> None:
                     address = item.get("address")
                     if address:
                         known_addresses.add(address.lower())
-    semantic_helpers = {r["semantic_name"] for r in annotations}
+    # Deterministic wrapper labels describe exact local behavior, but they are
+    # not domain-semantic helpers. Counting them here would push callers of
+    # thousands of no-op/delete stubs ahead of functions tied to game behavior.
+    semantic_helpers = {
+        r["semantic_name"] for r in annotations
+        if r["semantic_name"] != "guest_state_noop_stub"
+        and not r["semantic_name"].startswith("return_immediate_")
+        and not r["semantic_name"].startswith("tailcall_forward_to_")
+        and not r["semantic_name"].endswith("_import_thunk")
+    }
     names = {
         (r["module"], r["address"]): r["generated_name"]
         for r in read_tsv(NAMES)
@@ -70,12 +79,24 @@ def main() -> None:
         # Candidate strings and observed callers make reviewable evidence more likely;
         # helper overlap still determines whether the function belongs in this queue.
         strings = [s for s in (row.get("rodata_strings") or "").split(";") if s]
-        useful_strings = [s for s in strings if not s.startswith("kParam_")]
+        external_markers = ("openssl", "wws_gattaca", "external/", "external\\", "/ssl/", "\\ssl\\")
+        useful_strings = [
+            s for s in strings
+            if not s.startswith("kParam_")
+            and not any(marker in s.lower() for marker in external_markers)
+        ]
+        generic_helpers = {"linear_remap_clamped", "sampled_flight_segment_interpolate"}
+        generic_only_penalty = (
+            900 if callees and callees <= generic_helpers and not useful_strings else 0
+        )
+        external_string_penalty = 1600 if strings and not useful_strings else 0
         score = (
             len(callees) * 1000
             + min(loads + stores, 999)
             + min(caller_count, 99) * 25
             + min(len(useful_strings), 3) * 1800
+            - generic_only_penalty
+            - external_string_penalty
         )
         targets.append({
             "score": score,
