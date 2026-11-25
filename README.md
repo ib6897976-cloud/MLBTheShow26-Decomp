@@ -45,9 +45,10 @@ Run `python tools/progress_server.py` to view the live local dashboard at
 use the host computer's LAN address and port 8765.
 
 GitHub Pages serves a static exported snapshot because Pages cannot run the
-Python server. After reviewed annotation updates, run
-`tools/publish_progress_pages.ps1` to export and publish the latest snapshot.
-The public Pages repository contains only the dashboard and progress data.
+Python server. The public MLBTheShow26-Decomp repository contains the generated
+decomp, analysis tools, and the Pages site at its root. After reviewed
+annotation updates, run tools/publish_progress_pages.ps1 to export and publish
+the latest dashboard and coverage graphic.
 
 ## Disclaimer
 

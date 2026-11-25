@@ -1,0 +1,42 @@
+{
+  "wave": 61,
+  "method": "Three independent producers on the three highest-ranked unannotated targets. Each gets one function to cap per-agent usage while allowing parallel evidence gathering; a separate reviewer cross-checks every proposal before root merges serially.",
+  "assignments": [
+    {
+      "agent": "wave61_01",
+      "targets": [
+        {
+          "rank": 1,
+          "address": "0x7000c4ce50",
+          "semantic_callees": "attribute_record_value_get_with_id_offset_2c;get_owner_attribute_record_value_26_plus_index",
+          "rodata_strings": "ind%d_;ind_at1;ind_at2;ind_at3;ind_at4;pitch_movement_max;pitch_movement_min;pitch_type;pitch_velocity_max;pitch_velocity_min",
+          "evidence_summary": "17 direct callees; 0 static dispatch targets; 188 lifted loads; 112 lifted stores; 10 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave61_02",
+      "targets": [
+        {
+          "rank": 2,
+          "address": "0x700088e8c0",
+          "semantic_callees": "initialize_asset_binder_memory_pool;register_named_pointer",
+          "rodata_strings": "%s.%s;%s\\%s;FontProject;Texture",
+          "evidence_summary": "25 direct callees; 0 static dispatch targets; 134 lifted loads; 101 lifted stores; 4 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave61_03",
+      "targets": [
+        {
+          "rank": 3,
+          "address": "0x7001a2ad40",
+          "semantic_callees": "initialize_asset_binder_memory_pool;register_named_pointer",
+          "rodata_strings": "%s%s;SCOREBOARD/;Texture",
+          "evidence_summary": "24 direct callees; 0 static dispatch targets; 53 lifted loads; 66 lifted stores; 3 candidate rodata strings"
+        }
+      ]
+    }
+  ]
+}

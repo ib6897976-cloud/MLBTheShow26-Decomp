@@ -43,13 +43,13 @@ state and dispatches guest addresses.
 - `tools/data/function_prototype_candidates.tsv` records ABI-level source prototype
   candidates, separately from recomp wrapper signatures.
 - `tools/data/function_annotations.tsv` is the hand-reviewed semantic layer.
-  It currently contains 1814 named current-build routines and 175 candidate
+  It currently contains 1817 named current-build routines and 175 candidate
   source prototypes across pitch/ball, stamina, swing/contact, hit/timing,
   stadium lighting, broadcast moments, player attributes, nested delta operations,
   composite record copying, ranked-candidate evaluation, record parsing, context predicates, ranked output rows, and math. Command callbacks now cover parts of league trade and lineup management, mission progress, and arena inventory and roster operations. Every
   annotation carries evidence and confidence; this is still a small sample of
   the 135,060-function program, not a full source recovery.
-  `tools/data/field_annotations.tsv` contains 871 typed candidate-field rows.
+  `tools/data/field_annotations.tsv` contains 877 typed candidate-field rows.
   Partial layouts are in `recovered/pitch_types.h`,
   `recovered/pitch_fatigue_types.h`, `recovered/swing_types.h`,
   `recovered/hit_types.h`, `recovered/stadium_lighting_types.h`,
