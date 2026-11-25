@@ -435,3 +435,15 @@
 {"agent":"wave69_03","event":"started","wave":69,"timestamp":"2026-11-25T22:40:20.5137740Z","target_count":6,"timing_source":"parent_dispatch_time"}
 {"agent":"wave69_04","event":"started","wave":69,"timestamp":"2026-11-25T22:40:20.5137740Z","target_count":6,"timing_source":"parent_dispatch_time"}
 {"event":"qa_finished","wave":68,"agent":"wave68_independent_qa","timestamp":"2026-11-25T22:41:06.406783Z","duration_seconds":96.35,"target_count":1101,"approved_count":1101,"address_only_labels":962,"forwarders_to_known_names":139,"mismatch_count":0,"manual_sample_count":50,"timing_source":"independent_review_completion_observed"}
+{"timestamp":"2026-11-25T22:45:33.8062538Z","agent":"wave69_review12","wave":69,"target_count":12,"event":"qa_started","timing_source":"parent_dispatch_time"}
+{"agent":"wave69_review34","target_count":12,"wave":69,"event":"qa_started","timestamp":"2026-11-25T22:46:49.8738807Z","timing_source":"parent_dispatch_time"}
+{"timestamp":"2026-11-25T22:49:51.8691689Z","target_count":6,"event":"started","wave":70,"timing_source":"parent_dispatch_time","agent":"wave70_01"}
+{"timestamp":"2026-11-25T22:49:51.8691689Z","target_count":6,"event":"started","wave":70,"timing_source":"parent_dispatch_time","agent":"wave70_02"}
+{"timestamp":"2026-11-25T22:49:51.8691689Z","target_count":6,"event":"started","wave":70,"timing_source":"parent_dispatch_time","agent":"wave70_03"}
+{"timestamp":"2026-11-25T22:49:51.8691689Z","target_count":6,"event":"started","wave":70,"timing_source":"parent_dispatch_time","agent":"wave70_04"}
+{"event":"qa_finished","wave":69,"agent":"wave69_review12","timestamp":"2026-11-25T22:52:43.106687Z","target_count":12,"confirmed_names_count":7,"needs_more_evidence_count":5,"timing_source":"completion_observed; duration not independently timestamped"}
+{"event":"qa_finished","wave":69,"agent":"wave69_review34","timestamp":"2026-11-25T22:52:43.106687Z","target_count":12,"confirmed_names_count":8,"needs_more_evidence_count":4,"timing_source":"completion_observed; duration not independently timestamped"}
+{"event":"finished","wave":69,"agent":"wave69_01","timestamp":"2026-11-25T22:43:04.667980Z","duration_seconds":164.15,"target_count":6,"seconds_per_function":27.36,"staged_file":"wave69_01_wave69.jsonl","timing_source":"staged_file_creation_time"}
+{"event":"finished","wave":69,"agent":"wave69_02","timestamp":"2026-11-25T22:44:22.295563Z","duration_seconds":241.78,"target_count":6,"seconds_per_function":40.3,"staged_file":"wave69_02_wave69.jsonl","timing_source":"staged_file_creation_time"}
+{"event":"finished","wave":69,"agent":"wave69_03","timestamp":"2026-11-25T22:45:08.798828Z","duration_seconds":288.29,"target_count":6,"seconds_per_function":48.05,"staged_file":"wave69_03_wave69.jsonl","timing_source":"staged_file_creation_time"}
+{"event":"finished","wave":69,"agent":"wave69_04","timestamp":"2026-11-25T22:46:04.164964Z","duration_seconds":343.65,"target_count":6,"seconds_per_function":57.28,"staged_file":"wave69_04_wave69.jsonl","timing_source":"staged_file_creation_time"}
