@@ -38,12 +38,19 @@ evidence remain candidates for audit.
 
 `tools/build_tailcall_fastlane.py` stages a narrow class of stripped functions
 only when the entire lifted body is `FN_ENTER` plus one `musttail` return to an
-already named function. It assigns `tailcall_forward_to_<known-target>` labels
-and makes no source-prototype or field claims. These synthetic labels describe
-the exact forwarding behavior, not original source symbols. Before merge, run
-an independent all-row mechanical validator and manually inspect a random
-sample; preserve the validator report with the batch. Do not broaden the
+single function. By default, the target must have an accepted semantic label or
+readable exact ELF name. `--include-unknown-targets` also emits
+`tailcall_forward_to_address_<guest-address>` when the destination has no
+recovered name. All tail-call labels describe exact forwarding behavior, not
+original source symbols, and make no source-prototype or field claims. Before
+merge, run an independent all-row mechanical validator and manually inspect a
+random sample; preserve the validator report with the batch. Do not broaden the
 classifier to functions with any extra operations without a separate review.
+
+Wave 68's address-inclusive batch is checked by
+`tools/validate_unknown_tailcall_fastlane.py`; it verifies each body and target
+and checks a 50-function sample. Its independent audit is stored beside the
+batch in `wave68_independent_review.md`.
 
 `tools/build_trivial_fastlane.py` similarly stages only exact no-op wrappers
 (`FN_ENTER; return;`) and literal-return wrappers (`FN_ENTER`, set `x0` to one

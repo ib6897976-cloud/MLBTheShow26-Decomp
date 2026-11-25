@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Stage exact-name forwarder labels for stripped functions that only tail-call a known callee.
+"""Stage exact-address forwarder labels for stripped functions that only tail-call a callee.
 
 This fast lane is deliberately narrow: after FN_ENTER the complete lifted body
-must contain exactly one musttail return to an indexed semantic or exact ELF name.
-No arguments, fields, or hidden behavior are inferred.
+must contain exactly one musttail return to one function. By default, the target
+must have an indexed semantic or exact ELF name. With --include-unknown-targets,
+address-only synthetic labels are also allowed. No arguments, fields, or hidden
+behavior are inferred.
 """
 from __future__ import annotations
 import argparse, csv, json, re
@@ -30,6 +32,8 @@ def main():
     ap.add_argument('--wave', type=int, required=True)
     ap.add_argument('--output', type=Path)
     ap.add_argument('--limit', type=int, default=0, help='optional cap; zero means all eligible functions')
+    ap.add_argument('--include-unknown-targets', action='store_true',
+                    help='label unnamed callees by exact guest address')
     args=ap.parse_args()
     decomp=ROOT/'decompiled'
     names={r['address'].lower():r for r in read_tsv(decomp/'function_name_index.tsv') if r['module']=='main'}
@@ -79,6 +83,9 @@ def main():
             target_name=target_sem; target_evidence='accepted semantic annotation'
         elif target.get('raw_elf_name') and target_readable and target_readable != target.get('generated_name'):
             target_name=target_readable; target_evidence='exact exported ELF symbol demangling'
+        elif args.include_unknown_targets:
+            target_name=f'address_{callee[2:]}'
+            target_evidence='exact guest function address; no source symbol is inferred'
         else:
             continue
         callee_slug=slug(target_name)
@@ -91,7 +98,7 @@ def main():
         semantic=f'tailcall_forward_to_{callee_slug}'
         proposals.append({
           'module':'main','address':addr,'semantic_name':semantic,'confidence':'high',
-          'evidence':f'Exact lifted body in decompiled/main/{source}:{start}-{end} contains FN_ENTER and only the musttail return to {callee}. The target is named {target_name!r} from {target_evidence} in decompiled/function_name_index.tsv. This label records the proven forwarding behavior; it does not infer source parameter or field types.'
+          'evidence':f'Exact lifted body in decompiled/main/{source}:{start}-{end} contains FN_ENTER and only the musttail return to {callee}. The target label is {target_name!r} from {target_evidence}. This synthetic label records only the proven forwarding behavior; it does not infer a source symbol, parameter type, or field type.'
         })
     if args.limit:
         proposals=proposals[:args.limit]
