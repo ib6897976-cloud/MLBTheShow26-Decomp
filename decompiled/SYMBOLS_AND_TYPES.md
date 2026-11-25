@@ -43,18 +43,19 @@ state and dispatches guest addresses.
 - `tools/data/function_prototype_candidates.tsv` records ABI-level source prototype
   candidates, separately from recomp wrapper signatures.
 - `tools/data/function_annotations.tsv` is the evidence-reviewed semantic layer.
-  It currently contains 6005 named current-build routines and 177 candidate
+  It currently contains 10556 named current-build routines and 177 candidate
   source prototypes across pitch/ball, stamina, swing/contact, hit/timing,
   stadium lighting, broadcast moments, player attributes, nested delta operations,
   composite record copying, ranked-candidate evaluation, record parsing, context predicates, ranked output rows, and math. Command callbacks now cover parts of league trade and lineup management, mission progress, and arena inventory and roster operations. Every
   annotation carries evidence and confidence; this is still a small sample of
   the 135,060-function program, not a full source recovery.
-  Names prefixed `tailcall_forward_to_` are synthetic behavior labels for
-  stripped wrappers whose complete lifted body is exactly `FN_ENTER` followed
-  by a musttail call to an already named function. The batch is mechanically
-  checked row by row with an independent parser and manually spot-checked;
-  these labels describe forwarding behavior, not recovered original symbols.
-  They do not infer parameter or field types.
+  `tailcall_forward_to_*`, `guest_state_noop_stub`, and
+  `return_immediate_*` are synthetic labels from deterministic fast lanes.
+  They are emitted only for exact lifted bodies that forward to an already
+  named function, return without guest-state operations, or set `x0` to one
+  literal and return. The batches are mechanically checked row by row and
+  manually spot-checked. These labels describe observed wrapper behavior, not
+  recovered original symbols, and infer no parameter or field types.
   `tools/data/field_annotations.tsv` contains 885 typed candidate-field rows.
   Partial layouts are in `recovered/pitch_types.h`,
   `recovered/pitch_fatigue_types.h`, `recovered/swing_types.h`,

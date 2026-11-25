@@ -34,7 +34,7 @@ especially where one command has multiple registered functions. Several older
 labels were corrected after wave 22. Earlier rows that rely on cached string
 evidence remain candidates for audit.
 
-## Deterministic tail-call fast lane
+## Deterministic fast lanes
 
 `tools/build_tailcall_fastlane.py` stages a narrow class of stripped functions
 only when the entire lifted body is `FN_ENTER` plus one `musttail` return to an
@@ -44,3 +44,11 @@ the exact forwarding behavior, not original source symbols. Before merge, run
 an independent all-row mechanical validator and manually inspect a random
 sample; preserve the validator report with the batch. Do not broaden the
 classifier to functions with any extra operations without a separate review.
+
+`tools/build_trivial_fastlane.py` similarly stages only exact no-op wrappers
+(`FN_ENTER; return;`) and literal-return wrappers (`FN_ENTER`, set `x0` to one
+immediate, store it, return). It emits `guest_state_noop_stub` or
+`return_immediate_<literal>`, never a source prototype or field. Independently
+validate every generated row and manually inspect a random sample before merge.
+The profiling hook in `FN_ENTER` is host instrumentation, not guest-state
+behavior.
