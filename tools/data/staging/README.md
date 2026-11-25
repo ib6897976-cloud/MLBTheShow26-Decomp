@@ -21,6 +21,13 @@ Review the function body and at least one caller where available. Check every
 claimed offset/width against the actual loads/stores. Review files are advisory;
 the parent applies corrections before merging the proposals.
 
+Apply name verdicts with `tools/apply_staging_reviews.py` before merging. It
+requires an exact review-to-proposal address match, the correct source filename,
+non-empty evidence notes, and concise snake_case corrected names. It refuses a
+confirmed verdict whose reviewed name disagrees with the proposal. The helper
+applies names only; field and prototype candidates still require explicit
+review and correction before the serial merge.
+
 
 Treat string matches in the ranked queue as leads. For a semantic claim,
 resolve the full guest address against NSO rodata and trace how the body uses
