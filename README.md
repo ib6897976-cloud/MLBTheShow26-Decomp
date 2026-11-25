@@ -20,7 +20,7 @@ for current coverage and progress history.
 [![Function coverage map](https://ib6897976-cloud.github.io/MLBTheShow26-Decomp/progress.svg)](https://ib6897976-cloud.github.io/MLBTheShow26-Decomp/)
 
 Subsystem notes live in [decompiled](decompiled/), and recovered partial
-layouts live in [recovered](recovered/). These are evolving maps, not complete
+layouts live in [decompiled/recovered](decompiled/recovered/). These are evolving maps, not complete
 or authoritative descriptions of every game data structure.
 
 ## Compatibility

@@ -33,3 +33,14 @@ the dispatch association. Read the body to confirm what the handler does,
 especially where one command has multiple registered functions. Several older
 labels were corrected after wave 22. Earlier rows that rely on cached string
 evidence remain candidates for audit.
+
+## Deterministic tail-call fast lane
+
+`tools/build_tailcall_fastlane.py` stages a narrow class of stripped functions
+only when the entire lifted body is `FN_ENTER` plus one `musttail` return to an
+already named function. It assigns `tailcall_forward_to_<known-target>` labels
+and makes no source-prototype or field claims. These synthetic labels describe
+the exact forwarding behavior, not original source symbols. Before merge, run
+an independent all-row mechanical validator and manually inspect a random
+sample; preserve the validator report with the batch. Do not broaden the
+classifier to functions with any extra operations without a separate review.
