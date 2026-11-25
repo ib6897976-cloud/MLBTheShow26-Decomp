@@ -1,0 +1,42 @@
+{
+  "wave": 54,
+  "method": "One producer on five sibling JSON/property-map readers with exact queue keys. Hard cap total estimated workload at 100 (sum=85). Parent directly QA checks each proposal; no separate reviewer agents.",
+  "assignments": [
+    {
+      "agent": "wave54_one",
+      "estimated_work": 85,
+      "targets": [
+        {
+          "rank": 651,
+          "address": "0x7000c3a2fc",
+          "estimate": 18,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 584,
+          "address": "0x7000a92c00",
+          "estimate": 17,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 672,
+          "address": "0x7000c2b1dc",
+          "estimate": 16,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 668,
+          "address": "0x7000af2cac",
+          "estimate": 17,
+          "rodata_cues": 1
+        },
+        {
+          "rank": 671,
+          "address": "0x7000c26bb0",
+          "estimate": 17,
+          "rodata_cues": 1
+        }
+      ]
+    }
+  ]
+}

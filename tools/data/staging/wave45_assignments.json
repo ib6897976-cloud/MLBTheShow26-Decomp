@@ -1,0 +1,350 @@
+{
+  "wave": 45,
+  "method": "32 refreshed queue targets at ranks 14-39 plus 42-45 and 48-49; each has workload estimate <=100 and specific readable rodata or >=2 callers. Chosen around known-recoverable protocol/gameplay/UI keys and moderate workloads. Greedy largest-first balance across 4x8 using loads+stores+4*semantic_callees; estimates are proxy only. Prior Waves 40-44 and already annotated addresses excluded.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 437,
+      "targets": [
+        {
+          "rank": 20,
+          "address": "0x7000b2d420",
+          "estimate": 99,
+          "score": 6495,
+          "generated_name": "f_7000b2d420",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "CompleteDDSeasonDetails;SznNum;ViewedFeat;duration_secs;season_number;viewed_featured_rewards"
+        },
+        {
+          "rank": 25,
+          "address": "0x7000b1a158",
+          "estimate": 67,
+          "score": 6463,
+          "generated_name": "f_7000b1a158",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "ARENACARD%d;^c2^;^c52^"
+        },
+        {
+          "rank": 27,
+          "address": "0x7000b54abc",
+          "estimate": 54,
+          "score": 6450,
+          "generated_name": "f_7000b54abc",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "ENEMY_TYPE;MINI BOSS;OPPONENT;PERK%d;STADIUM;TREASURE%d;YIP%d;ZONE SWEEPER"
+        },
+        {
+          "rank": 28,
+          "address": "0x70009170a0",
+          "estimate": 52,
+          "score": 6448,
+          "generated_name": "f_70009170a0",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "custom_team_id;is_cpu_game;matchmaking;mini_cpu_idx;mini_run_id;player_id;squad_type;tournament_team;vs_type"
+        },
+        {
+          "rank": 32,
+          "address": "0x7000b46ab8",
+          "estimate": 33,
+          "score": 6429,
+          "generated_name": "f_7000b46ab8",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "DATA_C;DATA_G;chapter;has_side_quest"
+        },
+        {
+          "rank": 34,
+          "address": "0x700091a020",
+          "estimate": 29,
+          "score": 6425,
+          "generated_name": "f_700091a020",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "player_id;stadium;stadiums"
+        },
+        {
+          "rank": 38,
+          "address": "0x7000b38938",
+          "estimate": 24,
+          "score": 6420,
+          "generated_name": "f_7000b38938",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "STORY_ATK_ID;STORY_DEF_ID;STORY_OWNER;STORY_RES_ATK;STORY_RES_DEF"
+        },
+        {
+          "rank": 43,
+          "address": "0x70004708c0",
+          "estimate": 79,
+          "score": 4725,
+          "generated_name": "f_70004708c0",
+          "caller_count": 2,
+          "semantic_callee_count": 1,
+          "rodata_strings": "EnterGame;Texture"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_02",
+      "estimated_work": 428,
+      "targets": [
+        {
+          "rank": 23,
+          "address": "0x7000b20b1c",
+          "estimate": 68,
+          "score": 6464,
+          "generated_name": "f_7000b20b1c",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "ARENA_STATSD;INVITE_MODE;LIFETIME;No qualifying teams;leaderboard;player;username"
+        },
+        {
+          "rank": 29,
+          "address": "0x7000c2ac30",
+          "estimate": 51,
+          "score": 6447,
+          "generated_name": "f_7000c2ac30",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "CC_FILTER;LG_STATS_DATA;LG_STATS_DATA_CURRENT_PLAYER;dynamic_filters;filter;leaderboard.current_mlb_team_id;leaderboard_columns.column.vcount;league_id;mlb_team_id;page;position;sort_asc;sort_column"
+        },
+        {
+          "rank": 31,
+          "address": "0x7000b46d58",
+          "estimate": 34,
+          "score": 6430,
+          "generated_name": "f_7000b46d58",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "DATA_C;SIDE_QUEST_INDEX;episode;outro_locked;side_quest;status"
+        },
+        {
+          "rank": 35,
+          "address": "0x7000b04c00",
+          "estimate": 29,
+          "score": 6425,
+          "generated_name": "f_7000b04c00",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "CARD%d;RECENT;item;items"
+        },
+        {
+          "rank": 39,
+          "address": "0x7000b2d974",
+          "estimate": 15,
+          "score": 6411,
+          "generated_name": "f_7000b2d974",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "PENALTY;player;seconds_left"
+        },
+        {
+          "rank": 45,
+          "address": "0x70016218e0",
+          "estimate": 95,
+          "score": 4691,
+          "generated_name": "f_70016218e0",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "%s%c%08lx.%s%d;c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/openssl/crypto/x509/by_dir.c"
+        },
+        {
+          "rank": 48,
+          "address": "0x70009da770",
+          "estimate": 81,
+          "score": 4677,
+          "generated_name": "f_70009da770",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "Keyboard;kReadyCancelled"
+        },
+        {
+          "rank": 49,
+          "address": "0x7001293438",
+          "estimate": 55,
+          "score": 4676,
+          "generated_name": "f_7001293438",
+          "caller_count": 1,
+          "semantic_callee_count": 1,
+          "rodata_strings": "%s_Global;%s_Locals"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_03",
+      "estimated_work": 432,
+      "targets": [
+        {
+          "rank": 14,
+          "address": "0x70015cc5c0",
+          "estimate": 62,
+          "score": 6508,
+          "generated_name": "f_70015cc5c0",
+          "caller_count": 2,
+          "semantic_callee_count": 1,
+          "rodata_strings": "ANY PRIVATE KEY;CERTIFICATE;CERTIFICATE REQUEST;DH PARAMETERS;ENCRYPTED PRIVATE KEY;Expecting:;NEW CERTIFICATE REQUEST;PARAMETERS;PKCS #7 SIGNED DATA;PKCS7;PRIVATE KEY;TRUSTED CERTIFICATE;X509 CERTIFICATE;X9.42 DH PARAMETERS;c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/openssl/crypto/pem/pem_lib.c"
+        },
+        {
+          "rank": 15,
+          "address": "0x70017a6314",
+          "estimate": 37,
+          "score": 6508,
+          "generated_name": "f_70017a6314",
+          "caller_count": 3,
+          "semantic_callee_count": 1,
+          "rodata_strings": "%s %s %s%s;INVALID;breaks for"
+        },
+        {
+          "rank": 18,
+          "address": "0x7001adf4c0",
+          "estimate": 29,
+          "score": 6500,
+          "generated_name": "f_7001adf4c0",
+          "caller_count": 3,
+          "semantic_callee_count": 1,
+          "rodata_strings": "CCSound;MIDISound;ScriptedSound;Stream;custom;snd_SetHandlerForType;sndhand.cpp"
+        },
+        {
+          "rank": 21,
+          "address": "0x7000b774ec",
+          "estimate": 88,
+          "score": 6484,
+          "generated_name": "f_7000b774ec",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "CC_FILTER;FILT_PAGE;filter_series;filter_special;filter_type"
+        },
+        {
+          "rank": 22,
+          "address": "0x7000ba3218",
+          "estimate": 73,
+          "score": 6469,
+          "generated_name": "f_7000ba3218",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "FaceScanDownloadedData;face_scan.csv;face_scan.jpg;face_scan.mtl;face_scan.obj"
+        },
+        {
+          "rank": 30,
+          "address": "0x7000c2b244",
+          "estimate": 38,
+          "score": 6434,
+          "generated_name": "f_7000c2b244",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "LG_STATS_DATA;LG_STATS_DATA_CURRENT_PLAYER;leaderboard;leaderboard.player[%d].mlb_team_id;player"
+        },
+        {
+          "rank": 37,
+          "address": "0x7000916f80",
+          "estimate": 24,
+          "score": 6420,
+          "generated_name": "f_7000916f80",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "custom_team_id;squad_type;team_id"
+        },
+        {
+          "rank": 42,
+          "address": "0x70004ef294",
+          "estimate": 81,
+          "score": 4727,
+          "generated_name": "f_70004ef294",
+          "caller_count": 2,
+          "semantic_callee_count": 1,
+          "rodata_strings": "%s_%s;Help"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_04",
+      "estimated_work": 434,
+      "targets": [
+        {
+          "rank": 16,
+          "address": "0x7001621010",
+          "estimate": 86,
+          "score": 6507,
+          "generated_name": "f_7001621010",
+          "caller_count": 1,
+          "semantic_callee_count": 1,
+          "rodata_strings": "CERTIFICATE;DSA PRIVATE KEY;EC PRIVATE KEY;RSA PRIVATE KEY;TRUSTED CERTIFICATE;X509 CERTIFICATE;X509 CRL;c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/openssl/crypto/pem/pem_info.c"
+        },
+        {
+          "rank": 17,
+          "address": "0x70009a3a7c",
+          "estimate": 34,
+          "score": 6505,
+          "generated_name": "f_70009a3a7c",
+          "caller_count": 3,
+          "semantic_callee_count": 1,
+          "rodata_strings": "LIVE_ROSTERS;roster.dat;roster_LIVE.dat;roster_MTO.dat"
+        },
+        {
+          "rank": 19,
+          "address": "0x70009e1910",
+          "estimate": 75,
+          "score": 6496,
+          "generated_name": "f_70009e1910",
+          "caller_count": 1,
+          "semantic_callee_count": 1,
+          "rodata_strings": ".1,>Az;ClientInternalType;Got TC update request ...;Got telemetry update request ...;Unexpected message data type %d;UpdateTcStash;trophy"
+        },
+        {
+          "rank": 24,
+          "address": "0x70015ccac0",
+          "estimate": 43,
+          "score": 6464,
+          "generated_name": "f_70015ccac0",
+          "caller_count": 1,
+          "semantic_callee_count": 1,
+          "rodata_strings": "%02X;DEK-Info: %s,;ENCRYPTED;c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/openssl/crypto/pem/pem_lib.c"
+        },
+        {
+          "rank": 26,
+          "address": "0x7000ab5558",
+          "estimate": 57,
+          "score": 6453,
+          "generated_name": "f_7000ab5558",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "Frontend\\Stats\\lockedaccessories.bin;Problem reading rosters.bin!;Problem reading stats.bin!"
+        },
+        {
+          "rank": 33,
+          "address": "0x7000b14038",
+          "estimate": 30,
+          "score": 6426,
+          "generated_name": "f_7000b14038",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "FILT_POS;FILT_ROLE;FILT_TYPE"
+        },
+        {
+          "rank": 36,
+          "address": "0x7000b4cb08",
+          "estimate": 27,
+          "score": 6423,
+          "generated_name": "f_7000b4cb08",
+          "caller_count": 0,
+          "semantic_callee_count": 1,
+          "rodata_strings": "DATA_CR;ENEMY_TYPE;challenge;mini_bosses;opponents;stadiums;zone_sweepers"
+        },
+        {
+          "rank": 44,
+          "address": "0x70004b8bb0",
+          "estimate": 82,
+          "score": 4703,
+          "generated_name": "f_70004b8bb0",
+          "caller_count": 1,
+          "semantic_callee_count": 1,
+          "rodata_strings": "%s_%s;DisplayText"
+        }
+      ]
+    }
+  ]
+}

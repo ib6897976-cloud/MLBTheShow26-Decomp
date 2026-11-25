@@ -1,0 +1,254 @@
+{
+  "wave": 47,
+  "method": "32 refreshed queue targets in ranks 37-100, per-target work<=100 and observed caller or cached rodata cue, first 32 by rank; greedy-largest-first 4x8. Chosen to approximate prior faster rank37-116 mix with bounded workload. Cues require body/caller verification.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 194,
+      "targets": [
+        {
+          "rank": 41,
+          "address": "0x7000ab6060",
+          "estimate": 54,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 44,
+          "address": "0x7000cb9e70",
+          "estimate": 29,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 47,
+          "address": "0x7000cb9f64",
+          "estimate": 24,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 50,
+          "address": "0x7000ce5920",
+          "estimate": 22,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 56,
+          "address": "0x7000b61504",
+          "estimate": 17,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 58,
+          "address": "0x7000cb190c",
+          "estimate": 17,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 62,
+          "address": "0x70009358e8",
+          "estimate": 16,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 65,
+          "address": "0x7000bf25dc",
+          "estimate": 15,
+          "caller_count": 0,
+          "rodata_cues": 2
+        }
+      ]
+    },
+    {
+      "agent": "decomp_02",
+      "estimated_work": 194,
+      "targets": [
+        {
+          "rank": 42,
+          "address": "0x7000cb8958",
+          "estimate": 47,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 43,
+          "address": "0x7000be8d1c",
+          "estimate": 37,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 48,
+          "address": "0x7000d075bc",
+          "estimate": 23,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 51,
+          "address": "0x7000cd3744",
+          "estimate": 20,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 53,
+          "address": "0x7000cb7fd4",
+          "estimate": 19,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 59,
+          "address": "0x7000cc2914",
+          "estimate": 17,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 63,
+          "address": "0x7000c44f6c",
+          "estimate": 16,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 66,
+          "address": "0x7000cdc0f0",
+          "estimate": 15,
+          "caller_count": 0,
+          "rodata_cues": 2
+        }
+      ]
+    },
+    {
+      "agent": "decomp_03",
+      "estimated_work": 194,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x7001aa4180",
+          "estimate": 42,
+          "caller_count": 1,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 40,
+          "address": "0x70005d2744",
+          "estimate": 37,
+          "caller_count": 1,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 45,
+          "address": "0x7000cd7a60",
+          "estimate": 27,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 49,
+          "address": "0x7000caf344",
+          "estimate": 22,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 55,
+          "address": "0x7000c7fdb8",
+          "estimate": 18,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 60,
+          "address": "0x7000cc47f4",
+          "estimate": 17,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 64,
+          "address": "0x7000cd104c",
+          "estimate": 16,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 67,
+          "address": "0x7000ce0440",
+          "estimate": 15,
+          "caller_count": 0,
+          "rodata_cues": 2
+        }
+      ]
+    },
+    {
+      "agent": "decomp_04",
+      "estimated_work": 193,
+      "targets": [
+        {
+          "rank": 38,
+          "address": "0x7000d1acfc",
+          "estimate": 41,
+          "caller_count": 1,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 39,
+          "address": "0x70005465e0",
+          "estimate": 39,
+          "caller_count": 1,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 46,
+          "address": "0x7000cd7b78",
+          "estimate": 27,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 52,
+          "address": "0x7000cd37f4",
+          "estimate": 20,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 54,
+          "address": "0x7000c7fd30",
+          "estimate": 18,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 57,
+          "address": "0x7000cac084",
+          "estimate": 17,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 61,
+          "address": "0x7000cc4884",
+          "estimate": 17,
+          "caller_count": 0,
+          "rodata_cues": 2
+        },
+        {
+          "rank": 68,
+          "address": "0x7000bf27c8",
+          "estimate": 14,
+          "caller_count": 0,
+          "rodata_cues": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3769 @@
+{
+  "schema_version": 1,
+  "purpose": "Evidence-backed names and types for camera-related decomp resources",
+  "generated_code_policy": "Do not edit decompiled/main/*.c or decompiled/sdk/*.c; files are generated and overwritten by recomp/gen.py",
+  "module": {
+    "name": "main",
+    "base": "0x7000000000",
+    "generated_function_count": 94991
+  },
+  "function_naming": {
+    "pattern": "f_<guest virtual address>",
+    "wrapper_signature": "void f_<address>(Cpu *c)",
+    "meaning": "Host recomp dispatch wrapper; not recovered original function name or signature",
+    "camera_functions_identified": []
+  },
+  "resource_type_notes": {
+    "opaque_camera_resource": "Binary .CAM asset; camera semantics and record layout unverified",
+    "opaque_camera_companion_resource": "Binary .PLB paired by basename; relationship beyond filename not verified",
+    "opaque_stadium_camera_bundle": "Binary CAMERA.CB file under a stadium directory; internal schema not decoded"
+  },
+  "resources": [
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AAP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5512,
+      "paired_basename": "AAP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AAP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 41244,
+      "paired_basename": "AAP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AGS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4356,
+      "paired_basename": "AGS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AGS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38820,
+      "paired_basename": "AGS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ARZ.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 13944,
+      "paired_basename": "ARZ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ARZ.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 60876,
+      "paired_basename": "ARZ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ATL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 13332,
+      "paired_basename": "ATL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ATL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 62076,
+      "paired_basename": "ATL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AWARDSTAGE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 140,
+      "paired_basename": "AWARDSTAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AWARDSTAGE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 612,
+      "paired_basename": "AWARDSTAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_CENTRAL_SSC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2180,
+      "paired_basename": "AX_CENTRAL_SSC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_CENTRAL_SSC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21828,
+      "paired_basename": "AX_CENTRAL_SSC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_COLLEGE_OP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2996,
+      "paired_basename": "AX_COLLEGE_OP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_COLLEGE_OP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24276,
+      "paired_basename": "AX_COLLEGE_OP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_EAST_PGP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2860,
+      "paired_basename": "AX_EAST_PGP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_EAST_PGP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24468,
+      "paired_basename": "AX_EAST_PGP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_NORTH_RPF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2588,
+      "paired_basename": "AX_NORTH_RPF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_NORTH_RPF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 23412,
+      "paired_basename": "AX_NORTH_RPF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_WEST_BEF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2452,
+      "paired_basename": "AX_WEST_BEF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/AX_WEST_BEF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22884,
+      "paired_basename": "AX_WEST_BEF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BAL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14284,
+      "paired_basename": "BAL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BAL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 64692,
+      "paired_basename": "BAL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BAR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5036,
+      "paired_basename": "BAR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BAR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 41556,
+      "paired_basename": "BAR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BAY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4696,
+      "paired_basename": "BAY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BAY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 37188,
+      "paired_basename": "BAY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BMS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4356,
+      "paired_basename": "BMS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BMS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 29436,
+      "paired_basename": "BMS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BOS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14964,
+      "paired_basename": "BOS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BOS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 66276,
+      "paired_basename": "BOS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BRS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 7348,
+      "paired_basename": "BRS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/BRS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 47076,
+      "paired_basename": "BRS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CAMERACORE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 377608,
+      "paired_basename": "CAMERACORE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CAMERACORE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 1349796,
+      "paired_basename": "CAMERACORE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CAP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4628,
+      "paired_basename": "CAP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CAP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 37332,
+      "paired_basename": "CAP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CCF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6260,
+      "paired_basename": "CCF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CCF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 41844,
+      "paired_basename": "CCF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CHC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14352,
+      "paired_basename": "CHC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CHC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 63996,
+      "paired_basename": "CHC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CHW.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14828,
+      "paired_basename": "CHW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CHW.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 64908,
+      "paired_basename": "CHW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CIN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 16120,
+      "paired_basename": "CIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CIN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 64740,
+      "paired_basename": "CIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CLE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14828,
+      "paired_basename": "CLE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CLE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 65796,
+      "paired_basename": "CLE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/COL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 15100,
+      "paired_basename": "COL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/COL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 70212,
+      "paired_basename": "COL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1092,
+      "paired_basename": "CRAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 7188,
+      "paired_basename": "CRAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS10.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS10",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS10.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS10",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS11.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS11",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS11.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS11",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS12.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS12",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS12.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS12",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS13.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS13",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS13.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS13",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS14.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS14",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS14.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS14",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS15.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS15",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS15.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS15",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS16.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS16",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS16.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS16",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS17.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS17",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS17.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS17",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS18.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS18",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS18.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS18",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS19.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS19",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS19.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS19",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS2.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS2",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS2.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16788,
+      "paired_basename": "CRAS2",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS20.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS20",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS20.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS20",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS21.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS21",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS21.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS21",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS22.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS22",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS22.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS22",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS23.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS23",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS23.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS23",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS24.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS24",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS24.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS24",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS25.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS25",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS25.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS25",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS26.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS26",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS26.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS26",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS27.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS27",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS27.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS27",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS28.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS28",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS28.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS28",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS29.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS29",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS29.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS29",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS3.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS3",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS3.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS3",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS30.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS30",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS30.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS30",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS4.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS4",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS4.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS4",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS5.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS5",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS5.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS5",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS6.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS6",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS6.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS6",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS7.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS7",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS7.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS7",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS8.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS8",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS8.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS8",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS9.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "CRAS9",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRAS9.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 16524,
+      "paired_basename": "CRAS9",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRO.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4424,
+      "paired_basename": "CRO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRO.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 39084,
+      "paired_basename": "CRO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4424,
+      "paired_basename": "CRY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CRY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 36252,
+      "paired_basename": "CRY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CUSTOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 548,
+      "paired_basename": "CUSTOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/CUSTOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 2868,
+      "paired_basename": "CUSTOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/DET.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14556,
+      "paired_basename": "DET",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/DET.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 61308,
+      "paired_basename": "DET",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/DPF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4424,
+      "paired_basename": "DPF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/DPF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38796,
+      "paired_basename": "DPF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EHB.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 3336,
+      "paired_basename": "EHB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EHB.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 13908,
+      "paired_basename": "EHB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_ARZ.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 10748,
+      "paired_basename": "EXT_ARZ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_ARZ.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 35340,
+      "paired_basename": "EXT_ARZ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_ATL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 10952,
+      "paired_basename": "EXT_ATL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_ATL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 35700,
+      "paired_basename": "EXT_ATL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_BAL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 684,
+      "paired_basename": "EXT_BAL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_BAL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 3756,
+      "paired_basename": "EXT_BAL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_BOS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_BOS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_BOS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_BOS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CHC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 684,
+      "paired_basename": "EXT_CHC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CHC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 3756,
+      "paired_basename": "EXT_CHC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CHW.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1092,
+      "paired_basename": "EXT_CHW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CHW.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4812,
+      "paired_basename": "EXT_CHW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CIN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_CIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CIN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_CIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CLE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 684,
+      "paired_basename": "EXT_CLE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_CLE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 3756,
+      "paired_basename": "EXT_CLE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_COL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_COL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_COL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_COL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_DET.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_DET",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_DET.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_DET",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_FLA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "EXT_FLA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_FLA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4812,
+      "paired_basename": "EXT_FLA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_HOU.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "EXT_HOU",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_HOU.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_HOU",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_KC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 276,
+      "paired_basename": "EXT_KC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_KC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 2316,
+      "paired_basename": "EXT_KC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_LAA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1024,
+      "paired_basename": "EXT_LAA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_LAA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4380,
+      "paired_basename": "EXT_LAA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_LAD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "EXT_LAD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_LAD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4812,
+      "paired_basename": "EXT_LAD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_MIL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_MIL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_MIL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_MIL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_MIN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 276,
+      "paired_basename": "EXT_MIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_MIN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 2172,
+      "paired_basename": "EXT_MIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_NYM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 684,
+      "paired_basename": "EXT_NYM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_NYM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 3756,
+      "paired_basename": "EXT_NYM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_NYY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "EXT_NYY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_NYY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4812,
+      "paired_basename": "EXT_NYY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_PHI.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_PHI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_PHI.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_PHI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_PIT.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_PIT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_PIT.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_PIT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SAC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 276,
+      "paired_basename": "EXT_SAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SAC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 2172,
+      "paired_basename": "EXT_SAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1364,
+      "paired_basename": "EXT_SD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 5868,
+      "paired_basename": "EXT_SD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SEA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_SEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SEA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_SEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "EXT_SF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_SF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4548,
+      "paired_basename": "EXT_SF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_STL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 684,
+      "paired_basename": "EXT_STL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_STL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 3756,
+      "paired_basename": "EXT_STL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_TB.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 276,
+      "paired_basename": "EXT_TB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_TB.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 2172,
+      "paired_basename": "EXT_TB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_TEX.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "EXT_TEX",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_TEX.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4812,
+      "paired_basename": "EXT_TEX",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_TOR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 820,
+      "paired_basename": "EXT_TOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_TOR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 4284,
+      "paired_basename": "EXT_TOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_WAS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 276,
+      "paired_basename": "EXT_WAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/EXT_WAS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 2172,
+      "paired_basename": "EXT_WAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FLA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 12720,
+      "paired_basename": "FLA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FLA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 58020,
+      "paired_basename": "FLA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FOD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5036,
+      "paired_basename": "FOD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FOD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 36780,
+      "paired_basename": "FOD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FOR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6532,
+      "paired_basename": "FOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FOR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 42900,
+      "paired_basename": "FOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FRA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 7144,
+      "paired_basename": "FRA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/FRA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 46692,
+      "paired_basename": "FRA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/GRI.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4628,
+      "paired_basename": "GRI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/GRI.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 35796,
+      "paired_basename": "GRI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/GVS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5920,
+      "paired_basename": "GVS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/GVS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 43332,
+      "paired_basename": "GVS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HIG.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5580,
+      "paired_basename": "HIG",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HIG.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 42540,
+      "paired_basename": "HIG",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HOF_LR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1568,
+      "paired_basename": "HOF_LR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HOF_LR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21540,
+      "paired_basename": "HOF_LR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HOU.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14352,
+      "paired_basename": "HOU",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HOU.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 64764,
+      "paired_basename": "HOU",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HRD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2724,
+      "paired_basename": "HRD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HRD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 3104,
+      "paired_basename": "HRD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HUB_RM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1568,
+      "paired_basename": "HUB_RM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/HUB_RM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21540,
+      "paired_basename": "HUB_RM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/IND.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4016,
+      "paired_basename": "IND",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/IND.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 34980,
+      "paired_basename": "IND",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/IRO.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4288,
+      "paired_basename": "IRO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/IRO.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 36324,
+      "paired_basename": "IRO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/JMF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 3676,
+      "paired_basename": "JMF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/JMF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 32196,
+      "paired_basename": "JMF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/JPS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5376,
+      "paired_basename": "JPS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/JPS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 40500,
+      "paired_basename": "JPS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14828,
+      "paired_basename": "KC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 69564,
+      "paired_basename": "KC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KM_PHASE_ATSEA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 7484,
+      "paired_basename": "KM_PHASE_ATSEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KM_PHASE_ATSEA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 29196,
+      "paired_basename": "KM_PHASE_ATSEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KM_PHASE_THECITY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 7484,
+      "paired_basename": "KM_PHASE_THECITY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KM_PHASE_THECITY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 29196,
+      "paired_basename": "KM_PHASE_THECITY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KM_PHASE_THEIRWORLD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 7484,
+      "paired_basename": "KM_PHASE_THEIRWORLD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/KM_PHASE_THEIRWORLD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 29460,
+      "paired_basename": "KM_PHASE_THEIRWORLD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/LAA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 16188,
+      "paired_basename": "LAA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/LAA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 67380,
+      "paired_basename": "LAA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/LAD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 15168,
+      "paired_basename": "LAD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/LAD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 66732,
+      "paired_basename": "LAD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/LMP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6600,
+      "paired_basename": "LMP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/LMP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 46164,
+      "paired_basename": "LMP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MAC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4356,
+      "paired_basename": "MAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MAC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38628,
+      "paired_basename": "MAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MAJ.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6464,
+      "paired_basename": "MAJ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MAJ.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 44292,
+      "paired_basename": "MAJ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MIL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14352,
+      "paired_basename": "MIL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MIL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 59796,
+      "paired_basename": "MIL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_CLP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2996,
+      "paired_basename": "MILB_CLP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_CLP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 32772,
+      "paired_basename": "MILB_CLP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_DCJ.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1364,
+      "paired_basename": "MILB_DCJ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_DCJ.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 19332,
+      "paired_basename": "MILB_DCJ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_HMF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1364,
+      "paired_basename": "MILB_HMF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_HMF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 19332,
+      "paired_basename": "MILB_HMF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_SMB.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1364,
+      "paired_basename": "MILB_SMB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_SMB.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 19332,
+      "paired_basename": "MILB_SMB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_SWP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1364,
+      "paired_basename": "MILB_SWP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_SWP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 19332,
+      "paired_basename": "MILB_SWP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TB1.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TB1",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TB1.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TB1",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD2.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TBD2",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD2.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TBD2",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD3.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TBD3",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD3.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TBD3",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD4.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TBD4",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD4.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TBD4",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD5.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TBD5",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD5.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TBD5",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD6.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TBD6",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD6.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TBD6",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD7.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TBD7",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD7.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TBD7",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD8.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "MILB_TBD8",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MILB_TBD8.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17196,
+      "paired_basename": "MILB_TBD8",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MIN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 15168,
+      "paired_basename": "MIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MIN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 62700,
+      "paired_basename": "MIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_CC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2724,
+      "paired_basename": "MINIS_CC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_CC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22356,
+      "paired_basename": "MINIS_CC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_LL_MAD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2588,
+      "paired_basename": "MINIS_LL_MAD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_LL_MAD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22092,
+      "paired_basename": "MINIS_LL_MAD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_LL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2656,
+      "paired_basename": "MINIS_LL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_LL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22620,
+      "paired_basename": "MINIS_LL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_LW.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2588,
+      "paired_basename": "MINIS_LW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_LW.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22356,
+      "paired_basename": "MINIS_LW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_PIN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2452,
+      "paired_basename": "MINIS_PIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_PIN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21564,
+      "paired_basename": "MINIS_PIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_SS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2724,
+      "paired_basename": "MINIS_SS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_SS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22356,
+      "paired_basename": "MINIS_SS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_TK.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2724,
+      "paired_basename": "MINIS_TK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MINIS_TK.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22356,
+      "paired_basename": "MINIS_TK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MOO.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4424,
+      "paired_basename": "MOO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MOO.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38796,
+      "paired_basename": "MOO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MSF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5784,
+      "paired_basename": "MSF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/MSF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 41748,
+      "paired_basename": "MSF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NAV_SPACE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1568,
+      "paired_basename": "NAV_SPACE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NAV_SPACE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21540,
+      "paired_basename": "NAV_SPACE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_COM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6940,
+      "paired_basename": "NGL_COM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_COM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21492,
+      "paired_basename": "NGL_COM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_FOR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5308,
+      "paired_basename": "NGL_FOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_FOR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 18636,
+      "paired_basename": "NGL_FOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_HDP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2996,
+      "paired_basename": "NGL_HDP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_HDP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 13308,
+      "paired_basename": "NGL_HDP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_KC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6668,
+      "paired_basename": "NGL_KC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_KC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 20964,
+      "paired_basename": "NGL_KC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_MAC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1772,
+      "paired_basename": "NGL_MAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_MAC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 10380,
+      "paired_basename": "NGL_MAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_NEW.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2996,
+      "paired_basename": "NGL_NEW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_NEW.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24996,
+      "paired_basename": "NGL_NEW",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_PIT.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2996,
+      "paired_basename": "NGL_PIT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_PIT.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24828,
+      "paired_basename": "NGL_PIT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_RWD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 3200,
+      "paired_basename": "NGL_RWD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_RWD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 23748,
+      "paired_basename": "NGL_RWD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_SSD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 7008,
+      "paired_basename": "NGL_SSD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_SSD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21756,
+      "paired_basename": "NGL_SSD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_STL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 7144,
+      "paired_basename": "NGL_STL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_STL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21924,
+      "paired_basename": "NGL_STL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_TRP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2656,
+      "paired_basename": "NGL_TRP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NGL_TRP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 12420,
+      "paired_basename": "NGL_TRP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NOWHERE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2792,
+      "paired_basename": "NOWHERE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NOWHERE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 29532,
+      "paired_basename": "NOWHERE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NYM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14420,
+      "paired_basename": "NYM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NYM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 62100,
+      "paired_basename": "NYM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NYY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 17140,
+      "paired_basename": "NYY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/NYY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 72348,
+      "paired_basename": "NYY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OAK.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 12244,
+      "paired_basename": "OAK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OAK.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 56532,
+      "paired_basename": "OAK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OFFICE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2656,
+      "paired_basename": "OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OFFICE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 25764,
+      "paired_basename": "OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_ATL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6804,
+      "paired_basename": "OLD_ATL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_ATL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 49044,
+      "paired_basename": "OLD_ATL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_FLA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4900,
+      "paired_basename": "OLD_FLA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_FLA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 43020,
+      "paired_basename": "OLD_FLA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_MIN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5104,
+      "paired_basename": "OLD_MIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_MIN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 44892,
+      "paired_basename": "OLD_MIN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_NYM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6124,
+      "paired_basename": "OLD_NYM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_NYM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 47388,
+      "paired_basename": "OLD_NYM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_NYY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6124,
+      "paired_basename": "OLD_NYY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_NYY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 47388,
+      "paired_basename": "OLD_NYY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_OAK.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 12516,
+      "paired_basename": "OLD_OAK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_OAK.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 58500,
+      "paired_basename": "OLD_OAK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_SEA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2996,
+      "paired_basename": "OLD_SEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_SEA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 25260,
+      "paired_basename": "OLD_SEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_TEX.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6736,
+      "paired_basename": "OLD_TEX",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OLD_TEX.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 48396,
+      "paired_basename": "OLD_TEX",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OSP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4832,
+      "paired_basename": "OSP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OSP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38172,
+      "paired_basename": "OSP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OZ.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "OZ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/OZ.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 17364,
+      "paired_basename": "OZ",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PHI.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14488,
+      "paired_basename": "PHI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PHI.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 62172,
+      "paired_basename": "PHI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PIT.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14896,
+      "paired_basename": "PIT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PIT.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 62988,
+      "paired_basename": "PIT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/POL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5376,
+      "paired_basename": "POL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/POL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 40020,
+      "paired_basename": "POL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/POR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4696,
+      "paired_basename": "POR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/POR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 41028,
+      "paired_basename": "POR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PRI.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2996,
+      "paired_basename": "PRI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PRI.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 30396,
+      "paired_basename": "PRI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PTF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4696,
+      "paired_basename": "PTF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/PTF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 39180,
+      "paired_basename": "PTF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RIV.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 6260,
+      "paired_basename": "RIV",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RIV.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 43932,
+      "paired_basename": "RIV",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AA_LOCKERROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_AA_LOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AA_LOCKERROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_AA_LOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AA_OFFICE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_AA_OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AA_OFFICE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 28404,
+      "paired_basename": "RTTS_AA_OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AAA_LOCKERROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_AAA_LOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AAA_LOCKERROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_AAA_LOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AAA_OFFICE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_AAA_OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_AAA_OFFICE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_AAA_OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_BATTINGCAGE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_BATTINGCAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_BATTINGCAGE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_BATTINGCAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_BEDROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 956,
+      "paired_basename": "RTTS_BEDROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_BEDROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 15876,
+      "paired_basename": "RTTS_BEDROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_BUSINTERIOR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_BUSINTERIOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_BUSINTERIOR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_BUSINTERIOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_DRAFTROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_DRAFTROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_DRAFTROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_DRAFTROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_DRAFTSTAGE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 319672,
+      "paired_basename": "RTTS_DRAFTSTAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_DRAFTSTAGE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 849996,
+      "paired_basename": "RTTS_DRAFTSTAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_FEMALELOCKERROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1568,
+      "paired_basename": "RTTS_FEMALELOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_FEMALELOCKERROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 21540,
+      "paired_basename": "RTTS_FEMALELOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_HALLWAY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2384,
+      "paired_basename": "RTTS_HALLWAY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_HALLWAY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24420,
+      "paired_basename": "RTTS_HALLWAY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MILB_HOTELROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 319672,
+      "paired_basename": "RTTS_MILB_HOTELROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MILB_HOTELROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 849996,
+      "paired_basename": "RTTS_MILB_HOTELROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MLB_HOTELROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 319672,
+      "paired_basename": "RTTS_MLB_HOTELROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MLB_HOTELROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 849996,
+      "paired_basename": "RTTS_MLB_HOTELROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MLB_LOCKERROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_MLB_LOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MLB_LOCKERROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_MLB_LOCKERROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MLB_OFFICE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_MLB_OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_MLB_OFFICE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_MLB_OFFICE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_PACKINGROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1704,
+      "paired_basename": "RTTS_PACKINGROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_PACKINGROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22236,
+      "paired_basename": "RTTS_PACKINGROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_PLANEINTERIOR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_PLANEINTERIOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_PLANEINTERIOR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_PLANEINTERIOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_PRACTICEFIELD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1704,
+      "paired_basename": "RTTS_PRACTICEFIELD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_PRACTICEFIELD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22236,
+      "paired_basename": "RTTS_PRACTICEFIELD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_RESTAURANT.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2384,
+      "paired_basename": "RTTS_RESTAURANT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_RESTAURANT.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24420,
+      "paired_basename": "RTTS_RESTAURANT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_STUDY.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_STUDY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_STUDY.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_STUDY",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_TRAININGROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5376,
+      "paired_basename": "RTTS_TRAININGROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_TRAININGROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38748,
+      "paired_basename": "RTTS_TRAININGROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_TROPHYROOM.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 2248,
+      "paired_basename": "RTTS_TROPHYROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_TROPHYROOM.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 24156,
+      "paired_basename": "RTTS_TROPHYROOM",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_TUNNEL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1976,
+      "paired_basename": "RTTS_TUNNEL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/RTTS_TUNNEL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22332,
+      "paired_basename": "RTTS_TUNNEL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SAC.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 3676,
+      "paired_basename": "SAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SAC.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 26676,
+      "paired_basename": "SAC",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SD.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 17752,
+      "paired_basename": "SD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SD.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 69972,
+      "paired_basename": "SD",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SEA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 13876,
+      "paired_basename": "SEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SEA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 61572,
+      "paired_basename": "SEA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SF.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 16120,
+      "paired_basename": "SF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SF.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 66804,
+      "paired_basename": "SF",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SHI.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4764,
+      "paired_basename": "SHI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SHI.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 39252,
+      "paired_basename": "SHI",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SHP.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 5308,
+      "paired_basename": "SHP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SHP.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 39540,
+      "paired_basename": "SHP",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE_L.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1704,
+      "paired_basename": "SIZZLE_STAGE_L",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE_L.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22236,
+      "paired_basename": "SIZZLE_STAGE_L",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE_M.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1704,
+      "paired_basename": "SIZZLE_STAGE_M",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE_M.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22236,
+      "paired_basename": "SIZZLE_STAGE_M",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE_S.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1704,
+      "paired_basename": "SIZZLE_STAGE_S",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE_S.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22236,
+      "paired_basename": "SIZZLE_STAGE_S",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1432,
+      "paired_basename": "SIZZLE_STAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SIZZLE_STAGE.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 20340,
+      "paired_basename": "SIZZLE_STAGE",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SPO.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4084,
+      "paired_basename": "SPO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SPO.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 37500,
+      "paired_basename": "SPO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST1.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4696,
+      "paired_basename": "ST1",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST1.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 39324,
+      "paired_basename": "ST1",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST2.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4424,
+      "paired_basename": "ST2",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST2.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38796,
+      "paired_basename": "ST2",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST3.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4696,
+      "paired_basename": "ST3",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST3.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 37788,
+      "paired_basename": "ST3",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST4.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4696,
+      "paired_basename": "ST4",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST4.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 37788,
+      "paired_basename": "ST4",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST5.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4356,
+      "paired_basename": "ST5",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/ST5.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38628,
+      "paired_basename": "ST5",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/STA.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4152,
+      "paired_basename": "STA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/STA.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 35316,
+      "paired_basename": "STA",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/STL.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14284,
+      "paired_basename": "STL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/STL.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 62916,
+      "paired_basename": "STL",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/STO.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 3404,
+      "paired_basename": "STO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/STO.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 32196,
+      "paired_basename": "STO",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SUN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4424,
+      "paired_basename": "SUN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/SUN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 38796,
+      "paired_basename": "SUN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TB.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 11836,
+      "paired_basename": "TB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TB.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 54156,
+      "paired_basename": "TB",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TBD1_26.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 140,
+      "paired_basename": "TBD1_26",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TBD1_26.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 612,
+      "paired_basename": "TBD1_26",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TBD2_26.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 140,
+      "paired_basename": "TBD2_26",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TBD2_26.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 612,
+      "paired_basename": "TBD2_26",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TEX.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 13400,
+      "paired_basename": "TEX",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TEX.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 48252,
+      "paired_basename": "TEX",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TOK.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 3268,
+      "paired_basename": "TOK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TOK.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 12924,
+      "paired_basename": "TOK",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TOR.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 14760,
+      "paired_basename": "TOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/TOR.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 62388,
+      "paired_basename": "TOR",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/WAS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 12652,
+      "paired_basename": "WAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/WAS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 57876,
+      "paired_basename": "WAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/WAT.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 4220,
+      "paired_basename": "WAT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/WAT.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 35724,
+      "paired_basename": "WAT",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/WGN.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1840,
+      "paired_basename": "WGN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/WGN.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 8076,
+      "paired_basename": "WGN",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/XCRAS.CAM",
+      "type": "opaque_camera_resource",
+      "bytes": 1704,
+      "paired_basename": "XCRAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/NSW/CAMERAS/XCRAS.PLB",
+      "type": "opaque_camera_companion_resource",
+      "bytes": 22236,
+      "paired_basename": "XCRAS",
+      "confidence": "extension and filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/AAP/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 7056,
+      "paired_basename": "AAP",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/ARZ/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 2668,
+      "paired_basename": "ARZ",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/ATL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 11934,
+      "paired_basename": "ATL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/BAL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3212,
+      "paired_basename": "BAL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/BAR/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 2832,
+      "paired_basename": "BAR",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/BAY/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 5548,
+      "paired_basename": "BAY",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/BMS/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 7488,
+      "paired_basename": "BMS",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/BOS/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 6108,
+      "paired_basename": "BOS",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/BRS/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 11700,
+      "paired_basename": "BRS",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CAP/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 12268,
+      "paired_basename": "CAP",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CCF/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4164,
+      "paired_basename": "CCF",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CHC/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 10308,
+      "paired_basename": "CHC",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CHW/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4740,
+      "paired_basename": "CHW",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CIN/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3096,
+      "paired_basename": "CIN",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CLE/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3092,
+      "paired_basename": "CLE",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/COL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 9776,
+      "paired_basename": "COL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CRAS/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4008,
+      "paired_basename": "CRAS",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CRO/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3916,
+      "paired_basename": "CRO",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/CRY/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 2840,
+      "paired_basename": "CRY",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/DET/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3044,
+      "paired_basename": "DET",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/DPF/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 12268,
+      "paired_basename": "DPF",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/EHB/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 7584,
+      "paired_basename": "EHB",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/FLA/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4844,
+      "paired_basename": "FLA",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/FOD/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3304,
+      "paired_basename": "FOD",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/FOR/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4060,
+      "paired_basename": "FOR",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/FRA/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3476,
+      "paired_basename": "FRA",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/GRI/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 10392,
+      "paired_basename": "GRI",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/GVS/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4164,
+      "paired_basename": "GVS",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/HIG/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4164,
+      "paired_basename": "HIG",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/HOU/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 9780,
+      "paired_basename": "HOU",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/IND/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 2552,
+      "paired_basename": "IND",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/IRO/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3308,
+      "paired_basename": "IRO",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/JPS/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4008,
+      "paired_basename": "JPS",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/KC/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4060,
+      "paired_basename": "KC",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/LAA/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 7500,
+      "paired_basename": "LAA",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/LAD/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4284,
+      "paired_basename": "LAD",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/LMP/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 2724,
+      "paired_basename": "LMP",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/MAJ/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4124,
+      "paired_basename": "MAJ",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/MIL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3212,
+      "paired_basename": "MIL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/MIN/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 9164,
+      "paired_basename": "MIN",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/MSF/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4324,
+      "paired_basename": "MSF",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_COM/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 1936,
+      "paired_basename": "NGL_COM",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_FOR/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4048,
+      "paired_basename": "NGL_FOR",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_HDP/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 1812,
+      "paired_basename": "NGL_HDP",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_KC/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3572,
+      "paired_basename": "NGL_KC",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_MAC/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4356,
+      "paired_basename": "NGL_MAC",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_NEW/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4668,
+      "paired_basename": "NGL_NEW",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_PIT/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4988,
+      "paired_basename": "NGL_PIT",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_RWD/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3936,
+      "paired_basename": "NGL_RWD",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_SSD/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3816,
+      "paired_basename": "NGL_SSD",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_STL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4352,
+      "paired_basename": "NGL_STL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NGL_TRP/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4128,
+      "paired_basename": "NGL_TRP",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NYM/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 2756,
+      "paired_basename": "NYM",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/NYY/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 7932,
+      "paired_basename": "NYY",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OAK/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 8280,
+      "paired_basename": "OAK",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OLD_ATL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 7500,
+      "paired_basename": "OLD_ATL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OLD_FLA/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3468,
+      "paired_basename": "OLD_FLA",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OLD_MIN/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 9964,
+      "paired_basename": "OLD_MIN",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OLD_NYM/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 12344,
+      "paired_basename": "OLD_NYM",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OLD_NYY/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 10504,
+      "paired_basename": "OLD_NYY",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OLD_SEA/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 11792,
+      "paired_basename": "OLD_SEA",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OLD_TEX/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 9792,
+      "paired_basename": "OLD_TEX",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/OSP/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 12108,
+      "paired_basename": "OSP",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/PHI/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3104,
+      "paired_basename": "PHI",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/PIT/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4420,
+      "paired_basename": "PIT",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/POL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 5292,
+      "paired_basename": "POL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/POR/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 1940,
+      "paired_basename": "POR",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/RIV/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 12220,
+      "paired_basename": "RIV",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/SAC/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 2444,
+      "paired_basename": "SAC",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/SD/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3572,
+      "paired_basename": "SD",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/SEA/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 12320,
+      "paired_basename": "SEA",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/SF/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 9824,
+      "paired_basename": "SF",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/SHI/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 1844,
+      "paired_basename": "SHI",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/SHP/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 10292,
+      "paired_basename": "SHP",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/SPO/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4756,
+      "paired_basename": "SPO",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/ST1/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4928,
+      "paired_basename": "ST1",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/STA/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4456,
+      "paired_basename": "STA",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/STL/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4008,
+      "paired_basename": "STL",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/TB/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4456,
+      "paired_basename": "TB",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/TEX/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 3156,
+      "paired_basename": "TEX",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/TOK/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 7184,
+      "paired_basename": "TOK",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/TOR/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4892,
+      "paired_basename": "TOR",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/WAS/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 8232,
+      "paired_basename": "WAS",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/WAT/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 4748,
+      "paired_basename": "WAT",
+      "confidence": "filename only; internal schema not decoded"
+    },
+    {
+      "path": "MLBTS/game/romfs/CROSS/STADIUMS/WGN/CAMERA.CB",
+      "type": "opaque_stadium_camera_bundle",
+      "bytes": 6808,
+      "paired_basename": "WGN",
+      "confidence": "filename only; internal schema not decoded"
+    }
+  ],
+  "search_result": "No camera function labels, .CAM path literals, or selectable camera-view names were found in generated main/sdk C text."
+}

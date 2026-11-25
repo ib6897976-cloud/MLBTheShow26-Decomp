@@ -1,0 +1,276 @@
+{
+  "wave": 40,
+  "method": "40 unannotated queue targets (ranks 101-400) selected for direct readable rodata behavior cues; greedy load balance across 5 workers \u00d78; estimated_work = lifted loads + lifted stores + 4\u00d7semantic callees. String evidence remains a lead for workers to verify against body/callers and full guest rodata address.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 233,
+      "targets": [
+        {
+          "rank": 102,
+          "address": "0x7000cfa160",
+          "estimate": 51,
+          "cue": "Unable to allocate m_pppViewData[i]!;Unable to allocate m_pppViewData[i][j]!"
+        },
+        {
+          "rank": 117,
+          "address": "0x7000aeae94",
+          "estimate": 36,
+          "cue": "LG_DH_DATA;response"
+        },
+        {
+          "rank": 118,
+          "address": "0x70009bf010",
+          "estimate": 10,
+          "cue": "frontend/servers.xml;frontend/servers_local.xml"
+        },
+        {
+          "rank": 123,
+          "address": "0x7001053e04",
+          "estimate": 33,
+          "cue": "CROWD_DIS_02;CROWD_DIS_04"
+        },
+        {
+          "rank": 128,
+          "address": "0x7000bcde5c",
+          "estimate": 28,
+          "cue": "type_id"
+        },
+        {
+          "rank": 132,
+          "address": "0x7000c5c10c",
+          "estimate": 27,
+          "cue": "DATA_ME;total_pages"
+        },
+        {
+          "rank": 137,
+          "address": "0x7000aec034",
+          "estimate": 24,
+          "cue": "LD_PLAYER_DATA"
+        },
+        {
+          "rank": 139,
+          "address": "0x7000c2f1c4",
+          "estimate": 24,
+          "cue": "tbFlags"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_02",
+      "estimated_work": 238,
+      "targets": [
+        {
+          "rank": 103,
+          "address": "0x7000b66e48",
+          "estimate": 48,
+          "cue": "total_pages"
+        },
+        {
+          "rank": 110,
+          "address": "0x7000ecf5b8",
+          "estimate": 16,
+          "cue": "Skip to Next Episode;Skip to Next Episode & Quit"
+        },
+        {
+          "rank": 114,
+          "address": "0x7000b2f5b0",
+          "estimate": 37,
+          "cue": "DATA_EQ"
+        },
+        {
+          "rank": 121,
+          "address": "0x7000dce600",
+          "estimate": 34,
+          "cue": "COWBELLS;THUNDERSTIX"
+        },
+        {
+          "rank": 127,
+          "address": "0x7000ade990",
+          "estimate": 28,
+          "cue": "item_draft_pack_id"
+        },
+        {
+          "rank": 131,
+          "address": "0x7000c2f2b0",
+          "estimate": 27,
+          "cue": "POSITIONS;tbFlags"
+        },
+        {
+          "rank": 135,
+          "address": "0x7000c59abc",
+          "estimate": 25,
+          "cue": "DATA_MGS;mission_group"
+        },
+        {
+          "rank": 140,
+          "address": "0x7000cb8778",
+          "estimate": 23,
+          "cue": "DraftPlayerPositionTab;FantasyDraftPlayerPositionTab"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_03",
+      "estimated_work": 234,
+      "targets": [
+        {
+          "rank": 101,
+          "address": "0x7000b60f0c",
+          "estimate": 26,
+          "cue": "DiamondDynasty;PICKEDPITCHER"
+        },
+        {
+          "rank": 104,
+          "address": "0x7000f2bc50",
+          "estimate": 48,
+          "cue": "PITCHER"
+        },
+        {
+          "rank": 115,
+          "address": "0x7000b32950",
+          "estimate": 37,
+          "cue": "DD_LINEUP_DATA;position"
+        },
+        {
+          "rank": 116,
+          "address": "0x700178fe58",
+          "estimate": 12,
+          "cue": ":DELAY=;:UNSKIPPABLE"
+        },
+        {
+          "rank": 122,
+          "address": "0x7000f56050",
+          "estimate": 33,
+          "cue": "ModifiableText;Scorebar_SlideUps"
+        },
+        {
+          "rank": 126,
+          "address": "0x700108a7d4",
+          "estimate": 30,
+          "cue": "EnterGame;PORTALROOM"
+        },
+        {
+          "rank": 136,
+          "address": "0x7000c66ddc",
+          "estimate": 25,
+          "cue": "GAME_LIST_DATA;total_pages"
+        },
+        {
+          "rank": 141,
+          "address": "0x70010583b4",
+          "estimate": 23,
+          "cue": "CROWD_DIS_02;CROWD_POS_03"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_04",
+      "estimated_work": 239,
+      "targets": [
+        {
+          "rank": 105,
+          "address": "0x7000a3d9bc",
+          "estimate": 22,
+          "cue": "CrossPlay"
+        },
+        {
+          "rank": 107,
+          "address": "0x70009c0040",
+          "estimate": 44,
+          "cue": "frontend/servers.xml;frontend/servers_local.xml"
+        },
+        {
+          "rank": 108,
+          "address": "0x7000c1f254",
+          "estimate": 18,
+          "cue": "CURRENT_PLAYER;player_id"
+        },
+        {
+          "rank": 113,
+          "address": "0x7000b19484",
+          "estimate": 37,
+          "cue": "DD_LINEUP_DATA;position"
+        },
+        {
+          "rank": 120,
+          "address": "0x7000abae40",
+          "estimate": 34,
+          "cue": "ARENACARD%d"
+        },
+        {
+          "rank": 125,
+          "address": "0x7000ab37f0",
+          "estimate": 30,
+          "cue": "CPURosterControl;ignoreCPURosterControl"
+        },
+        {
+          "rank": 130,
+          "address": "0x7000c2f0c0",
+          "estimate": 28,
+          "cue": "tbFlags"
+        },
+        {
+          "rank": 134,
+          "address": "0x7000c3c710",
+          "estimate": 26,
+          "cue": "AVAILABLE_RAIDS"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_05",
+      "estimated_work": 239,
+      "targets": [
+        {
+          "rank": 106,
+          "address": "0x70003c5a00",
+          "estimate": 19,
+          "cue": "Reliever has pitched more than 50 pitches or at least 3 times in the last 3 days.  Faster energy loss.;Starter has pitched more than 100 pitches or at least 3 times in the last 7 days.  Faster energy loss."
+        },
+        {
+          "rank": 111,
+          "address": "0x7000ba17f0",
+          "estimate": 38,
+          "cue": "total_pages"
+        },
+        {
+          "rank": 112,
+          "address": "0x7000b13eb4",
+          "estimate": 37,
+          "cue": "DD_LINEUP_DATA;position"
+        },
+        {
+          "rank": 119,
+          "address": "0x7000c67694",
+          "estimate": 35,
+          "cue": "CURRENT_GAME_DATA;opponent_platform_id"
+        },
+        {
+          "rank": 124,
+          "address": "0x7000bbfe58",
+          "estimate": 32,
+          "cue": "Credits.txt;TboxCredits"
+        },
+        {
+          "rank": 129,
+          "address": "0x7000c2efbc",
+          "estimate": 28,
+          "cue": "tbFlags"
+        },
+        {
+          "rank": 133,
+          "address": "0x7000c3c1e8",
+          "estimate": 26,
+          "cue": "AVAILABLE_RAIDS"
+        },
+        {
+          "rank": 138,
+          "address": "0x7000b8a3e4",
+          "estimate": 24,
+          "cue": "SINGLES_MOMENT_CRITERIA;response"
+        }
+      ]
+    }
+  ]
+}

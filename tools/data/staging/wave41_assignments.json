@@ -1,0 +1,236 @@
+{
+  "wave": 41,
+  "method": "40 unique unannotated targets selected by rank 37-116 from refreshed queue; direct contextual strings/key cues, mixed gameplay/UI/data access; avoided recently used wave40 ranks. Greedy longest-processing-time balance using per-target estimate=lifted loads + lifted stores + 4*semantic callees; each worker has 8 targets.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 328,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x7000888ad0",
+          "estimate": 21
+        },
+        {
+          "rank": 42,
+          "address": "0x700173ba5c",
+          "estimate": 44
+        },
+        {
+          "rank": 44,
+          "address": "0x7000baba6c",
+          "estimate": 92
+        },
+        {
+          "rank": 55,
+          "address": "0x7000a70c64",
+          "estimate": 54
+        },
+        {
+          "rank": 79,
+          "address": "0x7000ce8fb8",
+          "estimate": 37
+        },
+        {
+          "rank": 84,
+          "address": "0x70017e4850",
+          "estimate": 34
+        },
+        {
+          "rank": 94,
+          "address": "0x70004a164c",
+          "estimate": 28
+        },
+        {
+          "rank": 111,
+          "address": "0x7000b7f5cc",
+          "estimate": 18
+        }
+      ]
+    },
+    {
+      "agent": "decomp_02",
+      "estimated_work": 326,
+      "targets": [
+        {
+          "rank": 51,
+          "address": "0x7000b9e5a0",
+          "estimate": 82
+        },
+        {
+          "rank": 53,
+          "address": "0x7000d1aebc",
+          "estimate": 55
+        },
+        {
+          "rank": 61,
+          "address": "0x7000d9f4c8",
+          "estimate": 52
+        },
+        {
+          "rank": 69,
+          "address": "0x7001897218",
+          "estimate": 43
+        },
+        {
+          "rank": 89,
+          "address": "0x7000b50730",
+          "estimate": 32
+        },
+        {
+          "rank": 97,
+          "address": "0x7000eb0a20",
+          "estimate": 28
+        },
+        {
+          "rank": 107,
+          "address": "0x7000ada7f8",
+          "estimate": 19
+        },
+        {
+          "rank": 114,
+          "address": "0x7000b1424c",
+          "estimate": 15
+        }
+      ]
+    },
+    {
+      "agent": "decomp_03",
+      "estimated_work": 328,
+      "targets": [
+        {
+          "rank": 41,
+          "address": "0x7000f518a8",
+          "estimate": 45
+        },
+        {
+          "rank": 48,
+          "address": "0x7000d9fad4",
+          "estimate": 58
+        },
+        {
+          "rank": 57,
+          "address": "0x70018807a4",
+          "estimate": 79
+        },
+        {
+          "rank": 68,
+          "address": "0x7000de3a60",
+          "estimate": 44
+        },
+        {
+          "rank": 83,
+          "address": "0x70015814b0",
+          "estimate": 34
+        },
+        {
+          "rank": 93,
+          "address": "0x7000a3da80",
+          "estimate": 29
+        },
+        {
+          "rank": 104,
+          "address": "0x7000b1bc9c",
+          "estimate": 20
+        },
+        {
+          "rank": 109,
+          "address": "0x7000bb9048",
+          "estimate": 19
+        }
+      ]
+    },
+    {
+      "agent": "decomp_04",
+      "estimated_work": 326,
+      "targets": [
+        {
+          "rank": 43,
+          "address": "0x70004cc464",
+          "estimate": 42
+        },
+        {
+          "rank": 58,
+          "address": "0x7000502068",
+          "estimate": 53
+        },
+        {
+          "rank": 62,
+          "address": "0x7000cfbcc0",
+          "estimate": 74
+        },
+        {
+          "rank": 78,
+          "address": "0x7000c74da0",
+          "estimate": 62
+        },
+        {
+          "rank": 86,
+          "address": "0x7000dc4730",
+          "estimate": 33
+        },
+        {
+          "rank": 98,
+          "address": "0x70002c1258",
+          "estimate": 27
+        },
+        {
+          "rank": 106,
+          "address": "0x7000c0a37c",
+          "estimate": 20
+        },
+        {
+          "rank": 116,
+          "address": "0x7000c18624",
+          "estimate": 15
+        }
+      ]
+    },
+    {
+      "agent": "decomp_05",
+      "estimated_work": 327,
+      "targets": [
+        {
+          "rank": 45,
+          "address": "0x7000a5ec80",
+          "estimate": 65
+        },
+        {
+          "rank": 49,
+          "address": "0x700168e0e0",
+          "estimate": 33
+        },
+        {
+          "rank": 60,
+          "address": "0x70016ca510",
+          "estimate": 53
+        },
+        {
+          "rank": 65,
+          "address": "0x70007b3b20",
+          "estimate": 71
+        },
+        {
+          "rank": 74,
+          "address": "0x7000af1ba0",
+          "estimate": 40
+        },
+        {
+          "rank": 95,
+          "address": "0x7000a8c140",
+          "estimate": 28
+        },
+        {
+          "rank": 105,
+          "address": "0x7000b615a0",
+          "estimate": 20
+        },
+        {
+          "rank": 113,
+          "address": "0x7000b1bd9c",
+          "estimate": 17
+        }
+      ]
+    }
+  ]
+}

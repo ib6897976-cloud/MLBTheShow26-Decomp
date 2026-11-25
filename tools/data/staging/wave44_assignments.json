@@ -1,0 +1,350 @@
+{
+  "wave": 44,
+  "method": "32 unannotated refreshed queue targets from ranks 40\u2013160; per-target load+store+4\u00d7semantic-callee estimate <=100; require non-generic rodata cue or >=2 observed callers; exclude four prior waves and existing annotations; greedy largest-first balance across 4\u00d78. This compact moderate slice favors inspectable cues; estimated load remains a proxy.",
+  "assignments": [
+    {
+      "agent": "decomp_01",
+      "estimated_work": 462,
+      "targets": [
+        {
+          "rank": 92,
+          "address": "0x70003e389c",
+          "estimate": 99,
+          "score": 3916,
+          "generated_name": "f_70003e389c",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "Bink Audio"
+        },
+        {
+          "rank": 104,
+          "address": "0x7000e972bc",
+          "estimate": 66,
+          "score": 3883,
+          "generated_name": "f_7000e972bc",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "%s%s in the %s"
+        },
+        {
+          "rank": 111,
+          "address": "0x70004be140",
+          "estimate": 62,
+          "score": 3854,
+          "generated_name": "f_70004be140",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "CareerDecisionView Pool"
+        },
+        {
+          "rank": 119,
+          "address": "0x7000cf7e58",
+          "estimate": 35,
+          "score": 3827,
+          "generated_name": "f_7000cf7e58",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "StatView Pool"
+        },
+        {
+          "rank": 120,
+          "address": "0x7000cae398",
+          "estimate": 34,
+          "score": 3826,
+          "generated_name": "f_7000cae398",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "AllStarVotingView Pool"
+        },
+        {
+          "rank": 136,
+          "address": "0x70009062fc",
+          "estimate": 17,
+          "score": 3413,
+          "generated_name": "f_70009062fc",
+          "caller_count": 24,
+          "semantic_callee_count": 1,
+          "rodata_strings": "DiamondDynasty"
+        },
+        {
+          "rank": 138,
+          "address": "0x7001877910",
+          "estimate": 78,
+          "score": 3391,
+          "generated_name": "f_7001877910",
+          "caller_count": 13,
+          "semantic_callee_count": 3,
+          "rodata_strings": ""
+        },
+        {
+          "rank": 159,
+          "address": "0x70018a3920",
+          "estimate": 71,
+          "score": 3242,
+          "generated_name": "f_70018a3920",
+          "caller_count": 15,
+          "semantic_callee_count": 1,
+          "rodata_strings": "AssetBinder"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_02",
+      "estimated_work": 469,
+      "targets": [
+        {
+          "rank": 80,
+          "address": "0x700168c6c0",
+          "estimate": 63,
+          "score": 3930,
+          "generated_name": "f_700168c6c0",
+          "caller_count": 3,
+          "semantic_callee_count": 2,
+          "rodata_strings": "CreatePlayer"
+        },
+        {
+          "rank": 91,
+          "address": "0x70009dab5c",
+          "estimate": 75,
+          "score": 3917,
+          "generated_name": "f_70009dab5c",
+          "caller_count": 2,
+          "semantic_callee_count": 2,
+          "rodata_strings": "GameBoot"
+        },
+        {
+          "rank": 93,
+          "address": "0x7000dedb20",
+          "estimate": 97,
+          "score": 3914,
+          "generated_name": "f_7000dedb20",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "$(PLATFORM)/Characters/JzNameOverrides.csv"
+        },
+        {
+          "rank": 106,
+          "address": "0x7000ce1c10",
+          "estimate": 62,
+          "score": 3879,
+          "generated_name": "f_7000ce1c10",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "(%s)"
+        },
+        {
+          "rank": 108,
+          "address": "0x7000c7e970",
+          "estimate": 78,
+          "score": 3870,
+          "generated_name": "f_7000c7e970",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "Franchise_Entry_Options"
+        },
+        {
+          "rank": 117,
+          "address": "0x7000c97700",
+          "estimate": 27,
+          "score": 3844,
+          "generated_name": "f_7000c97700",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "Games_List"
+        },
+        {
+          "rank": 118,
+          "address": "0x7000be9008",
+          "estimate": 39,
+          "score": 3831,
+          "generated_name": "f_7000be9008",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "MTO FA Signings"
+        },
+        {
+          "rank": 134,
+          "address": "0x70009b92b0",
+          "estimate": 28,
+          "score": 3424,
+          "generated_name": "f_70009b92b0",
+          "caller_count": 24,
+          "semantic_callee_count": 1,
+          "rodata_strings": "CNetHeap pool buddy 1."
+        }
+      ]
+    },
+    {
+      "agent": "decomp_03",
+      "estimated_work": 463,
+      "targets": [
+        {
+          "rank": 94,
+          "address": "0x7000cbd0b0",
+          "estimate": 95,
+          "score": 3912,
+          "generated_name": "f_7000cbd0b0",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "GamesViewScroller"
+        },
+        {
+          "rank": 100,
+          "address": "0x7001091b40",
+          "estimate": 81,
+          "score": 3898,
+          "generated_name": "f_7001091b40",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "GAME_STATE_GAME_OVER: state = NONE"
+        },
+        {
+          "rank": 109,
+          "address": "0x70003c3bb0",
+          "estimate": 71,
+          "score": 3863,
+          "generated_name": "f_70003c3bb0",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "#$#$#$#$#$ BATTER INCREMENT"
+        },
+        {
+          "rank": 110,
+          "address": "0x70003d09b4",
+          "estimate": 69,
+          "score": 3861,
+          "generated_name": "f_70003d09b4",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "MUSIC"
+        },
+        {
+          "rank": 116,
+          "address": "0x7000b43a80",
+          "estimate": 27,
+          "score": 3844,
+          "generated_name": "f_7000b43a80",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "Games_List"
+        },
+        {
+          "rank": 132,
+          "address": "0x7000e4c0d4",
+          "estimate": 52,
+          "score": 3448,
+          "generated_name": "f_7000e4c0d4",
+          "caller_count": 24,
+          "semantic_callee_count": 1,
+          "rodata_strings": "9AGQ_"
+        },
+        {
+          "rank": 133,
+          "address": "0x70005367c8",
+          "estimate": 48,
+          "score": 3444,
+          "generated_name": "f_70005367c8",
+          "caller_count": 24,
+          "semantic_callee_count": 1,
+          "rodata_strings": "Warning: Cannot initialize allocator twice!"
+        },
+        {
+          "rank": 135,
+          "address": "0x70009dc920",
+          "estimate": 20,
+          "score": 3416,
+          "generated_name": "f_70009dc920",
+          "caller_count": 24,
+          "semantic_callee_count": 1,
+          "rodata_strings": "value"
+        }
+      ]
+    },
+    {
+      "agent": "decomp_04",
+      "estimated_work": 458,
+      "targets": [
+        {
+          "rank": 62,
+          "address": "0x70004d65a4",
+          "estimate": 67,
+          "score": 3984,
+          "generated_name": "f_70004d65a4",
+          "caller_count": 5,
+          "semantic_callee_count": 2,
+          "rodata_strings": "HitZone"
+        },
+        {
+          "rank": 68,
+          "address": "0x7000d76790",
+          "estimate": 72,
+          "score": 3964,
+          "generated_name": "f_7000d76790",
+          "caller_count": 4,
+          "semantic_callee_count": 2,
+          "rodata_strings": "&elg"
+        },
+        {
+          "rank": 78,
+          "address": "0x7000d00990",
+          "estimate": 93,
+          "score": 3935,
+          "generated_name": "f_7000d00990",
+          "caller_count": 2,
+          "semantic_callee_count": 2,
+          "rodata_strings": "^c%d^"
+        },
+        {
+          "rank": 98,
+          "address": "0x7000652a90",
+          "estimate": 82,
+          "score": 3899,
+          "generated_name": "f_7000652a90",
+          "caller_count": 1,
+          "semantic_callee_count": 2,
+          "rodata_strings": "AmateurProgression_%d.txt"
+        },
+        {
+          "rank": 105,
+          "address": "0x700047b81c",
+          "estimate": 40,
+          "score": 3882,
+          "generated_name": "f_700047b81c",
+          "caller_count": 2,
+          "semantic_callee_count": 2,
+          "rodata_strings": "%s %s"
+        },
+        {
+          "rank": 114,
+          "address": "0x7000c0a894",
+          "estimate": 56,
+          "score": 3848,
+          "generated_name": "f_7000c0a894",
+          "caller_count": 0,
+          "semantic_callee_count": 2,
+          "rodata_strings": "Sign Draft Picks View Data"
+        },
+        {
+          "rank": 139,
+          "address": "0x70009373a8",
+          "estimate": 13,
+          "score": 3384,
+          "generated_name": "f_70009373a8",
+          "caller_count": 23,
+          "semantic_callee_count": 1,
+          "rodata_strings": "Leagues"
+        },
+        {
+          "rank": 158,
+          "address": "0x7001560270",
+          "estimate": 35,
+          "score": 3256,
+          "generated_name": "f_7001560270",
+          "caller_count": 17,
+          "semantic_callee_count": 1,
+          "rodata_strings": "c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/openssl/crypto/buffer/buffer.c"
+        }
+      ]
+    }
+  ]
+}

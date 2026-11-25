@@ -1,0 +1,26 @@
+{
+  "wave": 57,
+  "method": "One producer for two low-work online-status callers sharing set_online_status_not in the indexed call graph. Total estimated work <=100; root directly QA checks body, callers, and raw strings before merge.",
+  "assignments": [
+    {
+      "agent": "wave57_one",
+      "estimated_work": 59,
+      "targets": [
+        {
+          "rank": 21,
+          "address": "0x7000c6eb48",
+          "estimate": 33,
+          "semantic_callees": "set_online_status_not",
+          "rodata_strings": "MY_CH_LG_STATS;MY_CH_STAT_COLS;MY_CH_STAT_DATA;OPP_CH_LG_STATS;OPP_CH_STAT_COLS;OPP_CH_STAT_DATA"
+        },
+        {
+          "rank": 22,
+          "address": "0x7000c76a34",
+          "estimate": 26,
+          "semantic_callees": "set_online_status_not",
+          "rodata_strings": "Normal;OnlineFake;Training"
+        }
+      ]
+    }
+  ]
+}

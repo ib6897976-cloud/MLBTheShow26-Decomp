@@ -1,0 +1,2 @@
+{"event":"started","wave":48,"agent":"decomp_05_prototype_audit","timestamp":"2026-11-25T18:42:39.943Z","target_count":12,"source_file":"wave48_prototype_audit_targets.jsonl"}
+{"event":"finished","wave":48,"agent":"decomp_05_prototype_audit","timestamp":"2026-11-25T18:45:26.725450Z","duration_seconds":166.78,"target_count":12,"staged_file":"wave48_prototype_audit_review.jsonl","timing_source":"staged_file_creation_time"}

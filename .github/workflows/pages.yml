@@ -1,0 +1,47 @@
+name: Publish progress dashboard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "decompiled/function_name_index.tsv"
+      - "decompiled/function_behavior.tsv"
+      - "tools/data/function_annotations.tsv"
+      - "tools/data/function_prototype_candidates.tsv"
+      - "tools/data/field_annotations.tsv"
+      - "tools/data/progress_timeline.jsonl"
+      - "tools/data/progress_timeline_state.json"
+      - "tools/progress_server.py"
+      - "tools/export_progress_site.py"
+      - "tools/progress_site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Export dashboard snapshots
+        run: python tools/export_progress_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: tools/progress_site
+      - id: deployment
+        uses: actions/deploy-pages@v4

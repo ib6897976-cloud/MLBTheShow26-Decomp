@@ -1,0 +1,14 @@
+{
+ "title_id": "0100AA7024094000",
+ "display_version": "1.0.20",
+ "update_version": 1310720,
+ "exefs_sha256": {
+  "main": "0553e7661b20ff1d3628ee044f8e87001d22a16a3bd9367d91ecc83cbc16879d",
+  "main.npdm": "1c18636837aa1666ff31271122e68f200d951d78406e37a380458d5db178fbeb",
+  "rtld": "714ead44bbd81ccba54509399a5dca59c1a24e068b384292f6755829f1e9d523",
+  "sdk": "0449487b457490afae879c08d6a90dd28295eaaa5c55677089a46b13991afbab"
+ },
+ "main_image_size": "0x4b34000",
+ "romfs_files": 86235,
+ "romfs_bytes": 37872017171
+}
