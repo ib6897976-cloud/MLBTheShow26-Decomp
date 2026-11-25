@@ -1,0 +1,222 @@
+{
+  "wave": 74,
+  "method": "Additional four disjoint six-function producers from ranks 25-48, run in the same eight-producer throughput trial. Inspect full bodies and available callers; leave unsupported names blank; no speculative structure/prototype claims; separate staged files, independent QA, serial merge.",
+  "assignments": [
+    {
+      "agent": "wave74_05",
+      "estimated_work": 302,
+      "targets": [
+        {
+          "rank": 25,
+          "address": "0x7000ea6078",
+          "estimate": 48,
+          "semantic_callees": "nested_attribute_provider_get_float",
+          "rodata_strings": "Starting Pitching Duel: %s %s vs %s %s",
+          "evidence_summary": "10 direct callees; 0 static dispatch targets; 39 lifted loads; 18 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 26,
+          "address": "0x70003247e8",
+          "estimate": 47,
+          "semantic_callees": "pitch_flight_sample_position_at_time",
+          "rodata_strings": "Hit reaction",
+          "evidence_summary": "14 direct callees; 0 static dispatch targets; 41 lifted loads; 13 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 27,
+          "address": "0x7000cc52d0",
+          "estimate": 74,
+          "semantic_callees": "resolve_player_attribute_context_path",
+          "rodata_strings": "^c%d^",
+          "evidence_summary": "12 direct callees; 0 static dispatch targets; 69 lifted loads; 10 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 28,
+          "address": "0x700195dc08",
+          "estimate": 45,
+          "semantic_callees": "initialize_named_memory_region",
+          "rodata_strings": "Crowd Common CPU Pool",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 37 lifted loads; 17 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 29,
+          "address": "0x700056ed80",
+          "estimate": 42,
+          "semantic_callees": "initialize_named_memory_region",
+          "rodata_strings": "PackedPtrPool",
+          "evidence_summary": "3 direct callees; 0 static dispatch targets; 32 lifted loads; 21 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 30,
+          "address": "0x70004ff988",
+          "estimate": 46,
+          "semantic_callees": "record_league_game_attribute_metrics",
+          "rodata_strings": "%dth",
+          "evidence_summary": "10 direct callees; 0 static dispatch targets; 42 lifted loads; 9 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave74_06",
+      "estimated_work": 257,
+      "targets": [
+        {
+          "rank": 31,
+          "address": "0x70009b9140",
+          "estimate": 23,
+          "semantic_callees": "load_roster_data",
+          "rodata_strings": "c:/Jenkins/workspace/MLB26PATCH/BRANCHES/MLB26_PATCH/MLBPS3/SRC/Online/COnline.cpp",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 21 lifted loads; 5 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 32,
+          "address": "0x7000ae64e4",
+          "estimate": 59,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "friend",
+          "evidence_summary": "23 direct callees; 0 static dispatch targets; 43 lifted loads; 33 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 33,
+          "address": "0x7000bb9be0",
+          "estimate": 58,
+          "semantic_callees": "build_store_start_event_payload",
+          "rodata_strings": "EntitlementDescriptionBox",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 42 lifted loads; 33 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 34,
+          "address": "0x70002b6c6c",
+          "estimate": 43,
+          "semantic_callees": "pitch_flight_sample_position_at_time",
+          "rodata_strings": "Un-duck",
+          "evidence_summary": "9 direct callees; 0 static dispatch targets; 38 lifted loads; 10 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 35,
+          "address": "0x70011c65d0",
+          "estimate": 36,
+          "semantic_callees": "load_image_from_memory",
+          "rodata_strings": "FaceScan_%s",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 25 lifted loads; 23 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 36,
+          "address": "0x7000006738",
+          "estimate": 38,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "phbunt",
+          "evidence_summary": "15 direct callees; 0 static dispatch targets; 29 lifted loads; 18 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave74_07",
+      "estimated_work": 201,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x7000ca7580",
+          "estimate": 55,
+          "semantic_callees": "initialize_named_memory_region",
+          "rodata_strings": "Coach View",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 38 lifted loads; 34 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 38,
+          "address": "0x7000a0dd40",
+          "estimate": 14,
+          "semantic_callees": "get_nested_attribute_float",
+          "rodata_strings": "%d.%d",
+          "evidence_summary": "5 direct callees; 0 static dispatch targets; 7 lifted loads; 14 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 39,
+          "address": "0x7001730f10",
+          "estimate": 35,
+          "semantic_callees": "populate_character_asset_path_set",
+          "rodata_strings": "head",
+          "evidence_summary": "14 direct callees; 0 static dispatch targets; 27 lifted loads; 16 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 40,
+          "address": "0x7000d87a88",
+          "estimate": 33,
+          "semantic_callees": "register_named_pointer",
+          "rodata_strings": "Texture",
+          "evidence_summary": "18 direct callees; 0 static dispatch targets; 25 lifted loads; 17 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 41,
+          "address": "0x7000913018",
+          "estimate": 31,
+          "semantic_callees": "lookup_property_value_by_name",
+          "rodata_strings": "DIFFMOD_OUT",
+          "evidence_summary": "12 direct callees; 0 static dispatch targets; 22 lifted loads; 19 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 42,
+          "address": "0x70009c8578",
+          "estimate": 33,
+          "semantic_callees": "property_map_find_u32",
+          "rodata_strings": "value",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 25 lifted loads; 16 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave74_08",
+      "estimated_work": 215,
+      "targets": [
+        {
+          "rank": 43,
+          "address": "0x70009c8754",
+          "estimate": 33,
+          "semantic_callees": "property_map_find_u32",
+          "rodata_strings": "value",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 25 lifted loads; 16 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 44,
+          "address": "0x7000c89090",
+          "estimate": 32,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "Only MLB stadiums are selectable in Home Run Derby^r^ Online",
+          "evidence_summary": "23 direct callees; 0 static dispatch targets; 25 lifted loads; 15 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 45,
+          "address": "0x7000c893c0",
+          "estimate": 32,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "Only MLB stadiums are selectable in Home Run Derby^r^ Online",
+          "evidence_summary": "23 direct callees; 0 static dispatch targets; 25 lifted loads; 15 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 46,
+          "address": "0x7001742f60",
+          "estimate": 31,
+          "semantic_callees": "process_extra_player_definitions",
+          "rodata_strings": "$(PLATFORM)/Characters/extraPlayers.csv",
+          "evidence_summary": "9 direct callees; 0 static dispatch targets; 23 lifted loads; 17 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 47,
+          "address": "0x700072d7a0",
+          "estimate": 30,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "Notification System",
+          "evidence_summary": "6 direct callees; 0 static dispatch targets; 21 lifted loads; 18 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 48,
+          "address": "0x700187da2c",
+          "estimate": 57,
+          "semantic_callees": "update_training_point_change_notification",
+          "rodata_strings": "+<<<<<<",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 52 lifted loads; 11 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    }
+  ]
+}
