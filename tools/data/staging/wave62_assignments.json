@@ -1,0 +1,136 @@
+{
+  "wave": 62,
+  "method": "Ten independent producers, one unique high-ranked target each. Per-worker target cap is one function to reduce context and usage; each writes an isolated JSONL. Root reviews bodies/callers and any field claims before serial merge. The queue ranks candidates only; roster/string evidence and callers must be confirmed from binary/body.",
+  "assignments": [
+    {
+      "agent": "wave62_01",
+      "estimated_work": 6,
+      "targets": [
+        {
+          "rank": 1,
+          "address": "0x7000471ee0",
+          "estimate": 6,
+          "semantic_callees": "initialize_asset_binder_memory_pool;register_named_pointer",
+          "rodata_strings": "%s.%s;DynamicLoadingScreens;Texture"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_02",
+      "estimated_work": 6,
+      "targets": [
+        {
+          "rank": 2,
+          "address": "0x7000aa594c",
+          "estimate": 6,
+          "semantic_callees": "initialize_asset_binder_memory_pool;register_named_pointer",
+          "rodata_strings": "%s.%s;%s.%s_%s;CareerData;FrontEnd;Texture;UI\\DisplayText;options;quirks"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_03",
+      "estimated_work": 2,
+      "targets": [
+        {
+          "rank": 3,
+          "address": "0x700175469c",
+          "estimate": 2,
+          "semantic_callees": "load_character_head_appearance_resources",
+          "rodata_strings": "BBY%d;Ball Boy;Bat Boy"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_04",
+      "estimated_work": 4,
+      "targets": [
+        {
+          "rank": 9,
+          "address": "0x7000d7ee30",
+          "estimate": 4,
+          "semantic_callees": "save_image_to_memory",
+          "rodata_strings": ".webp;CRAS_TEMP.BIN"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_05",
+      "estimated_work": 3,
+      "targets": [
+        {
+          "rank": 11,
+          "address": "0x7001a444a4",
+          "estimate": 3,
+          "semantic_callees": "initialize_named_memory_region",
+          "rodata_strings": "SetGraphicsPool;SetPool"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_06",
+      "estimated_work": 3,
+      "targets": [
+        {
+          "rank": 13,
+          "address": "0x7000b33cfc",
+          "estimate": 3,
+          "semantic_callees": "property_map_find_u32",
+          "rodata_strings": "DD_LINEUP_DATA;position"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_07",
+      "estimated_work": 3,
+      "targets": [
+        {
+          "rank": 14,
+          "address": "0x7000c3b0e4",
+          "estimate": 3,
+          "semantic_callees": "property_map_find_u32",
+          "rodata_strings": "DD_LINEUP_DATA;position"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_08",
+      "estimated_work": 2,
+      "targets": [
+        {
+          "rank": 15,
+          "address": "0x70005b1fb0",
+          "estimate": 2,
+          "semantic_callees": "initialize_named_memory_region",
+          "rodata_strings": "Persistent;Persistent Onion"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_09",
+      "estimated_work": 2,
+      "targets": [
+        {
+          "rank": 17,
+          "address": "0x70009a2e18",
+          "estimate": 2,
+          "semantic_callees": "handle_live_roster_operation",
+          "rodata_strings": "DEFAULT_ROSTERS;LIVE_ROSTERS"
+        }
+      ]
+    },
+    {
+      "agent": "wave62_10",
+      "estimated_work": 7,
+      "targets": [
+        {
+          "rank": 22,
+          "address": "0x700042db60",
+          "estimate": 7,
+          "semantic_callees": "Body decompiled/main/main_0032.c:29639-29780 resolves frontend//rtts//Relationship.xml, enters the XML/config helper sequence, and logs relationship scaling parameters. Caller at main_0032.c:29324 is in the RTTS configuration setup. Name supported.;construct_sorted_temporary_entries;load_rtts_passive_relationships;zero_fill_import_thunk",
+          "rodata_strings": ""
+        }
+      ]
+    }
+  ]
+}

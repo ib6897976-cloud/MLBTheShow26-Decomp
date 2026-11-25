@@ -43,7 +43,7 @@ state and dispatches guest addresses.
 - `tools/data/function_prototype_candidates.tsv` records ABI-level source prototype
   candidates, separately from recomp wrapper signatures.
 - `tools/data/function_annotations.tsv` is the hand-reviewed semantic layer.
-  It currently contains 1817 named current-build routines and 175 candidate
+  It currently contains 1827 named current-build routines and 176 candidate
   source prototypes across pitch/ball, stamina, swing/contact, hit/timing,
   stadium lighting, broadcast moments, player attributes, nested delta operations,
   composite record copying, ranked-candidate evaluation, record parsing, context predicates, ranked output rows, and math. Command callbacks now cover parts of league trade and lineup management, mission progress, and arena inventory and roster operations. Every
