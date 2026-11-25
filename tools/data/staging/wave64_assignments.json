@@ -1,0 +1,138 @@
+{
+  "wave": 64,
+  "method": "Six independent producers, two related attribute-context/formatting functions per worker. Shared callees are grouped to reduce repeated subsystem context; require exact body/caller and guest-string evidence. Independent QA reviews all proposals before serial merge.",
+  "assignments": [
+    {
+      "agent": "wave64_01",
+      "estimated_work": 4,
+      "targets": [
+        {
+          "rank": 17,
+          "address": "0x7000cc2ac0",
+          "estimate": 2,
+          "semantic_callees": "attribute_context_mode_is_two;attribute_context_status_value_get;format_player_attribute_float_with_context;resolve_player_attribute_context_path",
+          "rodata_strings": "",
+          "evidence_summary": "16 direct callees; 0 static dispatch targets; 37 lifted loads; 23 lifted stores; 0 candidate rodata strings"
+        },
+        {
+          "rank": 23,
+          "address": "0x70004f2c6c",
+          "estimate": 2,
+          "semantic_callees": "format_batting_line_stat;format_pitching_line_stats;nested_attribute_provider_get_float;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "11 direct callees; 0 static dispatch targets; 17 lifted loads; 13 lifted stores; 0 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave64_02",
+      "estimated_work": 6,
+      "targets": [
+        {
+          "rank": 13,
+          "address": "0x7000e9da50",
+          "estimate": 4,
+          "semantic_callees": "ranked_attribute_secondary_metric_compute;zero_fill_import_thunk",
+          "rodata_strings": "%s %s",
+          "evidence_summary": "15 direct callees; 0 static dispatch targets; 183 lifted loads; 106 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 20,
+          "address": "0x7000c9acec",
+          "estimate": 2,
+          "semantic_callees": "attribute_context_status_value_get;copy_bytes_import_thunk",
+          "rodata_strings": "%d-%d",
+          "evidence_summary": "17 direct callees; 0 static dispatch targets; 88 lifted loads; 25 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave64_03",
+      "estimated_work": 8,
+      "targets": [
+        {
+          "rank": 10,
+          "address": "0x70006f0648",
+          "estimate": 4,
+          "semantic_callees": "attribute_context_status_value_get;zero_fill_import_thunk",
+          "rodata_strings": "%s (%s)",
+          "evidence_summary": "23 direct callees; 0 static dispatch targets; 37 lifted loads; 284 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 11,
+          "address": "0x70004b0a64",
+          "estimate": 4,
+          "semantic_callees": "attribute_context_status_value_get;copy_bytes_import_thunk",
+          "rodata_strings": "^c%d^",
+          "evidence_summary": "85 direct callees; 0 static dispatch targets; 201 lifted loads; 87 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave64_04",
+      "estimated_work": 4,
+      "targets": [
+        {
+          "rank": 9,
+          "address": "0x7000ba9fcc",
+          "estimate": 2,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "AWAY;HOME",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 47 lifted loads; 16 lifted stores; 2 candidate rodata strings"
+        },
+        {
+          "rank": 49,
+          "address": "0x70004d6880",
+          "estimate": 2,
+          "semantic_callees": "attribute_context_mode_is_two;copy_bytes_import_thunk",
+          "rodata_strings": "^c%d^",
+          "evidence_summary": "9 direct callees; 0 static dispatch targets; 28 lifted loads; 76 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave64_05",
+      "estimated_work": 5,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x7000cd49ac",
+          "estimate": 2,
+          "semantic_callees": "attribute_context_status_value_get;resolve_player_attribute_context_path",
+          "rodata_strings": "2500+",
+          "evidence_summary": "25 direct callees; 0 static dispatch targets; 108 lifted loads; 16 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 24,
+          "address": "0x7000fd1910",
+          "estimate": 3,
+          "semantic_callees": "attribute_context_status_value_get;copy_bytes_import_thunk",
+          "rodata_strings": "CatchLinerInfielder",
+          "evidence_summary": "51 direct callees; 0 static dispatch targets; 77 lifted loads; 151 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave64_06",
+      "estimated_work": 6,
+      "targets": [
+        {
+          "rank": 26,
+          "address": "0x7000f7804c",
+          "estimate": 3,
+          "semantic_callees": "attribute_context_status_value_get;copy_bytes_import_thunk",
+          "rodata_strings": "CatchLinerInfielder",
+          "evidence_summary": "62 direct callees; 0 static dispatch targets; 74 lifted loads; 150 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 28,
+          "address": "0x7000fd076c",
+          "estimate": 3,
+          "semantic_callees": "copy_bytes_import_thunk;player_attribute_get_float",
+          "rodata_strings": "StealResultThrow",
+          "evidence_summary": "30 direct callees; 0 static dispatch targets; 110 lifted loads; 103 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    }
+  ]
+}
