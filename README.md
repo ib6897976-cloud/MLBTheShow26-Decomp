@@ -14,8 +14,10 @@ call-graph evidence, with confidence recorded where possible.
 The current analysis covers 135,060 indexed guest functions. A subset has
 readable names, candidate prototypes, or field annotations; the remaining
 functions are still being investigated. See the
-[public progress dashboard](https://ib6897976-cloud.github.io/mlb-the-show-progress/)
+[public progress dashboard](https://ib6897976-cloud.github.io/MLBTheShow26-Decomp/)
 for current coverage and progress history.
+
+[![Function coverage map](https://ib6897976-cloud.github.io/MLBTheShow26-Decomp/progress.svg)](https://ib6897976-cloud.github.io/MLBTheShow26-Decomp/)
 
 Subsystem notes live in [decompiled](decompiled/), and recovered partial
 layouts live in [recovered](recovered/). These are evolving maps, not complete

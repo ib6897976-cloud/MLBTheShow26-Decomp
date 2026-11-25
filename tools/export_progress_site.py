@@ -6,6 +6,7 @@ import time
 from pathlib import Path
 
 import progress_server
+import render_progress_svg
 
 
 DATA_DIR = progress_server.SITE / "data"
@@ -26,6 +27,7 @@ def main() -> None:
     progress_server.refresh_timeline()
     coverage = progress_server.snapshot()
     timeline = progress_server.read_timeline()
+    render_progress_svg.render()
     write_json(DATA_DIR / "coverage-status.json", progress_server.coverage_status())
     write_json(DATA_DIR / "coverage.json", coverage)
     write_json(DATA_DIR / "timeline.json", timeline)
