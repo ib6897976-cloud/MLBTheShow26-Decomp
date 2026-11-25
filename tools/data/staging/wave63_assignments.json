@@ -1,0 +1,168 @@
+{
+  "wave": 63,
+  "method": "Six independent producers, with related two-function clusters per worker (four close attribute-state siblings assigned together). Grouping targets by behavior should reduce repeated file/NSO context. Each writes an isolated JSONL; an independent reviewer checks all claims before a serial merge.",
+  "assignments": [
+    {
+      "agent": "wave63_01",
+      "estimated_work": 12,
+      "targets": [
+        {
+          "rank": 9,
+          "address": "0x700010ec84",
+          "estimate": 7,
+          "generated_name": "f_700010ec84",
+          "semantic_callees": "linear_remap_clamped;pitch_flight_sample_position_at_time",
+          "rodata_strings": "Working",
+          "evidence_summary": "35 direct callees; 0 static dispatch targets; 294 lifted loads; 188 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 11,
+          "address": "0x700035150c",
+          "estimate": 5,
+          "generated_name": "f_700035150c",
+          "semantic_callees": "pitch_flight_sample_position_at_time;zero_fill_import_thunk",
+          "rodata_strings": "Loco Ring",
+          "evidence_summary": "32 direct callees; 0 static dispatch targets; 190 lifted loads; 185 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave63_02",
+      "estimated_work": 12,
+      "targets": [
+        {
+          "rank": 10,
+          "address": "0x7000286f30",
+          "estimate": 7,
+          "generated_name": "f_7000286f30",
+          "semantic_callees": "linear_remap_clamped;update_swing_hit_power_vector",
+          "rodata_strings": "REMOVE: add run",
+          "evidence_summary": "67 direct callees; 0 static dispatch targets; 386 lifted loads; 72 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 12,
+          "address": "0x70002b4244",
+          "estimate": 5,
+          "generated_name": "f_70002b4244",
+          "semantic_callees": "pitch_flight_sample_position_at_time;update_player_reaction_state",
+          "rodata_strings": "Hit reaction",
+          "evidence_summary": "37 direct callees; 0 static dispatch targets; 179 lifted loads; 188 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave63_03",
+      "estimated_work": 4,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x70000fb30c",
+          "estimate": 2,
+          "generated_name": "f_70000fb30c",
+          "semantic_callees": "initialize_catch_loco_ring_properties;sampled_flight_segment_interpolate",
+          "rodata_strings": "Working ring",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 121 lifted loads; 61 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 41,
+          "address": "0x700013742c",
+          "estimate": 2,
+          "generated_name": "f_700013742c",
+          "semantic_callees": "initialize_catch_loco_ring_properties;pitch_flight_sample_position_at_time",
+          "rodata_strings": "Working ring",
+          "evidence_summary": "8 direct callees; 0 static dispatch targets; 121 lifted loads; 68 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave63_04",
+      "estimated_work": 7,
+      "targets": [
+        {
+          "rank": 17,
+          "address": "0x70014523d4",
+          "estimate": 4,
+          "generated_name": "f_70014523d4",
+          "semantic_callees": "pitch_flight_sample_position_at_time;zero_fill_import_thunk",
+          "rodata_strings": "Working ring",
+          "evidence_summary": "18 direct callees; 0 static dispatch targets; 48 lifted loads; 212 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 19,
+          "address": "0x70014552d0",
+          "estimate": 3,
+          "generated_name": "f_70014552d0",
+          "semantic_callees": "sampled_flight_segment_interpolate;zero_fill_import_thunk",
+          "rodata_strings": "Stop ring",
+          "evidence_summary": "22 direct callees; 0 static dispatch targets; 97 lifted loads; 160 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave63_05",
+      "estimated_work": 7,
+      "targets": [
+        {
+          "rank": 18,
+          "address": "0x7001063a4c",
+          "estimate": 4,
+          "generated_name": "f_7001063a4c",
+          "semantic_callees": "player_attribute_get_float;rank_player_attribute_against_samples",
+          "rodata_strings": "PrePitch",
+          "evidence_summary": "42 direct callees; 0 static dispatch targets; 148 lifted loads; 134 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 26,
+          "address": "0x70010622d0",
+          "estimate": 3,
+          "generated_name": "f_70010622d0",
+          "semantic_callees": "build_contextual_attribute_report;copy_bytes_import_thunk",
+          "rodata_strings": "ENCOURAGE_BIG",
+          "evidence_summary": "39 direct callees; 0 static dispatch targets; 151 lifted loads; 88 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    },
+    {
+      "agent": "wave63_06",
+      "estimated_work": 8,
+      "targets": [
+        {
+          "rank": 60,
+          "address": "0x70006f91a8",
+          "estimate": 2,
+          "generated_name": "f_70006f91a8",
+          "semantic_callees": "attribute_context_status_value_get;zero_fill_import_thunk",
+          "rodata_strings": "%s %s",
+          "evidence_summary": "11 direct callees; 0 static dispatch targets; 17 lifted loads; 85 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 61,
+          "address": "0x70006f93d8",
+          "estimate": 2,
+          "generated_name": "f_70006f93d8",
+          "semantic_callees": "attribute_context_status_value_get;zero_fill_import_thunk",
+          "rodata_strings": "%s %s",
+          "evidence_summary": "11 direct callees; 0 static dispatch targets; 17 lifted loads; 85 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 62,
+          "address": "0x70006f9608",
+          "estimate": 2,
+          "generated_name": "f_70006f9608",
+          "semantic_callees": "attribute_context_status_value_get;zero_fill_import_thunk",
+          "rodata_strings": "%s %s",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 17 lifted loads; 85 lifted stores; 1 candidate rodata strings"
+        },
+        {
+          "rank": 63,
+          "address": "0x70006f9834",
+          "estimate": 2,
+          "generated_name": "f_70006f9834",
+          "semantic_callees": "attribute_context_status_value_get;zero_fill_import_thunk",
+          "rodata_strings": "%s %s",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 17 lifted loads; 85 lifted stores; 1 candidate rodata strings"
+        }
+      ]
+    }
+  ]
+}
