@@ -3,7 +3,7 @@
 A public, static dashboard for aggregate analysis progress in the independent
 MLB The Show recompilation and reverse-engineering project.
 
-[![Function coverage map](progress.svg)](https://ib6897976-cloud.github.io/mlb-the-show-progress/)
+[![Function coverage map](progress.svg)](https://ib6897976-cloud.github.io/MLBTheShow26-Decomp/)
 
 ## Status
 
