@@ -413,3 +413,7 @@
 {"event":"finished","wave":65,"agent":"wave65_auto_tailcalls","timestamp":"2026-11-25T21:55:42Z","duration_seconds":9.69,"target_count":4152,"seconds_per_function":0.0023,"staged_file":"wave65_auto_tailcalls_wave65.jsonl","timing_source":"measured_generator_wall_time"}
 {"event":"qa_started","wave":65,"agent":"wave65_tailcall_qa","timestamp":"2026-11-25T21:55:42Z","target_count":4152,"timing_source":"parent_dispatch_time"}
 {"event":"qa_finished","wave":65,"agent":"wave65_tailcall_qa","timestamp":"2026-11-25T22:02:45Z","duration_seconds":423,"target_count":4152,"approved_count":4152,"mismatch_count":0,"manual_sample_count":50,"timing_source":"review_completion_observed"}
+{"event":"started","wave":66,"agent":"wave66_trivial_fastlane","timestamp":"2026-11-25T22:08:11Z","target_count":4551,"timing_source":"fastlane_generation_start"}
+{"event":"finished","wave":66,"agent":"wave66_trivial_fastlane","timestamp":"2026-11-25T22:08:19Z","duration_seconds":8.2,"target_count":4551,"seconds_per_function":0.0018,"staged_file":"wave66_trivial_fastlane_wave66.jsonl","timing_source":"measured_generator_wall_time"}
+{"event":"qa_started","wave":66,"agent":"wave66_trivial_qa","timestamp":"2026-11-25T22:08:21Z","target_count":4551,"timing_source":"parent_dispatch_time"}
+{"event":"qa_finished","wave":66,"agent":"wave66_trivial_qa","timestamp":"2026-11-25T22:14:37Z","duration_seconds":376,"target_count":4551,"approved_count":4551,"mismatch_count":0,"manual_sample_count":50,"timing_source":"review_completion_observed"}
