@@ -1,0 +1,37 @@
+{
+  "wave": 103,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T08:05:21.230Z",
+  "subagent_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "selection_method": "Screened top 500 ranked unannotated functions locally; retained functions with exact NSO guest-address-resolved strings, at least one indexed caller, and <=300 body lines. Built 90-line evidence excerpts and balanced ten worker packets by body/evidence cost.",
+  "screened_candidates": 500,
+  "assigned_targets": 39,
+  "unique_targets": 39,
+  "proposed_names": 18,
+  "accepted_names_after_qa": 18,
+  "review_verdicts": {
+    "confirmed": 17,
+    "needs_more_evidence": 21,
+    "corrected": 1
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_rows": 32,
+  "automatic_blank_carry_through": 7,
+  "annotation_rows_after_merge": 12587,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 122.03,
+  "producer_targets_per_hour": 1150.5,
+  "qa_pipeline_seconds": 707.98,
+  "qa_pipeline_targets_per_hour": 198.3,
+  "accepted_names_per_hour_through_qa": 91.5,
+  "notes": [
+    "All 18 proposed names were independently checked; 17 confirmed and one normalized to project snake_case.",
+    "The remaining 21 targets were kept unnamed; 14 blanks received independent samples and 7 were conservative automatic carry-through.",
+    "No token meter was available, so model usage savings cannot be quantified.",
+    "Compared with Wave100, this batch had a higher proposal acceptance ratio (18/39 vs. 13/50); throughput is not directly comparable because the target filter and body sizes differed."
+  ]
+}

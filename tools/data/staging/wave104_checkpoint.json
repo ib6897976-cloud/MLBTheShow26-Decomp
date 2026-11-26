@@ -1,0 +1,37 @@
+{
+  "wave": 104,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T08:20:19.261Z",
+  "subagent_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "selection_method": "Local scan of all 4,110 ranked unannotated functions; selected <=450-line functions with exact guest-address-resolved NSO strings after excluding embedded build paths and external OpenSSL debug noise. Strings were treated as leads, with body evidence deciding the name. Five workers x 7\u20138 targets; each reviewer checked all proposed names and one deterministic blank.",
+  "screened_ranked_functions": 4110,
+  "assigned_targets": 39,
+  "unique_targets": 39,
+  "proposed_names_before_qa": 21,
+  "accepted_names_after_qa": 20,
+  "review_verdicts": {
+    "confirmed": 20,
+    "needs_more_evidence": 18,
+    "reject_name": 1
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_rows": 26,
+  "automatic_blank_carry_through": 13,
+  "annotation_rows_after_merge": 12607,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 247.68,
+  "producer_targets_per_hour": 566.9,
+  "qa_pipeline_seconds": 590.19,
+  "qa_pipeline_targets_per_hour": 237.9,
+  "accepted_names_per_hour_through_qa": 122.0,
+  "notes": [
+    "One producer name was rejected as inaccurate (`is_foul_ball`); the function is a broader event dispatcher.",
+    "Twenty accepted labels were added; the other 19 targets remain unnamed.",
+    "Five workers and five reviewers were enough for this batch; configured capacity for ten subagents was not needed.",
+    "Token usage cannot be quantified; model and effort were explicitly Luna low."
+  ]
+}
