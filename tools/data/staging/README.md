@@ -29,6 +29,34 @@ applies names only; field and prototype candidates still require explicit
 review and correction before the serial merge.
 
 
+## Usage-efficient name QA
+
+For name-only batches (no prototype or field claims), independently review every
+nonblank proposed name and one deterministically selected blank per producer
+batch. Keep other blank rows unnamed automatically; they cannot add an
+annotation. The blank sample checks whether producers leave obvious behavior
+unnamed. Continue full QA for prototype/field claims and increase blank sampling
+if audits find missed names.
+
+Reviewers may write only inspected rows to a `*_partial.jsonl` file. Complete it
+with conservative verdicts for unsampled blanks before applying reviews:
+
+```powershell
+python tools/assemble_sampled_reviews.py `
+  --proposals wave85_01_wave85.jsonl `
+  --partial wave85_review01_partial.jsonl `
+  --output wave85_review01.jsonl
+python tools/apply_staging_reviews.py `
+  --proposals wave85_01_wave85.jsonl `
+  --review wave85_review01.jsonl --apply
+```
+
+The assembler requires a verdict for every proposed name and at least one
+independently reviewed blank when blanks exist. It refuses prototype/field
+claims. Each unsampled blank is marked `needs_more_evidence` with a note that it
+was carried through automatically, not independently inspected. Track producer
+targets separately from functions actually inspected by QA.
+
 Treat string matches in the ranked queue as leads. For a semantic claim,
 resolve the full guest address against NSO rodata and trace how the body uses
 it. Earlier queue versions could mistake an AArch64 page base for a string.
