@@ -1,0 +1,25 @@
+{
+  "wave": 95,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T06:00:06.735Z",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 50,
+  "review_verdicts": {
+    "confirmed": 43,
+    "corrected": 7
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12367,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 305.41,
+  "producer_targets_per_hour": 589.4,
+  "pipeline_through_qa_seconds": 1010.92,
+  "pipeline_targets_per_hour": 178.1,
+  "workflow_note": "Short-body wave used <=25 lifted body lines, <=30 combined loads/stores, and >=1 accepted semantic callee. Producer stage exceeded 500 targets/hour; full workflow rate through QA completion is lower. Ten low-effort producers ran in parallel. QA was required for all 50 names; seven were corrected. One producer JSONL row was truncated mid-write and reconstructed from the assignment packet and exact source; it was rechecked independently. A first-pass QA assembly race initially left several corrections unapplied, detected by final proposal/annotation comparison and resolved; no duplicate annotations were added.",
+  "next_step": "Continue short-body waves from the full ranked queue, overlap producers with remaining QA, apply reviewer corrections before merge, and refresh all indexes once per wave."
+}

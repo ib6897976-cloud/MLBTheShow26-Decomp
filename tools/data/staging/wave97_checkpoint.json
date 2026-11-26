@@ -1,0 +1,25 @@
+{
+  "wave": 97,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T06:12:58.955Z",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 50,
+  "review_verdicts": {
+    "confirmed": 49,
+    "corrected": 1
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12467,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 72.98,
+  "producer_targets_per_hour": 2466.4,
+  "pipeline_through_qa_seconds": 167.62,
+  "pipeline_targets_per_hour": 1073.8,
+  "workflow_note": "Usage efficiency pass: GPT-6 Luna low; parent prebuilt and split compact source/caller packets once, producers used one or two concise sentences plus source lines, and reviewer verdict notes were concise. All 50 names received independent review; one required correction. Serial merge added 50 labels, no prototypes/fields. No token meter was available, so actual token savings are not claimed.",
+  "next_step": "Continue compact packet workflow if subsequent waves sustain comparable acceptance and throughput; keep all-name QA and one index refresh per wave."
+}
