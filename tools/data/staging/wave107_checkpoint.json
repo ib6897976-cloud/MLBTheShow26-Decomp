@@ -1,0 +1,41 @@
+{
+  "wave": 107,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T09:07:53.258Z",
+  "subagent_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "selection_method": "Second sequential slice from the short-body candidate screen (<=70 lifted lines, <=40 loads/stores, >=1 known semantic callee). Five workers x ten; one reviewer per worker. Low-evidence tail batch; 43 of 50 remained unnamed.",
+  "screened_ranked_functions": 1000,
+  "assigned_targets": 50,
+  "unique_targets": 50,
+  "proposed_names_before_qa": 7,
+  "accepted_names_after_qa": 7,
+  "review_verdicts": {
+    "confirmed": 5,
+    "corrected": 2,
+    "needs_more_evidence": 43
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_rows": 12,
+  "automatic_blank_carry_through": 38,
+  "annotation_rows_after_merge": 12643,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 108.44,
+  "producer_targets_per_hour": 1659.9,
+  "pipeline_elapsed_including_usage_interruption_seconds": 1843.1,
+  "pipeline_targets_per_hour_including_interruption": 97.7,
+  "post_reset_qa_window_seconds": 111.25,
+  "post_reset_targets_per_hour_through_qa": 1618.0,
+  "post_reset_accepted_names_per_hour": 226.5,
+  "interrupted_by_account_usage_limit": true,
+  "usage_limit_reset_local_time": "2:55 AM America/Chicago",
+  "notes": [
+    "Two proposed labels were corrected from overly specific interpretations: compute_attribute_value_difference and check_slot_selection_eligibility.",
+    "The producer and QA tasks staged successfully; reviewer retries began after the account usage reset. Total elapsed rate includes this interruption, so it is not a steady-state benchmark.",
+    "No token meter was available; Luna low was explicitly selected.",
+    "Do not repeat this low-yield candidate slice; next selection should require stronger exact-string or caller-context support."
+  ]
+}
