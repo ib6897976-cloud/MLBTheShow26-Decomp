@@ -1,0 +1,39 @@
+{
+  "wave": 120,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T21:23:03.533176Z",
+  "assigned_targets": 50,
+  "producer_proposed_names_before_qa": 21,
+  "accepted_names_after_qa": 21,
+  "names_recovered_from_sampled_blanks": 1,
+  "proposed_names_rejected": 1,
+  "review_verdicts": {
+    "confirmed": 16,
+    "corrected": 5,
+    "reject_name": 1,
+    "needs_more_evidence": 28
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 34,
+  "automatic_blank_carry_through": 16,
+  "annotation_rows_after_merge": 12755,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "eligible_candidates": 287,
+  "selected_rank_range": [
+    1653,
+    3085
+  ],
+  "body_line_limit": 35,
+  "max_lifted_loads_plus_stores": 30,
+  "minimum_semantic_callees": 1,
+  "producer_window_seconds": 136.17,
+  "producer_targets_per_hour": 1321.9,
+  "pipeline_through_qa_seconds": 249.97,
+  "pipeline_targets_per_hour": 720.1,
+  "accepted_names_per_hour": 302.4,
+  "workflow_note": "Ten Luna-low producers processed five functions each. One independent reviewer per producer inspected every proposed name plus at least one deterministic blank. The group 04 blank sample supported an additional wrapper label, so both blanks in that batch were inspected. QA corrected four incorrect name claims, added one name from a blank sample, and rejected one unsupported proposed label; the other targets remained unnamed. Producer and through-QA rates are measured separately.",
+  "next_step": "The 35-line pool remains productive but its accepted-name density fell to 42%. After the index refresh, prioritize candidates with at least two accepted semantic callees and one or more callers, keeping short bodies to raise accepted-name yield while maintaining the measured target rate."
+}
