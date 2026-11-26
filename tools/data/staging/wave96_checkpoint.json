@@ -1,0 +1,25 @@
+{
+  "wave": 96,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T06:07:17.203Z",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 50,
+  "review_verdicts": {
+    "corrected": 9,
+    "confirmed": 41
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12417,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 166.85,
+  "producer_targets_per_hour": 1078.8,
+  "pipeline_through_qa_seconds": 269.83,
+  "pipeline_targets_per_hour": 667.1,
+  "workflow_note": "Ten low-effort producer agents each processed five disjoint functions. The targets had <=25 lifted body lines, <=30 combined loads/stores, and at least one accepted semantic callee. All 50 proposed names received independent full-body review; nine were corrected to avoid unsupported claims. Serial merge added 50 names and no prototype or field rows. The producer-stage rate is separate from the slower end-to-end QA/indexing interval.",
+  "next_step": "Keep using GPT-6 Luna low effort, overlap reviewer starts with producer completion, and refresh the broad indexes once per completed wave."
+}
