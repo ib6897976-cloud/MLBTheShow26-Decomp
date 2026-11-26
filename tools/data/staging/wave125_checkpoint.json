@@ -1,0 +1,39 @@
+{
+  "wave": 125,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T22:23:15.173343Z",
+  "assigned_targets": 50,
+  "producer_proposed_names_before_qa": 43,
+  "accepted_names_after_qa": 43,
+  "names_recovered_from_sampled_blanks": 0,
+  "proposed_names_rejected": 0,
+  "review_verdicts": {
+    "confirmed": 42,
+    "needs_more_evidence": 7,
+    "corrected": 1
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12950,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "eligible_candidates": 148,
+  "selected_rank_range": [
+    75,
+    552
+  ],
+  "body_line_limit": 120,
+  "max_lifted_loads_plus_stores": 140,
+  "minimum_semantic_callees": 1,
+  "greedy_load_balancing": "body lines + one third lifted operations",
+  "producer_window_seconds": 358.26,
+  "producer_targets_per_hour": 502.4,
+  "pipeline_through_qa_seconds": 545.46,
+  "pipeline_targets_per_hour": 330.0,
+  "accepted_names_per_hour": 283.8,
+  "workflow_note": "Ten Luna-low producers handled five functions each with greedy balancing. Independent QA reviewed every proposed name plus a deterministic blank sample; 42 labels were confirmed, one corrected, and seven rows remained unnamed (including one blank automatically carried through). No prototypes or fields were proposed. The producer rate ends at the last staged producer file; end-to-end ends at the last QA partial, excluding merge/index/publish.",
+  "next_step": "The <=120-line/140-op pool had 148 candidates before this wave. After refresh, choose a bounded batch from the remaining pool and compare target/hour and accepted-name/hour before widening again."
+}
