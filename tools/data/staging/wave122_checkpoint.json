@@ -1,0 +1,38 @@
+{
+  "wave": 122,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T21:45:33.649414Z",
+  "assigned_targets": 50,
+  "producer_proposed_names_before_qa": 40,
+  "accepted_names_after_qa": 42,
+  "names_recovered_from_adaptive_blank_sampling": 2,
+  "proposed_names_rejected": 0,
+  "review_verdicts": {
+    "confirmed": 33,
+    "needs_more_evidence": 8,
+    "corrected": 9
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12825,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "eligible_candidates_before_wave": 96,
+  "selected_rank_range": [
+    3214,
+    3319
+  ],
+  "body_line_limit": 30,
+  "max_lifted_loads_plus_stores": 30,
+  "minimum_semantic_callees": 1,
+  "producer_window_seconds": 157.84,
+  "producer_targets_per_hour": 1140.4,
+  "pipeline_through_qa_seconds": 296.59,
+  "pipeline_targets_per_hour": 606.9,
+  "accepted_names_per_hour": 509.8,
+  "workflow_note": "Ten Luna-low producers handled five functions each. Independent reviewers checked every proposed name and deterministic blank samples, with an adaptive second blank where the first revealed a name. 33 names were confirmed and 9 were corrected; 2 additional names were recovered from group 04 blanks. Eight functions remain unnamed. No prototypes or fields were proposed. Producer rate uses last staged producer file; pipeline rate uses last QA partial file and excludes merge/index/publish time.",
+  "next_step": "Strict <=30 line pool had 96 candidates before this wave and is now exhausted for this assignment window; re-rank after index refresh, then test caller-anchored candidates or a broader body-size window while tracking name yield and QA rate separately."
+}
