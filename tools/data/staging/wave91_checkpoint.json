@@ -1,0 +1,20 @@
+{
+  "wave": 91,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T05:03:57Z",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 38,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 44,
+  "automatic_blank_carry_through": 6,
+  "annotation_rows_after_merge": 12175,
+  "producer_window_seconds": 616.9,
+  "producer_targets_per_hour": 291.8,
+  "pipeline_wall_seconds": 705.3,
+  "pipeline_targets_per_hour": 255.2,
+  "pipeline_accepted_names_per_hour": 194.0,
+  "inspection_reduction_vs_full_qa_percent": 12.0,
+  "workflow_note": "Ten low-effort producers handled five later-ranked untried functions each. Event-driven QA ran as batches became available. The slowest producer batch dominated the window; end-to-end throughput remains below the 500/h target. QA directly read 44/50 targets; the six unsampled blank rows were conservatively carried through. No model-token metering was available.",
+  "next_step": "For Wave92, keep ten low-effort parallel producers but restrict targets to very short lifted bodies and low load/store counts to reduce the slowest-batch tail. Dispatch QA at each batch completion, then merge serially."
+}
