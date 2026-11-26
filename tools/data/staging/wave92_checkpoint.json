@@ -1,0 +1,20 @@
+{
+  "wave": 92,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T05:18:05Z",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 47,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 49,
+  "automatic_blank_carry_through": 1,
+  "annotation_rows_after_merge": 12222,
+  "producer_window_seconds": 315.2,
+  "producer_targets_per_hour": 571.1,
+  "pipeline_wall_seconds": 703.5,
+  "pipeline_targets_per_hour": 255.9,
+  "pipeline_accepted_names_per_hour": 240.5,
+  "inspection_reduction_vs_full_qa_percent": 2.0,
+  "workflow_note": "Wave92 tested only short bodies (<=25 lifted lines; <=30 combined loads/stores) and greedily balanced assignment loads. The ten-producer window processed 50 targets at 571/h. Full end-to-end throughput including QA, merge, and index refresh was 256/h, still below 500/h. QA directly inspected 49/50 targets; one blank was conservatively auto-carried. No model-token meter was available.",
+  "next_step": "Preserve the short-body selection. Improve steady-state throughput by preparing the next disjoint producer batch while current QA completes, then compare the actual end-to-end rate; continue conservative QA and serial merges."
+}
