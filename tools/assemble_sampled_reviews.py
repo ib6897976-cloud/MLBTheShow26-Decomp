@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STAGING = ROOT / "tools" / "data" / "staging"
-SOURCE_LINE = re.compile(r"decompiled/[A-Za-z0-9_./-]+:\d+-\d+")
+SOURCE_LINE = re.compile(r"decompiled/[A-Za-z0-9_./-]+:\d+(?:-\d+)?")
 
 
 def read_jsonl(path: Path) -> list[dict]:
