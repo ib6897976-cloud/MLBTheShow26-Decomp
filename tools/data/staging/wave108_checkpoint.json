@@ -1,0 +1,36 @@
+{
+  "wave": 108,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T09:24:53.564Z",
+  "subagent_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "selection_method": "Exact NSO guest-address-resolved strings screened from the refreshed unannotated queue, excluding build paths and external crypto debug noise; <=550 body lines. Three workers x four targets with 120-line evidence packets. QA overlapped production and checked every name plus one blank per batch.",
+  "screened_ranked_functions": 4020,
+  "assigned_targets": 12,
+  "unique_targets": 12,
+  "proposed_names_before_qa": 7,
+  "accepted_names_after_qa": 7,
+  "review_verdicts": {
+    "confirmed": 7,
+    "needs_more_evidence": 5
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_rows": 10,
+  "automatic_blank_carry_through": 2,
+  "annotation_rows_after_merge": 12646,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 244.41,
+  "producer_targets_per_hour": 176.8,
+  "pipeline_seconds_through_qa": 426.64,
+  "pipeline_targets_per_hour": 101.3,
+  "accepted_names_per_hour_through_qa": 59.1,
+  "notes": [
+    "All seven labels were confirmed; exact strings were treated only as leads.",
+    "Five functions remain unnamed because body/caller evidence was inconclusive.",
+    "Small batch with longer bodies; rates are noisy and not directly comparable to short-wrapper waves.",
+    "Token meter unavailable; GPT-6 Luna low was explicitly selected."
+  ]
+}

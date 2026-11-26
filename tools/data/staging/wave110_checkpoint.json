@@ -1,0 +1,39 @@
+{
+  "wave": 110,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T09:36:24.361Z",
+  "subagent_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "selection_method": "Refreshed top-1,000 ranked queue; selected bodies <=250 lines with >=3 already-understood non-generic semantic direct callees and >=2 indexed callers. Five workers x 7\u20138; QA checked every name and one blank per batch, launched as producers completed.",
+  "screened_ranked_functions": 1000,
+  "eligible_candidates": 38,
+  "assigned_targets": 38,
+  "unique_targets": 38,
+  "proposed_names_before_qa": 8,
+  "accepted_names_after_qa": 7,
+  "review_verdicts": {
+    "confirmed": 6,
+    "corrected": 1,
+    "reject_name": 1,
+    "needs_more_evidence": 30
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_rows": 13,
+  "automatic_blank_carry_through": 25,
+  "annotation_rows_after_merge": 12653,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 346.64,
+  "producer_targets_per_hour": 394.6,
+  "pipeline_seconds_through_qa": 466.1,
+  "pipeline_targets_per_hour": 293.5,
+  "accepted_names_per_hour_through_qa": 54.1,
+  "notes": [
+    "QA rejected one broad player-specific name because its body did not support a player-only role; another was corrected to dispatch_state_callback_if_allowed.",
+    "Only 7 of 38 targets yielded names, so stop using the >=3 callee/2 caller filter as a batch recipe.",
+    "No prototype or field evidence was proposed.",
+    "Token use cannot be quantified; GPT-6 Luna low was explicitly selected."
+  ]
+}
