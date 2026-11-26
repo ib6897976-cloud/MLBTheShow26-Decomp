@@ -1,0 +1,30 @@
+{
+  "wave": 99,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T06:28:51.454Z",
+  "subagent_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 39,
+  "review_verdicts": {
+    "confirmed": 34,
+    "needs_more_evidence": 10,
+    "corrected": 6
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_nonblank_names": 40,
+  "independently_sampled_blanks": 10,
+  "automatic_blank_carry_through": 10,
+  "annotation_rows_after_merge": 12556,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 210.89,
+  "producer_targets_per_hour": 853.5,
+  "pipeline_through_qa_seconds": 290.52,
+  "pipeline_targets_per_hour": 619.6,
+  "accepted_names_per_hour": 483.3,
+  "workflow_note": "GPT-6 Luna was explicitly selected at low effort for all producer and reviewer agents. Compact evidence packets were prebuilt once. Reviewers checked all proposed names and sampled one blank per batch where blanks existed; additional blank sampling was adaptive. Eleven targets remained unnamed; 39 names were merged after QA. Six proposed labels were corrected. No token meter was available, so cost savings are not quantified. Compared with Wave98, end-to-end throughput was lower in this single wave; this is a speed/cost tradeoff sample, not a stable model benchmark.",
+  "next_step": "Keep Luna low and compact packets for the next wave only if the user accepts the measured lower speed; compare additional waves because duration varies by batch and agent."
+}

@@ -1,0 +1,25 @@
+{
+  "wave": 98,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T06:20:32.310Z",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 50,
+  "review_verdicts": {
+    "confirmed": 46,
+    "corrected": 4
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12517,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 132.5,
+  "producer_targets_per_hour": 1358.5,
+  "pipeline_through_qa_seconds": 168.71,
+  "pipeline_targets_per_hour": 1066.9,
+  "workflow_note": "Compact packet format, concise evidence. All names received independent review; four were corrected to avoid wrong/redundant claims. This wave and Wave97 did not receive an actual subagent model override; task text requested GPT-6 Luna, but workers inherited the parent model. Do not attribute measured usage savings to Luna. Compact packet preparation and concise outputs are the measured workflow changes; token meter unavailable.",
+  "next_step": "For Wave99 explicitly set model=gpt-6-luna and reasoning_effort=low in each subagent spawn, continue compact packets, and compare QA acceptance and throughput."
+}
