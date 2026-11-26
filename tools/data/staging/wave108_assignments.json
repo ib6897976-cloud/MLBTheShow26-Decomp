@@ -1,0 +1,107 @@
+{
+  "wave": 108,
+  "method": "Exact guest-address-resolved NSO strings screened from the refreshed unannotated queue; exclude known build-path/OpenSSL debug noise; body <=550 lines. Three Luna-low producers x four targets, compact 120-line evidence packets. Strings are leads only; names must follow body/caller evidence. QA each proposed name and one deterministic blank sample per batch; pipeline review as producers finish.",
+  "screened_ranked_functions": 4020,
+  "selected_targets": 12,
+  "assignments": [
+    {
+      "agent": "wave108_01",
+      "targets": [
+        {
+          "address": "0x7000235eb8",
+          "estimate": 913,
+          "body_lines": 533,
+          "exact_string_count": 19,
+          "caller_count": 4
+        },
+        {
+          "address": "0x7000b10560",
+          "estimate": 589,
+          "body_lines": 529,
+          "exact_string_count": 3,
+          "caller_count": 0
+        },
+        {
+          "address": "0x70009e1c40",
+          "estimate": 520,
+          "body_lines": 460,
+          "exact_string_count": 3,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7001027790",
+          "estimate": 185,
+          "body_lines": 165,
+          "exact_string_count": 1,
+          "caller_count": 0
+        }
+      ]
+    },
+    {
+      "agent": "wave108_02",
+      "targets": [
+        {
+          "address": "0x70002e47d4",
+          "estimate": 781,
+          "body_lines": 501,
+          "exact_string_count": 14,
+          "caller_count": 0
+        },
+        {
+          "address": "0x700028053c",
+          "estimate": 641,
+          "body_lines": 501,
+          "exact_string_count": 7,
+          "caller_count": 2
+        },
+        {
+          "address": "0x70001c1540",
+          "estimate": 555,
+          "body_lines": 535,
+          "exact_string_count": 1,
+          "caller_count": 0
+        },
+        {
+          "address": "0x7001a4d600",
+          "estimate": 433,
+          "body_lines": 333,
+          "exact_string_count": 5,
+          "caller_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave108_03",
+      "targets": [
+        {
+          "address": "0x7000ad07e0",
+          "estimate": 735,
+          "body_lines": 535,
+          "exact_string_count": 10,
+          "caller_count": 0
+        },
+        {
+          "address": "0x70003e64f8",
+          "estimate": 713,
+          "body_lines": 513,
+          "exact_string_count": 10,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000e7f040",
+          "estimate": 551,
+          "body_lines": 451,
+          "exact_string_count": 5,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000fd6594",
+          "estimate": 189,
+          "body_lines": 169,
+          "exact_string_count": 1,
+          "caller_count": 0
+        }
+      ]
+    }
+  ]
+}
