@@ -1,0 +1,399 @@
+{
+  "wave": 114,
+  "method": "Expanded full ranked queue (all 3920 eligible unannotated main functions), requiring >=1 reviewed semantic callee, >=2 indexed callers, <=100 body lines. Select 45 highest-ranked qualifying targets from 321; five Luna-low producers; full bodies in packets; reviewer checks every proposed name plus one blank sample per batch.",
+  "screened_ranked_functions": 3920,
+  "eligible_candidates": 321,
+  "assigned_targets": 45,
+  "selection": {
+    "minimum_semantic_callees": 1,
+    "minimum_indexed_callers": 2,
+    "maximum_body_lines": 100
+  },
+  "assignments": [
+    {
+      "agent": "wave114_01",
+      "targets": [
+        {
+          "address": "0x700024b0d0",
+          "rank": 539,
+          "estimate": 99,
+          "body_lines": 99,
+          "known_semantic_callee_count": 2,
+          "indexed_caller_count": 2
+        },
+        {
+          "address": "0x70007a4fdc",
+          "rank": 1007,
+          "estimate": 64,
+          "body_lines": 64,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x7000a45a04",
+          "rank": 1031,
+          "estimate": 100,
+          "body_lines": 100,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 4
+        },
+        {
+          "address": "0x70010425d8",
+          "rank": 1055,
+          "estimate": 64,
+          "body_lines": 64,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x70006fb7cc",
+          "rank": 1073,
+          "estimate": 65,
+          "body_lines": 65,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 4
+        },
+        {
+          "address": "0x700073aea4",
+          "rank": 1081,
+          "estimate": 80,
+          "body_lines": 80,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000f9f420",
+          "rank": 1110,
+          "estimate": 68,
+          "body_lines": 68,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x700042df70",
+          "rank": 1141,
+          "estimate": 66,
+          "body_lines": 66,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 4
+        },
+        {
+          "address": "0x700075a080",
+          "rank": 1151,
+          "estimate": 74,
+          "body_lines": 74,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 4
+        }
+      ]
+    },
+    {
+      "agent": "wave114_02",
+      "targets": [
+        {
+          "address": "0x70001b080c",
+          "rank": 781,
+          "estimate": 18,
+          "body_lines": 18,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 24
+        },
+        {
+          "address": "0x70010430d0",
+          "rank": 986,
+          "estimate": 12,
+          "body_lines": 12,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 7
+        },
+        {
+          "address": "0x7000bc7ce0",
+          "rank": 1000,
+          "estimate": 75,
+          "body_lines": 75,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x7000bc7f10",
+          "rank": 1008,
+          "estimate": 60,
+          "body_lines": 60,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x7000762ae8",
+          "rank": 1037,
+          "estimate": 93,
+          "body_lines": 93,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x7000b29614",
+          "rank": 1052,
+          "estimate": 67,
+          "body_lines": 67,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x700076e3b0",
+          "rank": 1070,
+          "estimate": 91,
+          "body_lines": 91,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000cbec10",
+          "rank": 1090,
+          "estimate": 69,
+          "body_lines": 69,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x70017a1000",
+          "rank": 1126,
+          "estimate": 97,
+          "body_lines": 97,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 4
+        }
+      ]
+    },
+    {
+      "agent": "wave114_03",
+      "targets": [
+        {
+          "address": "0x7000e4b258",
+          "rank": 782,
+          "estimate": 18,
+          "body_lines": 18,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 24
+        },
+        {
+          "address": "0x70003c64e0",
+          "rank": 996,
+          "estimate": 77,
+          "body_lines": 77,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x70006e8edc",
+          "rank": 1006,
+          "estimate": 69,
+          "body_lines": 69,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x70006ec6c0",
+          "rank": 1036,
+          "estimate": 86,
+          "body_lines": 86,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x700091c71c",
+          "rank": 1051,
+          "estimate": 92,
+          "body_lines": 92,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 4
+        },
+        {
+          "address": "0x70007a3658",
+          "rank": 1075,
+          "estimate": 80,
+          "body_lines": 80,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000f98250",
+          "rank": 1091,
+          "estimate": 61,
+          "body_lines": 61,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x700072fb0c",
+          "rank": 1114,
+          "estimate": 70,
+          "body_lines": 70,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x70006fa71c",
+          "rank": 1142,
+          "estimate": 86,
+          "body_lines": 86,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 3
+        }
+      ]
+    },
+    {
+      "agent": "wave114_04",
+      "targets": [
+        {
+          "address": "0x7000329fc8",
+          "rank": 789,
+          "estimate": 15,
+          "body_lines": 15,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 19
+        },
+        {
+          "address": "0x70001c3820",
+          "rank": 982,
+          "estimate": 78,
+          "body_lines": 78,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000fec918",
+          "rank": 1002,
+          "estimate": 68,
+          "body_lines": 68,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x700186276c",
+          "rank": 1014,
+          "estimate": 67,
+          "body_lines": 67,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x70000a98f0",
+          "rank": 1047,
+          "estimate": 65,
+          "body_lines": 65,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000bc7a14",
+          "rank": 1059,
+          "estimate": 90,
+          "body_lines": 90,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x70007105f0",
+          "rank": 1080,
+          "estimate": 86,
+          "body_lines": 86,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7001038530",
+          "rank": 1093,
+          "estimate": 61,
+          "body_lines": 61,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000237134",
+          "rank": 1137,
+          "estimate": 92,
+          "body_lines": 92,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 4
+        }
+      ]
+    },
+    {
+      "agent": "wave114_05",
+      "targets": [
+        {
+          "address": "0x7000dcf4cc",
+          "rank": 801,
+          "estimate": 12,
+          "body_lines": 12,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 16
+        },
+        {
+          "address": "0x7000dcf3d4",
+          "rank": 900,
+          "estimate": 12,
+          "body_lines": 12,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 9
+        },
+        {
+          "address": "0x7000bae050",
+          "rank": 997,
+          "estimate": 96,
+          "body_lines": 96,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x7000f17560",
+          "rank": 1012,
+          "estimate": 66,
+          "body_lines": 66,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 6
+        },
+        {
+          "address": "0x7000771890",
+          "rank": 1042,
+          "estimate": 99,
+          "body_lines": 99,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 3
+        },
+        {
+          "address": "0x7000791c50",
+          "rank": 1058,
+          "estimate": 97,
+          "body_lines": 97,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000ec4c28",
+          "rank": 1076,
+          "estimate": 76,
+          "body_lines": 76,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000fe552c",
+          "rank": 1092,
+          "estimate": 61,
+          "body_lines": 61,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        },
+        {
+          "address": "0x7000711e1c",
+          "rank": 1131,
+          "estimate": 64,
+          "body_lines": 64,
+          "known_semantic_callee_count": 1,
+          "indexed_caller_count": 5
+        }
+      ]
+    }
+  ]
+}
