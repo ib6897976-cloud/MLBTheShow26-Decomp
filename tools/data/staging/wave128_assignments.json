@@ -1,0 +1,513 @@
+{
+  "wave": 128,
+  "method": "Continue the low lifted-memory-operation lane after Wave127: choose 50 lowest-operation unique ranked targets (<=16 loads+stores, >=1 accepted semantic callee), greedy effort balance across ten gpt-6-luna-low producers; name-only claims, independent QA.",
+  "eligible_candidates": 332,
+  "assigned_targets": 50,
+  "selection_constraints": {
+    "max_lifted_loads_plus_stores": 16,
+    "minimum_semantic_callees": 1,
+    "selection_order": "lifted loads + stores ascending, then queue score descending"
+  },
+  "assignments": [
+    {
+      "agent": "wave128_01",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000ff8144",
+          "generated_name": "f_7000ff8144",
+          "score": 2087,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 2
+        },
+        {
+          "module": "main",
+          "address": "0x700104094c",
+          "generated_name": "f_700104094c",
+          "score": 1062,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7001134ff4",
+          "generated_name": "f_7001134ff4",
+          "score": 1037,
+          "lifted_loads": 7,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000b24d70",
+          "generated_name": "f_7000b24d70",
+          "score": 1012,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70007589d0",
+          "generated_name": "f_70007589d0",
+          "score": 1036,
+          "lifted_loads": 5,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_02",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7001869af8",
+          "generated_name": "f_7001869af8",
+          "score": 1087,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000492c3c",
+          "generated_name": "f_7000492c3c",
+          "score": 1037,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x700168f470",
+          "generated_name": "f_700168f470",
+          "score": 1037,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000b64f28",
+          "generated_name": "f_7000b64f28",
+          "score": 1012,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000766680",
+          "generated_name": "f_7000766680",
+          "score": 1036,
+          "lifted_loads": 6,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_03",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x70000aa540",
+          "generated_name": "f_70000aa540",
+          "score": 1062,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x700075a6a4",
+          "generated_name": "f_700075a6a4",
+          "score": 1037,
+          "lifted_loads": 7,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70004a7850",
+          "generated_name": "f_70004a7850",
+          "score": 1012,
+          "lifted_loads": 5,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000be4520",
+          "generated_name": "f_7000be4520",
+          "score": 1012,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000cc1de0",
+          "generated_name": "f_7000cc1de0",
+          "score": 1036,
+          "lifted_loads": 6,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_04",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000432ebc",
+          "generated_name": "f_7000432ebc",
+          "score": 1062,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70007a92cc",
+          "generated_name": "f_70007a92cc",
+          "score": 1037,
+          "lifted_loads": 7,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70006c55bc",
+          "generated_name": "f_70006c55bc",
+          "score": 1012,
+          "lifted_loads": 5,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000c4fe80",
+          "generated_name": "f_7000c4fe80",
+          "score": 1012,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000d80cd0",
+          "generated_name": "f_7000d80cd0",
+          "score": 1036,
+          "lifted_loads": 8,
+          "lifted_stores": 3,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_05",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x70006591e8",
+          "generated_name": "f_70006591e8",
+          "score": 1062,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000c76160",
+          "generated_name": "f_7000c76160",
+          "score": 1037,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70006c56f4",
+          "generated_name": "f_70006c56f4",
+          "score": 1012,
+          "lifted_loads": 5,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000c57f88",
+          "generated_name": "f_7000c57f88",
+          "score": 1012,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000fa6638",
+          "generated_name": "f_7000fa6638",
+          "score": 1036,
+          "lifted_loads": 6,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_06",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x700071c850",
+          "generated_name": "f_700071c850",
+          "score": 1062,
+          "lifted_loads": 5,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000fa360c",
+          "generated_name": "f_7000fa360c",
+          "score": 1037,
+          "lifted_loads": 7,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70006c68b0",
+          "generated_name": "f_70006c68b0",
+          "score": 1012,
+          "lifted_loads": 7,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000c838d8",
+          "generated_name": "f_7000c838d8",
+          "score": 1012,
+          "lifted_loads": 4,
+          "lifted_stores": 8,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000ff33e4",
+          "generated_name": "f_7000ff33e4",
+          "score": 1036,
+          "lifted_loads": 6,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_07",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000dd8d5c",
+          "generated_name": "f_7000dd8d5c",
+          "score": 1062,
+          "lifted_loads": 9,
+          "lifted_stores": 3,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000ff0260",
+          "generated_name": "f_7000ff0260",
+          "score": 1037,
+          "lifted_loads": 7,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70006c9c68",
+          "generated_name": "f_70006c9c68",
+          "score": 1012,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70010377e0",
+          "generated_name": "f_70010377e0",
+          "score": 1611,
+          "lifted_loads": 8,
+          "lifted_stores": 3,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x700182ddb0",
+          "generated_name": "f_700182ddb0",
+          "score": 1085,
+          "lifted_loads": 5,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_08",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000fa018c",
+          "generated_name": "f_7000fa018c",
+          "score": 1062,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000ff5534",
+          "generated_name": "f_7000ff5534",
+          "score": 1037,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70007d3a64",
+          "generated_name": "f_70007d3a64",
+          "score": 1012,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70003bf550",
+          "generated_name": "f_70003bf550",
+          "score": 1061,
+          "lifted_loads": 6,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000707158",
+          "generated_name": "f_7000707158",
+          "score": 1035,
+          "lifted_loads": 5,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_09",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000fecfd0",
+          "generated_name": "f_7000fecfd0",
+          "score": 1062,
+          "lifted_loads": 6,
+          "lifted_stores": 6,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7001044010",
+          "generated_name": "f_7001044010",
+          "score": 1037,
+          "lifted_loads": 7,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000937290",
+          "generated_name": "f_7000937290",
+          "score": 1012,
+          "lifted_loads": 5,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7001047344",
+          "generated_name": "f_7001047344",
+          "score": 1061,
+          "lifted_loads": 6,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000776d74",
+          "generated_name": "f_7000776d74",
+          "score": 1035,
+          "lifted_loads": 7,
+          "lifted_stores": 3,
+          "semantic_callee_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave128_10",
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000ff7fd0",
+          "generated_name": "f_7000ff7fd0",
+          "score": 1062,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7001049494",
+          "generated_name": "f_7001049494",
+          "score": 1037,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x70009c4d94",
+          "generated_name": "f_70009c4d94",
+          "score": 1012,
+          "lifted_loads": 8,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000168950",
+          "generated_name": "f_7000168950",
+          "score": 1036,
+          "lifted_loads": 7,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        },
+        {
+          "module": "main",
+          "address": "0x7000e4f0a8",
+          "generated_name": "f_7000e4f0a8",
+          "score": 1035,
+          "lifted_loads": 6,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1
+        }
+      ]
+    }
+  ]
+}
