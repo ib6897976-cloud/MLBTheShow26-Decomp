@@ -1,0 +1,159 @@
+{
+  "wave": 116,
+  "scope": "Independent field audit only. Validate every base, offset, access width and ctype from generated bodies and caller evidence where available; compare with decompiled/recovered/pitch_types.h and pitch/dynamic trace notes. Do not change TSV/header. Report exact evidence and any correction needed.",
+  "assignments": [
+    {
+      "agent": "wave116_pitch_audit01",
+      "fields": [
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "x0 context pointer used by current-build pitch flight functions",
+          "offset": "0x30",
+          "size_bytes": "224",
+          "field_name": "state_slots",
+          "ctype": "PitchFlightStateSlot[2]",
+          "semantic_description": "Two state records with 0x70-byte stride; selector fields at +0x110 and +0x114 toggle between indices 0 and 1.",
+          "confidence": "high",
+          "evidence": "main_0158.c: f_7001657c10 computes context+0x30+index*0x70; context+0x30+0xe0 ends at +0x110"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "x0 context pointer used by current-build pitch flight functions",
+          "offset": "0x110",
+          "size_bytes": "4",
+          "field_name": "flight_state_index_a",
+          "ctype": "uint32_t",
+          "semantic_description": "Selects a state record using a 0x70-byte stride; the update toggles it with XOR 1.",
+          "confidence": "high",
+          "evidence": "main_0158.c: f_7001657c10 and f_7001658448"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "x0 context pointer used by current-build pitch flight functions",
+          "offset": "0x114",
+          "size_bytes": "4",
+          "field_name": "flight_state_index_b",
+          "ctype": "uint32_t",
+          "semantic_description": "Second state selector; toggled with XOR 1 alongside the first selector.",
+          "confidence": "high",
+          "evidence": "main_0158.c: f_7001657c10 and f_7001658b78"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "x0 context pointer used by current-build pitch flight functions",
+          "offset": "0x174",
+          "size_bytes": "4",
+          "field_name": "flight_flags_174",
+          "ctype": "uint32_t",
+          "semantic_description": "Bitfield; bits 13 and 15 select branches in the flight update.",
+          "confidence": "medium",
+          "evidence": "main_0158.c: f_7001658448 tests bits 13 and 15"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "x0 context pointer used by current-build pitch flight functions",
+          "offset": "0x18c",
+          "size_bytes": "4",
+          "field_name": "flight_scalar_18c",
+          "ctype": "float",
+          "semantic_description": "Clamped to a nonnegative value before later force/state calculations; exact semantic unit is unknown.",
+          "confidence": "medium",
+          "evidence": "main_0158.c: f_7001658448 loads, floating-compares, clamps, then stores this field"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "x0 context pointer used by current-build pitch flight functions",
+          "offset": "0x2c6",
+          "size_bytes": "1",
+          "field_name": "flight_flag_2c6",
+          "ctype": "uint8_t",
+          "semantic_description": "Nonzero/zero branch input to the flight force update; the flag's domain meaning is unknown.",
+          "confidence": "medium",
+          "evidence": "main_0158.c: f_7001658448 loads this byte and branches on zero"
+        }
+      ]
+    },
+    {
+      "agent": "wave116_pitch_audit02",
+      "fields": [
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "x0 context pointer used by current-build pitch flight functions",
+          "offset": "0x311",
+          "size_bytes": "1",
+          "field_name": "flight_state_flag_311_candidate",
+          "ctype": "uint8_t",
+          "semantic_description": "Byte read or written during pitch-flight state update; meaning unresolved.",
+          "confidence": "medium",
+          "evidence": "main_0158.c f_7001676ba0 reads/writes context+0x311 around 47378-47430."
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "Live traced x0 pitch context",
+          "offset": "0x410",
+          "size_bytes": "12",
+          "field_name": "release_position",
+          "ctype": "float[3]",
+          "semantic_description": "World-space release position vector logged as ACTUAL RELEASE MAT.",
+          "confidence": "high",
+          "evidence": "decompiled/dynamic_pitch_trace.md: live values at x0+0x410 matched the game log exactly"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "Live traced x0 pitch context",
+          "offset": "0x420",
+          "size_bytes": "12",
+          "field_name": "pitch_destination",
+          "ctype": "float[3]",
+          "semantic_description": "Final destination vector; confirmed against the pitch movement log and live memory.",
+          "confidence": "high",
+          "evidence": "decompiled/dynamic_pitch_trace.md: x0+0x420 minus x0+0x42c matched Actual Pitch Movement"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightContext",
+          "structure_confidence": "candidate",
+          "base_description": "Live traced x0 pitch context",
+          "offset": "0x42c",
+          "size_bytes": "12",
+          "field_name": "aim_reference_position",
+          "ctype": "float[3]",
+          "semantic_description": "Aim/reference vector used to calculate pitch movement relative to the final destination.",
+          "confidence": "high",
+          "evidence": "decompiled/dynamic_pitch_trace.md: x0+0x42c was the matching reference vector in the measured subtraction"
+        },
+        {
+          "module": "main",
+          "structure_name": "PitchFlightStateSlot",
+          "structure_confidence": "candidate",
+          "base_description": "One indexed pitch-flight state record",
+          "offset": "0x60",
+          "size_bytes": "12",
+          "field_name": "pair_distance_vector",
+          "ctype": "float[3]",
+          "semantic_description": "Three-float vector compared between the two selected records to compute Euclidean distance; its physical meaning is not established.",
+          "confidence": "high",
+          "evidence": "main_0158.c: f_7001658b78 loads vectors at slot+0x60/+0x68, subtracts, squares, sums, and square-roots"
+        }
+      ]
+    }
+  ]
+}

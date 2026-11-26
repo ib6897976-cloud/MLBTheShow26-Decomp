@@ -50,11 +50,13 @@ an original game type name.
 
 | Offset | Recovered type/name | Evidence and limit |
 |---|---|---|
+| `+0x30` | `PitchFlightStateSlot[2]` | Two `0x70`-byte slots; their `0xe0`-byte span ends at `+0x110`. |
 | `+0x110` | `uint32_t flight_state_index_a` | Used to select a `0x70`-stride record and flipped with XOR 1. |
 | `+0x114` | `uint32_t flight_state_index_b` | A second selector, flipped with the first. Exact role distinction is unknown. |
 | `+0x174` | `uint32_t flight_flags_174` | Branches test bits 13 and 15; meanings of those bits are unknown. |
 | `+0x18c` | `float flight_scalar_18c` | Treated as a float and clamped nonnegative; units and gameplay meaning are unknown. |
 | `+0x2c6` | `uint8_t flight_flag_2c6` | A zero/nonzero branch input; domain meaning is unknown. |
+| `+0x311` | `uint8_t flight_state_flag_311_candidate` | Cleared and later assigned a boolean-like value; domain meaning is unknown. |
 | `+0x410` | `float release_position[3]` | Live values matched the release position printed in the game log. |
 | `+0x420` | `float pitch_destination[3]` | Live value confirmed as the final pitch destination. |
 | `+0x42c` | `float aim_reference_position[3]` | Live value confirmed as the vector subtracted from the destination. |
@@ -63,6 +65,14 @@ The currently known vectors occupy 12 bytes each. No padding or neighboring
 field assumptions should be inferred from them.
 
 Additional context accesses in the same state path are now typed: bytes at `+0x2c0` and `+0x2c1`, and floats at `+0x2d8` and `+0x2e4`. The first byte is conditionally cleared, the second is a branch input, and the floats enter threshold/validation arithmetic. Their physics meanings and units are unresolved.
+
+An independent Wave116 audit checked the base, offset, width, and C type for all
+11 existing `PitchFlightContext` and `PitchFlightStateSlot` field rows. All were
+confirmed, including the `0x70` slot stride and the non-overlapping vectors at
+`+0x410`, `+0x420`, and `+0x42c`. The audit did not resolve the gameplay meanings
+of the state-slot distance vector, `+0x18c`, or the flag fields; those labels
+remain deliberately cautious. See the [first audit batch](../tools/data/staging/wave116_pitch_audit01.jsonl)
+and [second audit batch](../tools/data/staging/wave116_pitch_audit02.jsonl).
 
 ## Physics findings and open questions
 
