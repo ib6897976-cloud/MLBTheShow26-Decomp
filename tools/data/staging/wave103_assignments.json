@@ -1,0 +1,336 @@
+{
+  "wave": 103,
+  "method": "Exact-address rodata string leads resolved against NSO plus at least one indexed caller; <=300 lifted body lines; compact 90-line evidence excerpts. Ten Luna-low workers, up to four targets each; balance by body length and evidence density. QA every proposed name and sample blanks.",
+  "selection": {
+    "screened_top_ranked": 500,
+    "resolved_exact_string_and_caller_candidates": 39,
+    "max_body_lines": 300,
+    "exact_string_minimum": 1,
+    "caller_minimum": 1
+  },
+  "assignments": [
+    {
+      "agent": "wave103_01",
+      "targets": [
+        {
+          "address": "0x7000e02264",
+          "estimate": 620,
+          "body_lines": 210,
+          "exact_string_count": 20,
+          "caller_count": 2
+        },
+        {
+          "address": "0x7000ed562c",
+          "estimate": 232,
+          "body_lines": 147,
+          "exact_string_count": 4,
+          "caller_count": 1
+        },
+        {
+          "address": "0x700108cd24",
+          "estimate": 121,
+          "body_lines": 81,
+          "exact_string_count": 1,
+          "caller_count": 4
+        }
+      ]
+    },
+    {
+      "agent": "wave103_02",
+      "targets": [
+        {
+          "address": "0x7000be39d8",
+          "estimate": 412,
+          "body_lines": 172,
+          "exact_string_count": 11,
+          "caller_count": 4
+        },
+        {
+          "address": "0x7000bf9bc4",
+          "estimate": 239,
+          "body_lines": 174,
+          "exact_string_count": 3,
+          "caller_count": 1
+        },
+        {
+          "address": "0x70017314ec",
+          "estimate": 147,
+          "body_lines": 117,
+          "exact_string_count": 1,
+          "caller_count": 2
+        },
+        {
+          "address": "0x7001a2a8d0",
+          "estimate": 131,
+          "body_lines": 86,
+          "exact_string_count": 2,
+          "caller_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave103_03",
+      "targets": [
+        {
+          "address": "0x70010920f4",
+          "estimate": 384,
+          "body_lines": 259,
+          "exact_string_count": 6,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000d9eef4",
+          "estimate": 270,
+          "body_lines": 205,
+          "exact_string_count": 3,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000770900",
+          "estimate": 166,
+          "body_lines": 116,
+          "exact_string_count": 1,
+          "caller_count": 6
+        },
+        {
+          "address": "0x7000ce9178",
+          "estimate": 118,
+          "body_lines": 93,
+          "exact_string_count": 1,
+          "caller_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave103_04",
+      "targets": [
+        {
+          "address": "0x7000892ae0",
+          "estimate": 430,
+          "body_lines": 255,
+          "exact_string_count": 6,
+          "caller_count": 11
+        },
+        {
+          "address": "0x7000eb2e6c",
+          "estimate": 233,
+          "body_lines": 168,
+          "exact_string_count": 3,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000d06e00",
+          "estimate": 153,
+          "body_lines": 93,
+          "exact_string_count": 2,
+          "caller_count": 4
+        },
+        {
+          "address": "0x7000be37e4",
+          "estimate": 131,
+          "body_lines": 76,
+          "exact_string_count": 2,
+          "caller_count": 3
+        }
+      ]
+    },
+    {
+      "agent": "wave103_05",
+      "targets": [
+        {
+          "address": "0x7000ca80e0",
+          "estimate": 351,
+          "body_lines": 266,
+          "exact_string_count": 4,
+          "caller_count": 1
+        },
+        {
+          "address": "0x700000a9a0",
+          "estimate": 281,
+          "body_lines": 236,
+          "exact_string_count": 2,
+          "caller_count": 1
+        },
+        {
+          "address": "0x70004e7be4",
+          "estimate": 179,
+          "body_lines": 149,
+          "exact_string_count": 1,
+          "caller_count": 2
+        },
+        {
+          "address": "0x700108c030",
+          "estimate": 128,
+          "body_lines": 103,
+          "exact_string_count": 1,
+          "caller_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave103_06",
+      "targets": [
+        {
+          "address": "0x7000ca4e50",
+          "estimate": 337,
+          "body_lines": 247,
+          "exact_string_count": 4,
+          "caller_count": 2
+        },
+        {
+          "address": "0x70000c6f20",
+          "estimate": 290,
+          "body_lines": 245,
+          "exact_string_count": 2,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000f421bc",
+          "estimate": 217,
+          "body_lines": 192,
+          "exact_string_count": 1,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000dc3634",
+          "estimate": 113,
+          "body_lines": 83,
+          "exact_string_count": 1,
+          "caller_count": 2
+        }
+      ]
+    },
+    {
+      "agent": "wave103_07",
+      "targets": [
+        {
+          "address": "0x7000a565f0",
+          "estimate": 330,
+          "body_lines": 265,
+          "exact_string_count": 3,
+          "caller_count": 1
+        },
+        {
+          "address": "0x70015ce620",
+          "estimate": 313,
+          "body_lines": 158,
+          "exact_string_count": 7,
+          "caller_count": 3
+        },
+        {
+          "address": "0x70001c891c",
+          "estimate": 154,
+          "body_lines": 129,
+          "exact_string_count": 1,
+          "caller_count": 1
+        },
+        {
+          "address": "0x70008e1298",
+          "estimate": 136,
+          "body_lines": 91,
+          "exact_string_count": 2,
+          "caller_count": 1
+        }
+      ]
+    },
+    {
+      "agent": "wave103_08",
+      "targets": [
+        {
+          "address": "0x70006600d0",
+          "estimate": 343,
+          "body_lines": 263,
+          "exact_string_count": 3,
+          "caller_count": 4
+        },
+        {
+          "address": "0x70002e8528",
+          "estimate": 286,
+          "body_lines": 221,
+          "exact_string_count": 3,
+          "caller_count": 1
+        },
+        {
+          "address": "0x70014831a0",
+          "estimate": 212,
+          "body_lines": 147,
+          "exact_string_count": 3,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000be27ec",
+          "estimate": 117,
+          "body_lines": 67,
+          "exact_string_count": 2,
+          "caller_count": 2
+        }
+      ]
+    },
+    {
+      "agent": "wave103_09",
+      "targets": [
+        {
+          "address": "0x7000be2ab0",
+          "estimate": 335,
+          "body_lines": 160,
+          "exact_string_count": 8,
+          "caller_count": 3
+        },
+        {
+          "address": "0x7000f448c0",
+          "estimate": 295,
+          "body_lines": 270,
+          "exact_string_count": 1,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000ca7e94",
+          "estimate": 184,
+          "body_lines": 159,
+          "exact_string_count": 1,
+          "caller_count": 1
+        },
+        {
+          "address": "0x7000f21138",
+          "estimate": 132,
+          "body_lines": 102,
+          "exact_string_count": 1,
+          "caller_count": 2
+        }
+      ]
+    },
+    {
+      "agent": "wave103_10",
+      "targets": [
+        {
+          "address": "0x700027e570",
+          "estimate": 332,
+          "body_lines": 257,
+          "exact_string_count": 3,
+          "caller_count": 3
+        },
+        {
+          "address": "0x70004ba7d0",
+          "estimate": 302,
+          "body_lines": 277,
+          "exact_string_count": 1,
+          "caller_count": 1
+        },
+        {
+          "address": "0x70015ce850",
+          "estimate": 157,
+          "body_lines": 72,
+          "exact_string_count": 4,
+          "caller_count": 1
+        },
+        {
+          "address": "0x70003e6e04",
+          "estimate": 142,
+          "body_lines": 92,
+          "exact_string_count": 2,
+          "caller_count": 2
+        }
+      ]
+    }
+  ]
+}
