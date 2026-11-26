@@ -1,0 +1,33 @@
+{
+  "wave": 119,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T21:12:17.600164Z",
+  "assigned_targets": 50,
+  "producer_proposed_names_before_qa": 26,
+  "accepted_names_after_qa": 30,
+  "names_recovered_from_sampled_blanks": 4,
+  "review_verdicts": {
+    "confirmed": 25,
+    "corrected": 5,
+    "needs_more_evidence": 20,
+    "reject_name": 0
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 38,
+  "automatic_blank_carry_through": 12,
+  "annotation_rows_after_merge": 12734,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "screened_candidates": 335,
+  "strict_25_line_candidates_remaining_before_expansion": 15,
+  "selected_body_line_limit": 35,
+  "producer_window_seconds": 122.01,
+  "producer_targets_per_hour": 1475.2,
+  "pipeline_through_qa_seconds": 415.59,
+  "pipeline_targets_per_hour": 433.1,
+  "accepted_names_per_hour": 259.9,
+  "workflow_note": "Ten Luna-low producers handled five functions each; producer-only throughput was 1,475 targets/hour. The first 50 expanded <=35-line candidates produced 30 QA-confirmed names and 20 conservative blanks, at 433 targets/hour through complete QA. Review examined every proposed name and a deterministic blank per producer; four sampled blanks revealed additional names, triggering second samples in affected groups. A reviewer-to-group mismatch was corrected and re-reviewed; this is included in the pipeline duration. No prototypes or fields were claimed.",
+  "next_step": "Keep the <=35-line, <=30-load/store pool while it remains productive. Dispatch one independent reviewer per producer batch as soon as its file appears, verify address coverage before applying, and track full QA throughput against the historical 667 targets/hour Wave96 baseline."
+}
