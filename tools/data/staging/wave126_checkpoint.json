@@ -1,0 +1,41 @@
+{
+  "wave": 126,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T22:36:19.451871Z",
+  "assigned_targets": 50,
+  "producer_proposed_names_before_qa": 36,
+  "accepted_names_after_qa": 36,
+  "names_recovered_from_sampled_blanks": 0,
+  "proposed_names_rejected": 0,
+  "review_verdicts": {
+    "confirmed": 34,
+    "needs_more_evidence": 14,
+    "corrected": 2
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 44,
+  "automatic_blank_carry_through": 6,
+  "annotation_rows_after_merge": 12986,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "eligible_candidates": 114,
+  "selected_rank_range": [
+    443,
+    995
+  ],
+  "body_line_limit": 120,
+  "max_lifted_loads_plus_stores": 140,
+  "minimum_semantic_callees": 1,
+  "selection_order": "body_lines + lifted_ops/3 ascending",
+  "avg_selected_body_lines": 72.3,
+  "avg_selected_lifted_ops": 21.9,
+  "producer_window_seconds": 230.15,
+  "producer_targets_per_hour": 782.1,
+  "pipeline_through_qa_seconds": 393.04,
+  "pipeline_targets_per_hour": 458.0,
+  "accepted_names_per_hour": 329.7,
+  "workflow_note": "Ten Luna-low producers handled five functions each, greedily balanced by effort. Independent QA checked every proposed name and one blank sample per group; 34 names were confirmed, 2 corrected, and 14 rows remained unnamed including conservative automatic carry-through. No prototypes or fields were proposed. Producer timing ends at the final staged file; pipeline timing ends at final QA partial and excludes merge/index/publish.",
+  "next_step": "Compare complexity-first throughput to rank-first Wave125. Keep the ordering that yields better accepted names per hour; the remaining <=120-line pool was 114 candidates before this wave."
+}
