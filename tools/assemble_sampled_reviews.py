@@ -41,7 +41,11 @@ def main() -> None:
     parser.add_argument("--output", required=True, help="complete review JSONL basename to write in staging")
     parser.add_argument(
         "--minimum-blank-samples", type=int, default=1,
-        help="minimum independently reviewed blank proposals (default: 1; use 2 when the producer proposed no names)",
+        help="minimum independently reviewed blank proposals (default: 1; can force an extra sample)",
+    )
+    parser.add_argument(
+        "--adaptive-second-sample", action="store_true",
+        help="require a second blank sample if the first finds a name in an all-blank batch",
     )
     args = parser.parse_args()
 
@@ -85,7 +89,15 @@ def main() -> None:
         raise SystemExit(f"Every proposed name must be reviewed; missing={sorted(missing_names)}")
     blank_addresses = set(by_address) - named
     sampled_blanks = blank_addresses & reviewed.keys()
-    required_samples = min(len(blank_addresses), args.minimum_blank_samples)
+    required_samples = max(1, args.minimum_blank_samples) if blank_addresses else 0
+    missed_name_found = any(
+        str(reviewed[address].get("reviewed_name", "")).strip()
+        and reviewed[address].get("verdict") in {"confirmed", "corrected"}
+        for address in sampled_blanks
+    )
+    if args.adaptive_second_sample and not named and missed_name_found:
+        required_samples = max(required_samples, 2)
+    required_samples = min(len(blank_addresses), required_samples)
     if len(sampled_blanks) < required_samples:
         raise SystemExit(
             f"Need at least {required_samples} independently reviewed blank proposals; "

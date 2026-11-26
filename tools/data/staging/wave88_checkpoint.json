@@ -1,0 +1,21 @@
+{
+  "wave": 88,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T04:22:39.347757Z",
+  "assigned_targets": 50,
+  "proposed_names_before_qa": 24,
+  "accepted_names_after_qa": 24,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 36,
+  "automatic_blank_carry_through": 14,
+  "annotation_rows_after_merge": 12083,
+  "pipeline_wall_seconds": 263.988,
+  "producer_wall_seconds": 132.201,
+  "pipeline_targets_per_hour": 681.8,
+  "pipeline_accepted_names_per_hour": 327.3,
+  "inspection_reduction_vs_full_qa_percent": 28.0,
+  "blank_sample_findings": 0,
+  "adaptive_blank_sampling_note": "Wave88 forced two blank samples in four all-blank batches; all eight samples remained unnamed. Future waves use one initial sample and a second only if the first sample finds a name.",
+  "next_step": "Prepare Wave89; launch 10 low-effort producers and dispatch QA per completed batch. Use the adaptive second-sample rule for batches with no proposed names."
+}
