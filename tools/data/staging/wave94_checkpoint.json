@@ -1,0 +1,20 @@
+{
+  "wave": 94,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T05:36:09.364Z",
+  "assigned_targets": 50,
+  "accepted_names_after_qa": 48,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12317,
+  "producer_window_seconds": 316.8,
+  "producer_targets_per_hour": 568.1,
+  "pipeline_wall_seconds": 596.2,
+  "pipeline_targets_per_hour": 301.9,
+  "pipeline_accepted_names_per_hour": 289.9,
+  "inspection_reduction_vs_full_qa_percent": 0.0,
+  "workflow_note": "Wave94 used the <=25-line, <=30-load/store short-body filter and was started before Wave93 indexing/publishing completed. All 50 targets received direct body/caller QA; 48 names survived. Producer stage exceeded 500 targets/hour, but full rate through index refresh remains below 500/hour. No token meter was available.",
+  "next_step": "Continue disjoint short-body waves in an overlapping pipeline. Keep serial merges and verified labels; measure steady-state throughput across waves."
+}
