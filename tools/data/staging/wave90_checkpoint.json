@@ -1,0 +1,22 @@
+{
+  "wave": 90,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T04:48:03Z",
+  "assigned_targets": 50,
+  "proposed_names_after_qa": 26,
+  "accepted_names_after_qa": 26,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 36,
+  "automatic_blank_carry_through": 14,
+  "annotation_rows_after_merge": 12137,
+  "producer_wall_seconds": 207.69,
+  "producer_targets_per_hour": 866.7,
+  "pipeline_wall_seconds": 869.4,
+  "pipeline_targets_per_hour": 207.0,
+  "pipeline_accepted_names_per_hour": 107.7,
+  "inspection_reduction_vs_full_qa_percent": 28.0,
+  "adaptive_second_samples": 3,
+  "throughput_note": "The 10 producers staged all 50 targets within 207.7 seconds (producer window). Full end-to-end time was 14m29s because QA completion/manual finish lagged; the end-to-end rate is the comparable conservative pipeline metric. No model-token metering was available.",
+  "next_step": "Continue the full decomp workflow with low-effort bounded producers, event-driven QA, and adaptive second blank sampling; merge serially after QA."
+}
