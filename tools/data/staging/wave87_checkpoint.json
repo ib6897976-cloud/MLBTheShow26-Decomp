@@ -1,0 +1,102 @@
+{
+  "wave": 87,
+  "status": "producer_staging_complete_qa_pending",
+  "updated_at": "2026-11-26T03:56:41.636245Z",
+  "assigned_targets": 50,
+  "producer_staged_targets": 50,
+  "proposed_names": 23,
+  "reviewed_targets": 0,
+  "annotations_merged": 0,
+  "qa_started_batches": [
+    1,
+    2,
+    3
+  ],
+  "qa_batches_ended_at_usage_limit": [
+    1,
+    2,
+    3
+  ],
+  "qa_batches_not_started": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "next_step": "After account usage is available, resume independent QA: all producer names plus one deterministic blank per batch. Assemble sampled reviews, apply reviewer corrections, merge serially, refresh indexes and dashboard, then publish.",
+  "batches": [
+    {
+      "agent": "wave87_01",
+      "status": "staged",
+      "rows": 5,
+      "names": 2,
+      "duration_seconds": 75.4
+    },
+    {
+      "agent": "wave87_02",
+      "status": "staged",
+      "rows": 5,
+      "names": 1,
+      "duration_seconds": 80.7
+    },
+    {
+      "agent": "wave87_03",
+      "status": "staged",
+      "rows": 5,
+      "names": 4,
+      "duration_seconds": 92.1
+    },
+    {
+      "agent": "wave87_04",
+      "status": "staged",
+      "rows": 5,
+      "names": 5,
+      "duration_seconds": 138.3
+    },
+    {
+      "agent": "wave87_05",
+      "status": "staged",
+      "rows": 5,
+      "names": 1,
+      "duration_seconds": 95.4
+    },
+    {
+      "agent": "wave87_06",
+      "status": "staged",
+      "rows": 5,
+      "names": 3,
+      "duration_seconds": 121.2
+    },
+    {
+      "agent": "wave87_07",
+      "status": "staged",
+      "rows": 5,
+      "names": 3,
+      "duration_seconds": 97.1
+    },
+    {
+      "agent": "wave87_08",
+      "status": "staged",
+      "rows": 5,
+      "names": 0,
+      "duration_seconds": 90.8
+    },
+    {
+      "agent": "wave87_09",
+      "status": "staged",
+      "rows": 5,
+      "names": 4,
+      "duration_seconds": 103.5
+    },
+    {
+      "agent": "wave87_10",
+      "status": "staged",
+      "rows": 5,
+      "names": 0,
+      "duration_seconds": 95.1
+    }
+  ]
+}
