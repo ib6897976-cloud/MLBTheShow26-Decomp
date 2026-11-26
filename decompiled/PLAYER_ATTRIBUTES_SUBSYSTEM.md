@@ -270,6 +270,8 @@ filtered maximum is zero. This partial
 layout is represented by `AttributeRecordCandidate` in the recovered header;
 the recovered structure now names fields supported by exact NSO keys, while the remaining byte semantics and full source-level identity remain unresolved.
 
+The byte-accessor record has an observed extent of `0x4e` bytes. Two rows previously grouped with it are accesses on a different subject-data pointer: the word at subject `+0x70` and signed category byte at subject `+0xa2` belong to `SubjectAttributeDataCandidate`. The category byte is explicitly sign-extended before selector arithmetic (`main_0052.c`, `f_70006ad360`, lines 24477–24485). The field table now keeps these layouts separate.
+
 The fallback for the `0x3a` candidate group is independently implemented by
 `attribute_record_validated_max_3c_41_get` (`0x700183bf50`): it returns the
 maximum of unsigned bytes `+0x3c..+0x41` whose matching `+0x48..+0x4d` byte is
