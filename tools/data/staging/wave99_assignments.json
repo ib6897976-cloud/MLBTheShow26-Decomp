@@ -1,0 +1,622 @@
+{
+  "wave": 99,
+  "method": "Explicit GPT-6 Luna low effort override with compact prebuilt evidence packets; <=25 body lines, <=30 combined loads/stores, >=1 accepted semantic callee. Ten workers x five targets, balanced. Concise name-only proposals; independent review of each name; one serial merge/index refresh.",
+  "excluded_prior_targets": 14003,
+  "selection_constraints": {
+    "max_body_lines": 25,
+    "max_lifted_loads_plus_stores": 30,
+    "minimum_semantic_callees": 1
+  },
+  "assignments": [
+    {
+      "agent": "wave99_01",
+      "targets": [
+        {
+          "rank": 3861,
+          "address": "0x7000d8a77c",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3869,
+          "address": "0x7000e2c0d0",
+          "estimate": 48,
+          "semantic_callees": "context_status_id_0x48_is_positive",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 11,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3871,
+          "address": "0x7000e2ef50",
+          "estimate": 44,
+          "semantic_callees": "initialize_frontend_dialog_assets",
+          "rodata_strings": "",
+          "evidence_summary": "3 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3888,
+          "address": "0x700186c3a4",
+          "estimate": 24,
+          "semantic_callees": "map_integer_to_float_curve",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 0 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 6,
+          "semantic_callee_count": 1,
+          "lifted_ops": 0
+        },
+        {
+          "rank": 3892,
+          "address": "0x7001665e08",
+          "estimate": 96,
+          "semantic_callees": "sampled_flight_segment_interpolate",
+          "rodata_strings": "",
+          "evidence_summary": "2 direct callees; 0 static dispatch targets; 7 lifted loads; 5 lifted stores; 0 candidate rodata strings",
+          "body_lines": 21,
+          "semantic_callee_count": 1,
+          "lifted_ops": 12
+        }
+      ],
+      "estimated_work": 268
+    },
+    {
+      "agent": "wave99_02",
+      "targets": [
+        {
+          "rank": 3844,
+          "address": "0x7000cb8f44",
+          "estimate": 72,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "2 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 17,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3858,
+          "address": "0x7000d8a6a4",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3860,
+          "address": "0x7000d8a748",
+          "estimate": 44,
+          "semantic_callees": "context_status_ids_1_and_2_in_0x87_0x99",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3864,
+          "address": "0x7000dad454",
+          "estimate": 48,
+          "semantic_callees": "attribute_context_status_value_is_8",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 11,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3883,
+          "address": "0x7000200198",
+          "estimate": 24,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 0 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 6,
+          "semantic_callee_count": 1,
+          "lifted_ops": 0
+        }
+      ],
+      "estimated_work": 244
+    },
+    {
+      "agent": "wave99_03",
+      "targets": [
+        {
+          "rank": 3841,
+          "address": "0x7000c8484c",
+          "estimate": 56,
+          "semantic_callees": "initialize_global_status_table_if_selector_0x13_nonzero",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3845,
+          "address": "0x7000cbf398",
+          "estimate": 44,
+          "semantic_callees": "adjust_attribute_candidate_values",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3846,
+          "address": "0x7000cc2990",
+          "estimate": 52,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "2 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 12,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3851,
+          "address": "0x7000cf2e6c",
+          "estimate": 64,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 15,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3875,
+          "address": "0x7000f2a8ec",
+          "estimate": 44,
+          "semantic_callees": "copy_bytes_or_reset_buffer",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        }
+      ],
+      "estimated_work": 260
+    },
+    {
+      "agent": "wave99_04",
+      "targets": [
+        {
+          "rank": 3847,
+          "address": "0x7000ce5a94",
+          "estimate": 44,
+          "semantic_callees": "initialize_context_record_fields",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3852,
+          "address": "0x7000cfb994",
+          "estimate": 52,
+          "semantic_callees": "get_attribute_context_property_27_clamped_to_30",
+          "rodata_strings": "",
+          "evidence_summary": "2 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 12,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3856,
+          "address": "0x7000d8a664",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3865,
+          "address": "0x7000db5b4c",
+          "estimate": 64,
+          "semantic_callees": "compute_curved_vector_magnitude",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 15,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3878,
+          "address": "0x7000f2c9d8",
+          "estimate": 44,
+          "semantic_callees": "attribute_context_status_equals_6",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        }
+      ],
+      "estimated_work": 260
+    },
+    {
+      "agent": "wave99_05",
+      "targets": [
+        {
+          "rank": 3843,
+          "address": "0x7000ca0f8c",
+          "estimate": 44,
+          "semantic_callees": "initialize_global_status_table_if_selector_0x13_nonzero",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3857,
+          "address": "0x7000d8a684",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3873,
+          "address": "0x7000ee0660",
+          "estimate": 44,
+          "semantic_callees": "attribute_status_slots_1_and_2_are_125_to_128",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3874,
+          "address": "0x7000ef9858",
+          "estimate": 64,
+          "semantic_callees": "compute_curved_vector_magnitude",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 15,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 4155,
+          "address": "0x7001934948",
+          "estimate": 49,
+          "semantic_callees": "linear_remap_clamped",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 1 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 12,
+          "semantic_callee_count": 1,
+          "lifted_ops": 1
+        }
+      ],
+      "estimated_work": 257
+    },
+    {
+      "agent": "wave99_06",
+      "targets": [
+        {
+          "rank": 3840,
+          "address": "0x7000c83b7c",
+          "estimate": 60,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3842,
+          "address": "0x7000c8b124",
+          "estimate": 48,
+          "semantic_callees": "get_context_status_9_if_valid",
+          "rodata_strings": "",
+          "evidence_summary": "2 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 11,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3870,
+          "address": "0x7000e2c0ec",
+          "estimate": 48,
+          "semantic_callees": "context_status_id_0x48_is_positive",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 11,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3876,
+          "address": "0x7000f2ab70",
+          "estimate": 60,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3882,
+          "address": "0x70004e4e58",
+          "estimate": 33,
+          "semantic_callees": "process_update_inning_over_context",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 1 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 8,
+          "semantic_callee_count": 1,
+          "lifted_ops": 1
+        }
+      ],
+      "estimated_work": 249
+    },
+    {
+      "agent": "wave99_07",
+      "targets": [
+        {
+          "rank": 3849,
+          "address": "0x7000ceaf90",
+          "estimate": 48,
+          "semantic_callees": "get_attribute_context_property_27_clamped_to_30",
+          "rodata_strings": "",
+          "evidence_summary": "2 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 11,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3850,
+          "address": "0x7000ceb020",
+          "estimate": 60,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3872,
+          "address": "0x7000eb77c0",
+          "estimate": 44,
+          "semantic_callees": "initialize_rtts_player_creation_attribute_state",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3877,
+          "address": "0x7000f2b9bc",
+          "estimate": 60,
+          "semantic_callees": "get_context_status_9_if_valid",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3884,
+          "address": "0x7000572404",
+          "estimate": 44,
+          "semantic_callees": "build_platform_asset_path",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 0 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 11,
+          "semantic_callee_count": 1,
+          "lifted_ops": 0
+        }
+      ],
+      "estimated_work": 256
+    },
+    {
+      "agent": "wave99_08",
+      "targets": [
+        {
+          "rank": 3853,
+          "address": "0x7000d06190",
+          "estimate": 60,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3859,
+          "address": "0x7000d8a730",
+          "estimate": 44,
+          "semantic_callees": "attribute_status_slots_1_and_2_are_125_to_128",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3880,
+          "address": "0x70010c2814",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3881,
+          "address": "0x70003d2c84",
+          "estimate": 57,
+          "semantic_callees": "load_pa_music_boost_audio",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 1 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 1
+        },
+        {
+          "rank": 3887,
+          "address": "0x7000eb57c0",
+          "estimate": 32,
+          "semantic_callees": "initialize_end_game_pitcher_records",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 0 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 8,
+          "semantic_callee_count": 1,
+          "lifted_ops": 0
+        }
+      ],
+      "estimated_work": 249
+    },
+    {
+      "agent": "wave99_09",
+      "targets": [
+        {
+          "rank": 3838,
+          "address": "0x7000c838b8",
+          "estimate": 56,
+          "semantic_callees": "evaluate_attribute_context_status_predicate",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3848,
+          "address": "0x7000cea8f0",
+          "estimate": 44,
+          "semantic_callees": "populate_schedule_attribute_values",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3855,
+          "address": "0x7000d8a604",
+          "estimate": 60,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3862,
+          "address": "0x7000d8a79c",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3885,
+          "address": "0x70006679d0",
+          "estimate": 32,
+          "semantic_callees": "initialize_global_record_storage_block",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 0 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 8,
+          "semantic_callee_count": 1,
+          "lifted_ops": 0
+        }
+      ],
+      "estimated_work": 248
+    },
+    {
+      "agent": "wave99_10",
+      "targets": [
+        {
+          "rank": 3839,
+          "address": "0x7000c83b5c",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_is_2_or_3",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3854,
+          "address": "0x7000d09ed8",
+          "estimate": 44,
+          "semantic_callees": "attribute_context_status_is_2_or_3",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 10,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3863,
+          "address": "0x7000d8a7d4",
+          "estimate": 60,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 14,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3879,
+          "address": "0x7000f553f4",
+          "estimate": 56,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 2 lifted loads; 2 lifted stores; 0 candidate rodata strings",
+          "body_lines": 13,
+          "semantic_callee_count": 1,
+          "lifted_ops": 4
+        },
+        {
+          "rank": 3886,
+          "address": "0x7000c7e740",
+          "estimate": 32,
+          "semantic_callees": "attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "1 direct callees; 0 static dispatch targets; 0 lifted loads; 0 lifted stores; 0 candidate rodata strings",
+          "body_lines": 8,
+          "semantic_callee_count": 1,
+          "lifted_ops": 0
+        }
+      ],
+      "estimated_work": 248
+    }
+  ]
+}
