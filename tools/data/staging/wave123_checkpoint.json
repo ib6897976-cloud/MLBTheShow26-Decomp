@@ -1,0 +1,38 @@
+{
+  "wave": 123,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T21:58:05.787877Z",
+  "assigned_targets": 50,
+  "producer_proposed_names_before_qa": 38,
+  "accepted_names_after_qa": 38,
+  "names_recovered_from_sampled_blanks": 0,
+  "proposed_names_rejected": 0,
+  "review_verdicts": {
+    "confirmed": 36,
+    "needs_more_evidence": 12,
+    "corrected": 2
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 50,
+  "automatic_blank_carry_through": 0,
+  "annotation_rows_after_merge": 12863,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "eligible_candidates": 355,
+  "selected_rank_range": [
+    1,
+    159
+  ],
+  "minimum_indexed_callers": 1,
+  "minimum_semantic_callees": 2,
+  "max_lifted_loads_plus_stores": 180,
+  "producer_window_seconds": 237.32,
+  "producer_targets_per_hour": 758.5,
+  "pipeline_through_qa_seconds": 457.34,
+  "pipeline_targets_per_hour": 393.6,
+  "accepted_names_per_hour": 299.1,
+  "workflow_note": "Ten Luna-low producers reviewed full bodies and indexed callers to connect subsystem paths; ten independent QA agents checked all proposed names and one deterministic blank per group. QA confirmed 36 labels and corrected 2; 12 functions remain unnamed. Caller-anchored body work was substantially more expensive than the <=30-line leaf-wrapper lane. Producer rate ends at last producer file; end-to-end rate ends at last QA partial, excluding merge/index/publish.",
+  "next_step": "For throughput, return to the short-body candidate lane where possible and use deterministic mechanically validated fast lanes for exact no-op/tail-forward wrappers; reserve caller-anchored deep reads for subsystem-map batches."
+}
