@@ -1,0 +1,338 @@
+{
+  "wave": 107,
+  "method": "Second sequential slice of the remaining candidates from Wave106 local screen. Same <=70-line, <=40 loads/stores, >=1 known callee filter; exclude Wave106 targets now annotated. Five Luna-low producers x ten targets; pipeline one QA worker per completed batch.",
+  "selection_constraints": {
+    "max_body_lines": 70,
+    "max_lifted_loads_plus_stores": 40,
+    "minimum_named_direct_callees": 1
+  },
+  "eligible_after_exclusion": 55,
+  "assigned_targets": 50,
+  "assignments": [
+    {
+      "agent": "wave107_01",
+      "targets": [
+        {
+          "address": "0x70006c075c",
+          "estimate": 102,
+          "body_lines": 70,
+          "lifted_ops": 32
+        },
+        {
+          "address": "0x7000f35684",
+          "estimate": 95,
+          "body_lines": 64,
+          "lifted_ops": 31
+        },
+        {
+          "address": "0x7001130f50",
+          "estimate": 93,
+          "body_lines": 67,
+          "lifted_ops": 26
+        },
+        {
+          "address": "0x7000febee0",
+          "estimate": 89,
+          "body_lines": 66,
+          "lifted_ops": 23
+        },
+        {
+          "address": "0x7000ede304",
+          "estimate": 87,
+          "body_lines": 67,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7000dcf7d4",
+          "estimate": 86,
+          "body_lines": 66,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x700141ec50",
+          "estimate": 84,
+          "body_lines": 62,
+          "lifted_ops": 22
+        },
+        {
+          "address": "0x7000ca8860",
+          "estimate": 80,
+          "body_lines": 64,
+          "lifted_ops": 16
+        },
+        {
+          "address": "0x70010e9edc",
+          "estimate": 77,
+          "body_lines": 64,
+          "lifted_ops": 13
+        },
+        {
+          "address": "0x700076c850",
+          "estimate": 75,
+          "body_lines": 63,
+          "lifted_ops": 12
+        }
+      ]
+    },
+    {
+      "agent": "wave107_02",
+      "targets": [
+        {
+          "address": "0x70006c0948",
+          "estimate": 102,
+          "body_lines": 70,
+          "lifted_ops": 32
+        },
+        {
+          "address": "0x700103dab0",
+          "estimate": 95,
+          "body_lines": 65,
+          "lifted_ops": 30
+        },
+        {
+          "address": "0x70010fd774",
+          "estimate": 92,
+          "body_lines": 69,
+          "lifted_ops": 23
+        },
+        {
+          "address": "0x7000c7feac",
+          "estimate": 89,
+          "body_lines": 69,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x700103f488",
+          "estimate": 89,
+          "body_lines": 66,
+          "lifted_ops": 23
+        },
+        {
+          "address": "0x7001039778",
+          "estimate": 86,
+          "body_lines": 66,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7001118764",
+          "estimate": 82,
+          "body_lines": 62,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x70007d3ad0",
+          "estimate": 80,
+          "body_lines": 68,
+          "lifted_ops": 12
+        },
+        {
+          "address": "0x7000cb05c4",
+          "estimate": 78,
+          "body_lines": 69,
+          "lifted_ops": 9
+        },
+        {
+          "address": "0x7000c00bc8",
+          "estimate": 75,
+          "body_lines": 53,
+          "lifted_ops": 22
+        }
+      ]
+    },
+    {
+      "agent": "wave107_03",
+      "targets": [
+        {
+          "address": "0x70006c0854",
+          "estimate": 101,
+          "body_lines": 69,
+          "lifted_ops": 32
+        },
+        {
+          "address": "0x7000658080",
+          "estimate": 96,
+          "body_lines": 70,
+          "lifted_ops": 26
+        },
+        {
+          "address": "0x70007034f0",
+          "estimate": 91,
+          "body_lines": 68,
+          "lifted_ops": 23
+        },
+        {
+          "address": "0x7001a25770",
+          "estimate": 91,
+          "body_lines": 69,
+          "lifted_ops": 22
+        },
+        {
+          "address": "0x700189fbc4",
+          "estimate": 87,
+          "body_lines": 63,
+          "lifted_ops": 24
+        },
+        {
+          "address": "0x7000f995a8",
+          "estimate": 86,
+          "body_lines": 66,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7000ceb4e8",
+          "estimate": 83,
+          "body_lines": 64,
+          "lifted_ops": 19
+        },
+        {
+          "address": "0x7000ad4dbc",
+          "estimate": 80,
+          "body_lines": 69,
+          "lifted_ops": 11
+        },
+        {
+          "address": "0x7000d05fdc",
+          "estimate": 78,
+          "body_lines": 58,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7000d1cc50",
+          "estimate": 75,
+          "body_lines": 52,
+          "lifted_ops": 23
+        }
+      ]
+    },
+    {
+      "agent": "wave107_04",
+      "targets": [
+        {
+          "address": "0x70006c0a40",
+          "estimate": 101,
+          "body_lines": 69,
+          "lifted_ops": 32
+        },
+        {
+          "address": "0x7000ce5fd8",
+          "estimate": 95,
+          "body_lines": 69,
+          "lifted_ops": 26
+        },
+        {
+          "address": "0x700091c8cc",
+          "estimate": 93,
+          "body_lines": 64,
+          "lifted_ops": 29
+        },
+        {
+          "address": "0x7000d060a8",
+          "estimate": 89,
+          "body_lines": 66,
+          "lifted_ops": 23
+        },
+        {
+          "address": "0x700078bc08",
+          "estimate": 88,
+          "body_lines": 68,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7000fe6c18",
+          "estimate": 86,
+          "body_lines": 66,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7000d09ef0",
+          "estimate": 82,
+          "body_lines": 62,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x70007bf560",
+          "estimate": 80,
+          "body_lines": 69,
+          "lifted_ops": 11
+        },
+        {
+          "address": "0x70010c4a50",
+          "estimate": 79,
+          "body_lines": 70,
+          "lifted_ops": 9
+        },
+        {
+          "address": "0x70006d6a50",
+          "estimate": 73,
+          "body_lines": 55,
+          "lifted_ops": 18
+        }
+      ]
+    },
+    {
+      "agent": "wave107_05",
+      "targets": [
+        {
+          "address": "0x7000dce510",
+          "estimate": 97,
+          "body_lines": 65,
+          "lifted_ops": 32
+        },
+        {
+          "address": "0x70000e664c",
+          "estimate": 96,
+          "body_lines": 63,
+          "lifted_ops": 33
+        },
+        {
+          "address": "0x70004ff734",
+          "estimate": 94,
+          "body_lines": 64,
+          "lifted_ops": 30
+        },
+        {
+          "address": "0x70007c3934",
+          "estimate": 91,
+          "body_lines": 67,
+          "lifted_ops": 24
+        },
+        {
+          "address": "0x7000cf5f60",
+          "estimate": 87,
+          "body_lines": 66,
+          "lifted_ops": 21
+        },
+        {
+          "address": "0x7000bfe138",
+          "estimate": 86,
+          "body_lines": 67,
+          "lifted_ops": 19
+        },
+        {
+          "address": "0x7001083ebc",
+          "estimate": 86,
+          "body_lines": 69,
+          "lifted_ops": 17
+        },
+        {
+          "address": "0x7001121604",
+          "estimate": 80,
+          "body_lines": 63,
+          "lifted_ops": 17
+        },
+        {
+          "address": "0x700047f3e0",
+          "estimate": 76,
+          "body_lines": 65,
+          "lifted_ops": 11
+        },
+        {
+          "address": "0x70007b7750",
+          "estimate": 73,
+          "body_lines": 63,
+          "lifted_ops": 10
+        }
+      ]
+    }
+  ]
+}

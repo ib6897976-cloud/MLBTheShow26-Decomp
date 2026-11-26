@@ -1,0 +1,10 @@
+{"module":"main","address":"0x700106fd4c","semantic_name":"validate_player_attribute_edit_state","confidence":"medium","evidence":"decompiled/main/main_0120.c:18704-18772; caller f_700106d4c4 at 16568"}
+{"module":"main","address":"0x7000cead20","semantic_name":"validate_context_record_and_status","confidence":"medium","evidence":"decompiled/main/main_0088.c:42734-42803; "}
+{"module":"main","address":"0x7000ca7c5c","semantic_name":"reset_attribute_context_record_selection_state","confidence":"medium","evidence":"decompiled/main/main_0087.c:17477-17531; caller f_7000ca782c at 17185"}
+{"module":"main","address":"0x7000710710","semantic_name":"attribute_context_matches_status_with_fallback","confidence":"medium","evidence":"decompiled/main/main_0054.c:34122-34186; caller f_70007105f0 at 34048"}
+{"module":"main","address":"0x700111883c","semantic_name":"update_attribute_record_metric_difference","confidence":"medium","evidence":"decompiled/main/main_0125.c:5213-5274; "}
+{"module":"main","address":"0x70010b0a48","semantic_name":"set_attribute_record_status_code","confidence":"medium","evidence":"decompiled/main/main_0121.c:43900-43969; "}
+{"module":"main","address":"0x7001040230","semantic_name":"classify_player_attribute_value_range","confidence":"medium","evidence":"decompiled/main/main_0119.c:16443-16505; caller populate_player_attribute_values at 33005"}
+{"module":"main","address":"0x7000c8d4ac","semantic_name":"initialize_attribute_context_properties","confidence":"medium","evidence":"decompiled/main/main_0086.c:39881-39947; caller f_7000c8d3f0 at 39830"}
+{"module":"main","address":"0x7000f9f008","semantic_name":"classify_player_attribute_value_range_variant","confidence":"medium","evidence":"decompiled/main/main_0112.c:39138-39202; caller f_7000f67148 at 29949"}
+{"module":"main","address":"0x7000fec598","semantic_name":"classify_player_attribute_value_range_compact","confidence":"medium","evidence":"decompiled/main/main_0116.c:15320-15384; caller f_7000fafaf0 at 6770"}

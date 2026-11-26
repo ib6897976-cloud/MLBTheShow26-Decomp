@@ -1,0 +1,38 @@
+{
+  "wave": 106,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T08:33:35.638Z",
+  "subagent_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "selection_method": "Local screen of the top 1,000 ranked unannotated targets; selected <=70-line bodies with <=40 combined loads/stores and at least one understood direct callee. Five producers x ten targets; reviewers launched as producer files became available, overlapping QA with remaining production.",
+  "screened_ranked_functions": 1000,
+  "eligible_after_local_filter": 84,
+  "assigned_targets": 50,
+  "unique_targets": 50,
+  "proposed_names_before_qa": 29,
+  "accepted_names_after_qa": 29,
+  "review_verdicts": {
+    "confirmed": 28,
+    "corrected": 1,
+    "needs_more_evidence": 21
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_rows": 32,
+  "automatic_blank_carry_through": 18,
+  "annotation_rows_after_merge": 12636,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "producer_window_seconds": 115.98,
+  "producer_targets_per_hour": 1552.0,
+  "qa_pipeline_seconds": 281.29,
+  "qa_pipeline_targets_per_hour": 639.9,
+  "accepted_names_per_hour_through_qa": 371.2,
+  "notes": [
+    "The QA correction changed a broad player attribute curve name to compute_player_contextual_attribute_curve_value.",
+    "All 29 retained names were independently reviewed; the other 21 targets remain unnamed.",
+    "Review ran in parallel with production. This is one wave; rate varies by candidate complexity.",
+    "Token savings cannot be quantified; Luna low was explicitly selected."
+  ]
+}

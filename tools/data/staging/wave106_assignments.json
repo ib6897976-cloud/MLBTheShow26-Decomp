@@ -1,0 +1,389 @@
+{
+  "wave": 106,
+  "method": "Local filter from top 1,000 current ranked unannotated functions; <=70 lifted body lines, <=40 combined loads/stores, at least one already-understood direct callee. Select top 50 by current rank and balance five Luna-low producers x ten targets. Compact 70-line evidence packets; names only, no field/prototype claims. Pipeline one reviewer per batch as producers finish.",
+  "screened_ranked_functions": 1000,
+  "eligible_after_local_filter": 84,
+  "assigned_targets": 50,
+  "selection": {
+    "max_body_lines": 70,
+    "max_lifted_loads_plus_stores": 40,
+    "minimum_named_direct_callees": 1
+  },
+  "assignments": [
+    {
+      "agent": "wave106_01",
+      "targets": [
+        {
+          "address": "0x700106fd4c",
+          "rank": 715,
+          "estimate": 102,
+          "body_lines": 69,
+          "lifted_ops": 33
+        },
+        {
+          "address": "0x7000cead20",
+          "rank": 241,
+          "estimate": 91,
+          "body_lines": 70,
+          "lifted_ops": 21
+        },
+        {
+          "address": "0x7000ca7c5c",
+          "rank": 703,
+          "estimate": 89,
+          "body_lines": 55,
+          "lifted_ops": 34
+        },
+        {
+          "address": "0x7000710710",
+          "rank": 642,
+          "estimate": 84,
+          "body_lines": 65,
+          "lifted_ops": 19
+        },
+        {
+          "address": "0x700111883c",
+          "rank": 243,
+          "estimate": 82,
+          "body_lines": 62,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x70010b0a48",
+          "rank": 253,
+          "estimate": 79,
+          "body_lines": 70,
+          "lifted_ops": 9
+        },
+        {
+          "address": "0x7001040230",
+          "rank": 266,
+          "estimate": 79,
+          "body_lines": 63,
+          "lifted_ops": 16
+        },
+        {
+          "address": "0x7000c8d4ac",
+          "rank": 826,
+          "estimate": 77,
+          "body_lines": 67,
+          "lifted_ops": 10
+        },
+        {
+          "address": "0x7000f9f008",
+          "rank": 285,
+          "estimate": 72,
+          "body_lines": 65,
+          "lifted_ops": 7
+        },
+        {
+          "address": "0x7000fec598",
+          "rank": 432,
+          "estimate": 72,
+          "body_lines": 65,
+          "lifted_ops": 7
+        }
+      ]
+    },
+    {
+      "agent": "wave106_02",
+      "targets": [
+        {
+          "address": "0x7001071390",
+          "rank": 93,
+          "estimate": 98,
+          "body_lines": 68,
+          "lifted_ops": 30
+        },
+        {
+          "address": "0x7000f29e88",
+          "rank": 744,
+          "estimate": 93,
+          "body_lines": 65,
+          "lifted_ops": 28
+        },
+        {
+          "address": "0x700187e560",
+          "rank": 788,
+          "estimate": 90,
+          "body_lines": 70,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x70007b8220",
+          "rank": 244,
+          "estimate": 85,
+          "body_lines": 67,
+          "lifted_ops": 18
+        },
+        {
+          "address": "0x7000670008",
+          "rank": 194,
+          "estimate": 80,
+          "body_lines": 64,
+          "lifted_ops": 16
+        },
+        {
+          "address": "0x7000ca782c",
+          "rank": 249,
+          "estimate": 80,
+          "body_lines": 65,
+          "lifted_ops": 15
+        },
+        {
+          "address": "0x7000fecc90",
+          "rank": 265,
+          "estimate": 79,
+          "body_lines": 63,
+          "lifted_ops": 16
+        },
+        {
+          "address": "0x70010e9fb0",
+          "rank": 251,
+          "estimate": 77,
+          "body_lines": 64,
+          "lifted_ops": 13
+        },
+        {
+          "address": "0x7000f9fad8",
+          "rank": 387,
+          "estimate": 76,
+          "body_lines": 69,
+          "lifted_ops": 7
+        },
+        {
+          "address": "0x7000ac3a40",
+          "rank": 784,
+          "estimate": 70,
+          "body_lines": 50,
+          "lifted_ops": 20
+        }
+      ]
+    },
+    {
+      "agent": "wave106_03",
+      "targets": [
+        {
+          "address": "0x7000dce510",
+          "rank": 430,
+          "estimate": 97,
+          "body_lines": 65,
+          "lifted_ops": 32
+        },
+        {
+          "address": "0x700091c8cc",
+          "rank": 741,
+          "estimate": 93,
+          "body_lines": 64,
+          "lifted_ops": 29
+        },
+        {
+          "address": "0x70007034f0",
+          "rank": 457,
+          "estimate": 91,
+          "body_lines": 68,
+          "lifted_ops": 23
+        },
+        {
+          "address": "0x700141ec50",
+          "rank": 516,
+          "estimate": 84,
+          "body_lines": 62,
+          "lifted_ops": 22
+        },
+        {
+          "address": "0x7001118764",
+          "rank": 242,
+          "estimate": 82,
+          "body_lines": 62,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x70007bf560",
+          "rank": 252,
+          "estimate": 80,
+          "body_lines": 69,
+          "lifted_ops": 11
+        },
+        {
+          "address": "0x70017bcde4",
+          "rank": 680,
+          "estimate": 78,
+          "body_lines": 41,
+          "lifted_ops": 37
+        },
+        {
+          "address": "0x700103f928",
+          "rank": 339,
+          "estimate": 77,
+          "body_lines": 70,
+          "lifted_ops": 7
+        },
+        {
+          "address": "0x70006d6a50",
+          "rank": 793,
+          "estimate": 73,
+          "body_lines": 55,
+          "lifted_ops": 18
+        },
+        {
+          "address": "0x700103fb38",
+          "rank": 433,
+          "estimate": 72,
+          "body_lines": 65,
+          "lifted_ops": 7
+        }
+      ]
+    },
+    {
+      "agent": "wave106_04",
+      "targets": [
+        {
+          "address": "0x7000658080",
+          "rank": 609,
+          "estimate": 96,
+          "body_lines": 70,
+          "lifted_ops": 26
+        },
+        {
+          "address": "0x700103dab0",
+          "rank": 341,
+          "estimate": 95,
+          "body_lines": 65,
+          "lifted_ops": 30
+        },
+        {
+          "address": "0x70010403f0",
+          "rank": 345,
+          "estimate": 89,
+          "body_lines": 67,
+          "lifted_ops": 22
+        },
+        {
+          "address": "0x700078bc08",
+          "rank": 782,
+          "estimate": 88,
+          "body_lines": 68,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7000ca8860",
+          "rank": 248,
+          "estimate": 80,
+          "body_lines": 64,
+          "lifted_ops": 16
+        },
+        {
+          "address": "0x70010c4a50",
+          "rank": 254,
+          "estimate": 79,
+          "body_lines": 70,
+          "lifted_ops": 9
+        },
+        {
+          "address": "0x7000cb05c4",
+          "rank": 830,
+          "estimate": 78,
+          "body_lines": 69,
+          "lifted_ops": 9
+        },
+        {
+          "address": "0x7000fec388",
+          "rank": 359,
+          "estimate": 77,
+          "body_lines": 70,
+          "lifted_ops": 7
+        },
+        {
+          "address": "0x7000e43f40",
+          "rank": 271,
+          "estimate": 72,
+          "body_lines": 65,
+          "lifted_ops": 7
+        },
+        {
+          "address": "0x7000f9eeb8",
+          "rank": 431,
+          "estimate": 72,
+          "body_lines": 65,
+          "lifted_ops": 7
+        }
+      ]
+    },
+    {
+      "agent": "wave106_05",
+      "targets": [
+        {
+          "address": "0x70000e664c",
+          "rank": 832,
+          "estimate": 96,
+          "body_lines": 63,
+          "lifted_ops": 33
+        },
+        {
+          "address": "0x7000f35684",
+          "rank": 580,
+          "estimate": 95,
+          "body_lines": 64,
+          "lifted_ops": 31
+        },
+        {
+          "address": "0x7000fece50",
+          "rank": 369,
+          "estimate": 89,
+          "body_lines": 67,
+          "lifted_ops": 22
+        },
+        {
+          "address": "0x7000ede304",
+          "rank": 787,
+          "estimate": 87,
+          "body_lines": 67,
+          "lifted_ops": 20
+        },
+        {
+          "address": "0x7001121604",
+          "rank": 247,
+          "estimate": 80,
+          "body_lines": 63,
+          "lifted_ops": 17
+        },
+        {
+          "address": "0x7000ad4dbc",
+          "rank": 823,
+          "estimate": 80,
+          "body_lines": 69,
+          "lifted_ops": 11
+        },
+        {
+          "address": "0x70007bdc6c",
+          "rank": 100,
+          "estimate": 77,
+          "body_lines": 65,
+          "lifted_ops": 12
+        },
+        {
+          "address": "0x70010e9edc",
+          "rank": 250,
+          "estimate": 77,
+          "body_lines": 64,
+          "lifted_ops": 13
+        },
+        {
+          "address": "0x700047f3e0",
+          "rank": 229,
+          "estimate": 76,
+          "body_lines": 65,
+          "lifted_ops": 11
+        },
+        {
+          "address": "0x7000c9b4d0",
+          "rank": 835,
+          "estimate": 72,
+          "body_lines": 64,
+          "lifted_ops": 8
+        }
+      ]
+    }
+  ]
+}
