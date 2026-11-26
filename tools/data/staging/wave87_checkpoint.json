@@ -1,0 +1,114 @@
+{
+  "wave": 87,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T04:11:10.055822Z",
+  "assigned_targets": 50,
+  "producer_staged_targets": 50,
+  "proposed_names": 23,
+  "reviewed_targets": 32,
+  "annotations_merged": 25,
+  "qa_started_batches": [
+    1,
+    2,
+    3
+  ],
+  "qa_batches_ended_at_usage_limit": [
+    1,
+    2,
+    3
+  ],
+  "qa_batches_not_started": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "next_step": "Continue with Wave88. Start each reviewer as soon as its producer completes to avoid queueing QA; all semantic names still require review. Keep one deterministic blank sample per batch; Wave87 found two valid names among nine blank samples.",
+  "batches": [
+    {
+      "agent": "wave87_01",
+      "status": "staged",
+      "rows": 5,
+      "names": 2,
+      "duration_seconds": 75.4
+    },
+    {
+      "agent": "wave87_02",
+      "status": "staged",
+      "rows": 5,
+      "names": 1,
+      "duration_seconds": 80.7
+    },
+    {
+      "agent": "wave87_03",
+      "status": "staged",
+      "rows": 5,
+      "names": 4,
+      "duration_seconds": 92.1
+    },
+    {
+      "agent": "wave87_04",
+      "status": "staged",
+      "rows": 5,
+      "names": 5,
+      "duration_seconds": 138.3
+    },
+    {
+      "agent": "wave87_05",
+      "status": "staged",
+      "rows": 5,
+      "names": 1,
+      "duration_seconds": 95.4
+    },
+    {
+      "agent": "wave87_06",
+      "status": "staged",
+      "rows": 5,
+      "names": 3,
+      "duration_seconds": 121.2
+    },
+    {
+      "agent": "wave87_07",
+      "status": "staged",
+      "rows": 5,
+      "names": 3,
+      "duration_seconds": 97.1
+    },
+    {
+      "agent": "wave87_08",
+      "status": "staged",
+      "rows": 5,
+      "names": 0,
+      "duration_seconds": 90.8
+    },
+    {
+      "agent": "wave87_09",
+      "status": "staged",
+      "rows": 5,
+      "names": 4,
+      "duration_seconds": 103.5
+    },
+    {
+      "agent": "wave87_10",
+      "status": "staged",
+      "rows": 5,
+      "names": 0,
+      "duration_seconds": 95.1
+    }
+  ],
+  "proposed_names_before_qa": 23,
+  "independently_inspected_targets": 32,
+  "automatic_blank_carry_through": 18,
+  "accepted_names_after_qa": 25,
+  "blank_samples_corrected_to_names": 2,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "annotation_rows_after_merge": 12059,
+  "producer_wall_seconds": 138.305,
+  "qa_wall_seconds": 510.436,
+  "active_assigned_targets_per_hour": 277.5,
+  "inspection_reduction_vs_full_qa_percent": 36.0
+}

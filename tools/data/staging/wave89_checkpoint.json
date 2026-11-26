@@ -1,0 +1,21 @@
+{
+  "wave": 89,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T04:31:52.172332Z",
+  "assigned_targets": 50,
+  "proposed_names_before_qa": 26,
+  "accepted_names_after_qa": 28,
+  "blank_samples_added_names": 2,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 34,
+  "automatic_blank_carry_through": 16,
+  "annotation_rows_after_merge": 12111,
+  "pipeline_wall_seconds": 395.409,
+  "producer_wall_seconds": 87.574,
+  "pipeline_targets_per_hour": 455.2,
+  "pipeline_accepted_names_per_hour": 254.9,
+  "inspection_reduction_vs_full_qa_percent": 32.0,
+  "adaptive_second_sample": "Triggered in batch04 after the first blank sample revealed a name; the second sample found another supported name.",
+  "next_step": "Continue Wave90 with low-effort producers; dispatch QA immediately. Use one blank sample per batch and one adaptive second blank only after a name is found in an all-blank batch."
+}
