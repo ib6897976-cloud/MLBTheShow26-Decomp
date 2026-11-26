@@ -1,0 +1,32 @@
+{
+  "wave": 100,
+  "model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "method": "Compact evidence packets; broader short-body filter with <=30 lifted lines, <=40 combined loads/stores, and >=1 accepted semantic callee; ten parallel producers x five targets; independent QA of every nonblank plus deterministic blank sampling; serial merge and single index refresh.",
+  "assigned_targets": 50,
+  "unique_targets": 50,
+  "accepted_names": 13,
+  "verdicts": {
+    "confirmed": 12,
+    "corrected": 1,
+    "needs_more_evidence": 37
+  },
+  "candidate_prototypes": 0,
+  "candidate_fields": 0,
+  "annotations_after_merge": 12569,
+  "prototypes_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "function_index_rows": 135060,
+  "inspected_qa_rows": 24,
+  "producer_wall_seconds": 112.52,
+  "qa_wall_seconds": 185.37,
+  "producer_targets_per_hour": 1599.8,
+  "qa_targets_per_hour": 971.0,
+  "accepted_names_per_hour_through_qa": 252.5,
+  "notes": [
+    "Actual Luna-low override was set for all producer and reviewer subagents.",
+    "No token meter was available, so token savings cannot be quantified.",
+    "13/50 names were accepted; the broader candidate window increased throughput but lowered accepted-name yield.",
+    "Blank names remain blank; no prototype or field claims were made."
+  ]
+}
