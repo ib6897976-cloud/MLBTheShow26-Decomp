@@ -1,0 +1,543 @@
+{
+  "wave": 77,
+  "method": "Eight six-function batches from the refreshed queue; rank-ordered candidates with >1,000-line generated bodies deferred; remaining work balanced by lifted-code estimate. Direct full-body/caller evidence required; unsupported names blank; no speculative fields/prototypes; independent QA then serial merge.",
+  "assignments": [
+    {
+      "agent": "wave77_01",
+      "estimated_work": 622,
+      "targets": [
+        {
+          "rank": 18,
+          "address": "0x70019ff2c8",
+          "estimate": 244,
+          "semantic_callees": "load_player_uniform_asset_paths;stadium_lighting_request_dispatch",
+          "rodata_strings": "",
+          "evidence_summary": "11 direct callees; 0 static dispatch targets; 173 lifted loads; 143 lifted stores; 0 candidate rodata strings",
+          "body_lines": 467
+        },
+        {
+          "rank": 3,
+          "address": "0x7000fbb8cc",
+          "estimate": 172,
+          "semantic_callees": "attribute_context_status_value_get;compute_gated_attribute_value;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "59 direct callees; 0 static dispatch targets; 83 lifted loads; 178 lifted stores; 0 candidate rodata strings",
+          "body_lines": 771
+        },
+        {
+          "rank": 19,
+          "address": "0x700186aa90",
+          "estimate": 87,
+          "semantic_callees": "compute_player_attribute_context_value;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "13 direct callees; 0 static dispatch targets; 69 lifted loads; 36 lifted stores; 0 candidate rodata strings",
+          "body_lines": 495
+        },
+        {
+          "rank": 54,
+          "address": "0x7000d52680",
+          "estimate": 63,
+          "semantic_callees": "nested_attribute_provider_get_float;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "8 direct callees; 0 static dispatch targets; 50 lifted loads; 26 lifted stores; 0 candidate rodata strings",
+          "body_lines": 234
+        },
+        {
+          "rank": 49,
+          "address": "0x70000a94e0",
+          "estimate": 32,
+          "semantic_callees": "attribute_context_status_value_get;linear_remap_clamped",
+          "rodata_strings": "",
+          "evidence_summary": "3 direct callees; 0 static dispatch targets; 22 lifted loads; 20 lifted stores; 0 candidate rodata strings",
+          "body_lines": 276
+        },
+        {
+          "rank": 42,
+          "address": "0x700187838c",
+          "estimate": 24,
+          "semantic_callees": "nested_attribute_provider_get_float;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "5 direct callees; 0 static dispatch targets; 20 lifted loads; 9 lifted stores; 0 candidate rodata strings",
+          "body_lines": 122
+        }
+      ]
+    },
+    {
+      "agent": "wave77_02",
+      "estimated_work": 635,
+      "targets": [
+        {
+          "rank": 39,
+          "address": "0x70000f8200",
+          "estimate": 219,
+          "semantic_callees": "sampled_flight_segment_interpolate;update_catch_loco_working_ring_state",
+          "rodata_strings": "",
+          "evidence_summary": "25 direct callees; 0 static dispatch targets; 182 lifted loads; 74 lifted stores; 0 candidate rodata strings",
+          "body_lines": 640
+        },
+        {
+          "rank": 8,
+          "address": "0x700065a980",
+          "estimate": 175,
+          "semantic_callees": "attribute_context_mode_is_two;attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "14 direct callees; 0 static dispatch targets; 128 lifted loads; 95 lifted stores; 0 candidate rodata strings",
+          "body_lines": 408
+        },
+        {
+          "rank": 10,
+          "address": "0x7001869df4",
+          "estimate": 146,
+          "semantic_callees": "attribute_context_status_value_get;linear_remap_clamped",
+          "rodata_strings": "",
+          "evidence_summary": "31 direct callees; 0 static dispatch targets; 134 lifted loads; 24 lifted stores; 0 candidate rodata strings",
+          "body_lines": 561
+        },
+        {
+          "rank": 38,
+          "address": "0x70007218dc",
+          "estimate": 50,
+          "semantic_callees": "attribute_context_status_value_get;populate_record_output_from_attributes",
+          "rodata_strings": "",
+          "evidence_summary": "20 direct callees; 0 static dispatch targets; 38 lifted loads; 24 lifted stores; 0 candidate rodata strings",
+          "body_lines": 245
+        },
+        {
+          "rank": 20,
+          "address": "0x70006cf198",
+          "estimate": 26,
+          "semantic_callees": "attribute_record_value_get;linear_remap_clamped",
+          "rodata_strings": "",
+          "evidence_summary": "6 direct callees; 0 static dispatch targets; 24 lifted loads; 4 lifted stores; 0 candidate rodata strings",
+          "body_lines": 178
+        },
+        {
+          "rank": 32,
+          "address": "0x70002ebec0",
+          "estimate": 19,
+          "semantic_callees": "attribute_record_pointer_or_default;get_owner_attribute_record_value_26_plus_index",
+          "rodata_strings": "",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 16 lifted loads; 7 lifted stores; 0 candidate rodata strings",
+          "body_lines": 80
+        }
+      ]
+    },
+    {
+      "agent": "wave77_03",
+      "estimated_work": 628,
+      "targets": [
+        {
+          "rank": 25,
+          "address": "0x7000fcdbc8",
+          "estimate": 217,
+          "semantic_callees": "attribute_context_status_value_get;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "76 direct callees; 0 static dispatch targets; 122 lifted loads; 191 lifted stores; 0 candidate rodata strings",
+          "body_lines": 703
+        },
+        {
+          "rank": 1,
+          "address": "0x7001009764",
+          "estimate": 180,
+          "semantic_callees": "compute_gated_attribute_five_with_record_offset;compute_gated_attribute_value;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "58 direct callees; 0 static dispatch targets; 92 lifted loads; 177 lifted stores; 0 candidate rodata strings",
+          "body_lines": 707
+        },
+        {
+          "rank": 48,
+          "address": "0x7000735ef0",
+          "estimate": 105,
+          "semantic_callees": "attribute_context_status_value_get;attribute_record_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "28 direct callees; 0 static dispatch targets; 93 lifted loads; 25 lifted stores; 0 candidate rodata strings",
+          "body_lines": 556
+        },
+        {
+          "rank": 24,
+          "address": "0x700079f470",
+          "estimate": 63,
+          "semantic_callees": "attribute_context_status_value_get;attribute_record_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "15 direct callees; 0 static dispatch targets; 39 lifted loads; 49 lifted stores; 0 candidate rodata strings",
+          "body_lines": 230
+        },
+        {
+          "rank": 55,
+          "address": "0x70007055b0",
+          "estimate": 42,
+          "semantic_callees": "attribute_context_status_value_get;float_linear_range_remap_clamped",
+          "rodata_strings": "",
+          "evidence_summary": "12 direct callees; 0 static dispatch targets; 35 lifted loads; 15 lifted stores; 0 candidate rodata strings",
+          "body_lines": 212
+        },
+        {
+          "rank": 46,
+          "address": "0x7000fe8e9c",
+          "estimate": 21,
+          "semantic_callees": "attribute_context_status_value_get;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "3 direct callees; 0 static dispatch targets; 20 lifted loads; 3 lifted stores; 0 candidate rodata strings",
+          "body_lines": 75
+        }
+      ]
+    },
+    {
+      "agent": "wave77_04",
+      "estimated_work": 629,
+      "targets": [
+        {
+          "rank": 26,
+          "address": "0x7000fce658",
+          "estimate": 217,
+          "semantic_callees": "attribute_context_status_value_get;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "76 direct callees; 0 static dispatch targets; 122 lifted loads; 191 lifted stores; 0 candidate rodata strings",
+          "body_lines": 703
+        },
+        {
+          "rank": 2,
+          "address": "0x7000f73988",
+          "estimate": 176,
+          "semantic_callees": "compute_gated_attribute_five_with_record_offset;compute_gated_attribute_value;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "62 direct callees; 0 static dispatch targets; 85 lifted loads; 182 lifted stores; 0 candidate rodata strings",
+          "body_lines": 711
+        },
+        {
+          "rank": 57,
+          "address": "0x7000f0c5f0",
+          "estimate": 155,
+          "semantic_callees": "attribute_context_status_value_get;format_baseball_game_result_summary",
+          "rodata_strings": "",
+          "evidence_summary": "12 direct callees; 0 static dispatch targets; 114 lifted loads; 82 lifted stores; 0 candidate rodata strings",
+          "body_lines": 672
+        },
+        {
+          "rank": 51,
+          "address": "0x7000685780",
+          "estimate": 49,
+          "semantic_callees": "calculate_contextual_attribute_value;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 36 lifted loads; 26 lifted stores; 0 candidate rodata strings",
+          "body_lines": 215
+        },
+        {
+          "rank": 16,
+          "address": "0x7000eded8c",
+          "estimate": 25,
+          "semantic_callees": "attribute_context_status_value_get;nested_attribute_provider_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "10 direct callees; 0 static dispatch targets; 22 lifted loads; 6 lifted stores; 0 candidate rodata strings",
+          "body_lines": 127
+        },
+        {
+          "rank": 27,
+          "address": "0x70006b8048",
+          "estimate": 7,
+          "semantic_callees": "attribute_context_category_in_range;attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "2 direct callees; 0 static dispatch targets; 6 lifted loads; 3 lifted stores; 0 candidate rodata strings",
+          "body_lines": 47
+        }
+      ]
+    },
+    {
+      "agent": "wave77_05",
+      "estimated_work": 635,
+      "targets": [
+        {
+          "rank": 30,
+          "address": "0x700101ec5c",
+          "estimate": 207,
+          "semantic_callees": "attribute_context_status_value_get;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "78 direct callees; 0 static dispatch targets; 114 lifted loads; 187 lifted stores; 0 candidate rodata strings",
+          "body_lines": 687
+        },
+        {
+          "rank": 45,
+          "address": "0x7000f7c938",
+          "estimate": 188,
+          "semantic_callees": "nested_attribute_provider_get_float;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "68 direct callees; 0 static dispatch targets; 102 lifted loads; 173 lifted stores; 0 candidate rodata strings",
+          "body_lines": 652
+        },
+        {
+          "rank": 4,
+          "address": "0x7000b71534",
+          "estimate": 139,
+          "semantic_callees": "validate_home_run_derby_selection",
+          "rodata_strings": "CancelTeamReady",
+          "evidence_summary": "25 direct callees; 0 static dispatch targets; 76 lifted loads; 127 lifted stores; 1 candidate rodata strings",
+          "body_lines": 458
+        },
+        {
+          "rank": 59,
+          "address": "0x70017a6b30",
+          "estimate": 56,
+          "semantic_callees": "process_context_event_state;query_nested_attribute_or_delta",
+          "rodata_strings": "",
+          "evidence_summary": "7 direct callees; 0 static dispatch targets; 44 lifted loads; 24 lifted stores; 0 candidate rodata strings",
+          "body_lines": 197
+        },
+        {
+          "rank": 52,
+          "address": "0x7001610260",
+          "estimate": 26,
+          "semantic_callees": "grow_openssl_buffer_clean;reserve_ssl_packet_buffer_space",
+          "rodata_strings": "",
+          "evidence_summary": "3 direct callees; 0 static dispatch targets; 22 lifted loads; 8 lifted stores; 0 candidate rodata strings",
+          "body_lines": 66
+        },
+        {
+          "rank": 43,
+          "address": "0x7000671fb0",
+          "estimate": 19,
+          "semantic_callees": "attribute_record_value_get;build_attribute_record_candidates",
+          "rodata_strings": "",
+          "evidence_summary": "5 direct callees; 0 static dispatch targets; 11 lifted loads; 17 lifted stores; 0 candidate rodata strings",
+          "body_lines": 80
+        }
+      ]
+    },
+    {
+      "agent": "wave77_06",
+      "estimated_work": 633,
+      "targets": [
+        {
+          "rank": 37,
+          "address": "0x700100b690",
+          "estimate": 207,
+          "semantic_callees": "attribute_context_status_value_get;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "62 direct callees; 0 static dispatch targets; 122 lifted loads; 170 lifted stores; 0 candidate rodata strings",
+          "body_lines": 734
+        },
+        {
+          "rank": 53,
+          "address": "0x700166dfb0",
+          "estimate": 181,
+          "semantic_callees": "linear_remap_clamped;pitch_or_throw_dispatch",
+          "rodata_strings": "",
+          "evidence_summary": "9 direct callees; 0 static dispatch targets; 135 lifted loads; 92 lifted stores; 0 candidate rodata strings",
+          "body_lines": 740
+        },
+        {
+          "rank": 56,
+          "address": "0x700173f390",
+          "estimate": 168,
+          "semantic_callees": "format_generated_resource_key;populate_character_asset_path_set",
+          "rodata_strings": "",
+          "evidence_summary": "6 direct callees; 0 static dispatch targets; 112 lifted loads; 113 lifted stores; 0 candidate rodata strings",
+          "body_lines": 414
+        },
+        {
+          "rank": 21,
+          "address": "0x7001811df0",
+          "estimate": 42,
+          "semantic_callees": "attribute_context_mode_is_two;attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "8 direct callees; 0 static dispatch targets; 31 lifted loads; 22 lifted stores; 0 candidate rodata strings",
+          "body_lines": 265
+        },
+        {
+          "rank": 31,
+          "address": "0x70006db9fc",
+          "estimate": 22,
+          "semantic_callees": "attribute_context_status_value_get;context_selected_records_have_mask_0e",
+          "rodata_strings": "",
+          "evidence_summary": "5 direct callees; 0 static dispatch targets; 20 lifted loads; 4 lifted stores; 0 candidate rodata strings",
+          "body_lines": 64
+        },
+        {
+          "rank": 22,
+          "address": "0x7000ed664c",
+          "estimate": 13,
+          "semantic_callees": "attribute_context_mode_is_two;attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "8 direct callees; 0 static dispatch targets; 11 lifted loads; 4 lifted stores; 0 candidate rodata strings",
+          "body_lines": 89
+        }
+      ]
+    },
+    {
+      "agent": "wave77_07",
+      "estimated_work": 622,
+      "targets": [
+        {
+          "rank": 35,
+          "address": "0x700101f6b0",
+          "estimate": 204,
+          "semantic_callees": "attribute_context_status_value_get;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "75 direct callees; 0 static dispatch targets; 114 lifted loads; 181 lifted stores; 0 candidate rodata strings",
+          "body_lines": 664
+        },
+        {
+          "rank": 47,
+          "address": "0x7000e51cd0",
+          "estimate": 196,
+          "semantic_callees": "attribute_context_status_value_get;attribute_record_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "26 direct callees; 0 static dispatch targets; 145 lifted loads; 102 lifted stores; 0 candidate rodata strings",
+          "body_lines": 896
+        },
+        {
+          "rank": 58,
+          "address": "0x70004102c0",
+          "estimate": 98,
+          "semantic_callees": "initialize_global_attribute_query_state;initialize_rtts_create_player_options",
+          "rodata_strings": "",
+          "evidence_summary": "44 direct callees; 0 static dispatch targets; 77 lifted loads; 43 lifted stores; 0 candidate rodata strings",
+          "body_lines": 439
+        },
+        {
+          "rank": 23,
+          "address": "0x70003a1df8",
+          "estimate": 76,
+          "semantic_callees": "initialize_catch_loco_ring_properties;update_predictive_catch_target_ring",
+          "rodata_strings": "",
+          "evidence_summary": "24 direct callees; 0 static dispatch targets; 65 lifted loads; 23 lifted stores; 0 candidate rodata strings",
+          "body_lines": 366
+        },
+        {
+          "rank": 40,
+          "address": "0x700066c834",
+          "estimate": 27,
+          "semantic_callees": "aggregate_related_attribute_values;nested_attribute_provider_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "4 direct callees; 0 static dispatch targets; 24 lifted loads; 7 lifted stores; 0 candidate rodata strings",
+          "body_lines": 110
+        },
+        {
+          "rank": 33,
+          "address": "0x700103ba58",
+          "estimate": 21,
+          "semantic_callees": "attribute_context_status_value_get;player_attribute_get_float",
+          "rodata_strings": "",
+          "evidence_summary": "3 direct callees; 0 static dispatch targets; 20 lifted loads; 3 lifted stores; 0 candidate rodata strings",
+          "body_lines": 75
+        }
+      ]
+    },
+    {
+      "agent": "wave77_08",
+      "estimated_work": 622,
+      "targets": [
+        {
+          "rank": 50,
+          "address": "0x7000171634",
+          "estimate": 199,
+          "semantic_callees": "process_run_to_stand_animation_segment;sampled_flight_segment_interpolate",
+          "rodata_strings": "",
+          "evidence_summary": "65 direct callees; 0 static dispatch targets; 158 lifted loads; 82 lifted stores; 0 candidate rodata strings",
+          "body_lines": 969
+        },
+        {
+          "rank": 29,
+          "address": "0x7000247318",
+          "estimate": 197,
+          "semantic_callees": "attribute_record_validated_max_3c_41_get;linear_remap_clamped",
+          "rodata_strings": "",
+          "evidence_summary": "15 direct callees; 0 static dispatch targets; 164 lifted loads; 66 lifted stores; 0 candidate rodata strings",
+          "body_lines": 905
+        },
+        {
+          "rank": 44,
+          "address": "0x700040cf30",
+          "estimate": 118,
+          "semantic_callees": "parse_attribute_categories;parse_rtts_category_presets",
+          "rodata_strings": "",
+          "evidence_summary": "5 direct callees; 0 static dispatch targets; 11 lifted loads; 215 lifted stores; 0 candidate rodata strings",
+          "body_lines": 269
+        },
+        {
+          "rank": 13,
+          "address": "0x7000710d60",
+          "estimate": 57,
+          "semantic_callees": "attribute_record_value_get;compute_attribute_rating_value",
+          "rodata_strings": "",
+          "evidence_summary": "10 direct callees; 0 static dispatch targets; 45 lifted loads; 25 lifted stores; 0 candidate rodata strings",
+          "body_lines": 336
+        },
+        {
+          "rank": 11,
+          "address": "0x70018659a8",
+          "estimate": 29,
+          "semantic_callees": "attribute_context_status_value_get;get_nested_attribute_float",
+          "rodata_strings": "",
+          "evidence_summary": "3 direct callees; 0 static dispatch targets; 26 lifted loads; 7 lifted stores; 0 candidate rodata strings",
+          "body_lines": 102
+        },
+        {
+          "rank": 41,
+          "address": "0x700066c4f0",
+          "estimate": 22,
+          "semantic_callees": "attribute_context_mode_is_two;attribute_context_status_value_get",
+          "rodata_strings": "",
+          "evidence_summary": "10 direct callees; 0 static dispatch targets; 15 lifted loads; 14 lifted stores; 0 candidate rodata strings",
+          "body_lines": 132
+        }
+      ]
+    }
+  ],
+  "deferred_oversize": [
+    [
+      "5",
+      "0x7000fb9e00",
+      1411
+    ],
+    [
+      "6",
+      "0x70000f15e4",
+      1529
+    ],
+    [
+      "7",
+      "0x700010bc40",
+      1572
+    ],
+    [
+      "9",
+      "0x7000117700",
+      1520
+    ],
+    [
+      "12",
+      "0x70000f9820",
+      1231
+    ],
+    [
+      "14",
+      "0x700106d4c4",
+      1269
+    ],
+    [
+      "15",
+      "0x7000d5f3ac",
+      1077
+    ],
+    [
+      "17",
+      "0x7000e24700",
+      1313
+    ],
+    [
+      "28",
+      "0x700022430c",
+      1034
+    ],
+    [
+      "34",
+      "0x700165a5b4",
+      1149
+    ],
+    [
+      "36",
+      "0x700031d438",
+      1289
+    ]
+  ]
+}
