@@ -1,0 +1,30 @@
+{
+  "wave": 128,
+  "status": "merged_reviewed_annotations",
+  "updated_at": "2026-11-26T23:02:14.509Z",
+  "assigned_targets": 50,
+  "producer_proposed_names_before_qa": 28,
+  "accepted_names_after_qa": 28,
+  "review_verdicts": {
+    "needs_more_evidence": 22,
+    "corrected": 2,
+    "confirmed": 26
+  },
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "independently_inspected_targets": 37,
+  "automatic_blank_carry_through": 13,
+  "annotation_rows_after_merge": 13047,
+  "prototype_rows_after_merge": 177,
+  "field_rows_after_merge": 885,
+  "indexed_functions": 135060,
+  "eligible_candidates_before_wave": 332,
+  "selected_average_lifted_loads_plus_stores": 11.64,
+  "producer_window_seconds": 562.99,
+  "producer_targets_per_hour": 319.7,
+  "pipeline_through_qa_seconds": 562.9,
+  "pipeline_targets_per_hour": 319.8,
+  "accepted_names_per_hour": 179.1,
+  "workflow_note": "Ten gpt-6-luna-low producers handled five targets each, selected by low lifted loads+stores; all 28 names were independently checked plus one deterministic blank sample in nine groups (37 independent inspections; 13 other blank rows carried through automatically). Reviewer edits to two names and one evidence mapping were applied before serial merge. No prototypes or fields. Timing ends at last producer/review file mtime, excluding merge/index/publish.",
+  "next_step": "Wave128 was slower than Wave127: target throughput fell 26% and accepted-name throughput fell 37%. Change selection to the composite body_lines + lifted_memory_ops/3 score. The refreshed top-3000 pool contains 1,332 eligible candidates; its easiest 50 average 32.1 body lines and 14.0 loads+stores."
+}
