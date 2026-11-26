@@ -33,10 +33,10 @@ review and correction before the serial merge.
 
 For name-only batches (no prototype or field claims), independently review every
 nonblank proposed name and one deterministically selected blank per producer
-batch. Keep other blank rows unnamed automatically; they cannot add an
-annotation. The blank sample checks whether producers leave obvious behavior
-unnamed. Continue full QA for prototype/field claims and increase blank sampling
-if audits find missed names.
+batch. If a producer proposes no names, review two deterministic blanks: in
+Wave 87, both sampled all-blank batches contained a name the producer missed.
+Keep other blank rows unnamed automatically; they cannot add an annotation.
+Continue full QA for prototype/field claims.
 
 Reviewers may write only inspected rows to a `*_partial.jsonl` file. Complete it
 with conservative verdicts for unsampled blanks before applying reviews:
@@ -56,6 +56,10 @@ independently reviewed blank when blanks exist. It refuses prototype/field
 claims. Each unsampled blank is marked `needs_more_evidence` with a note that it
 was carried through automatically, not independently inspected. Track producer
 targets separately from functions actually inspected by QA.
+
+When a batch has no proposed names, dispatch two deterministic blank samples
+and pass `--minimum-blank-samples 2` to the assembler. Batches with one or more
+proposed names continue to use one blank sample.
 
 Treat string matches in the ranked queue as leads. For a semantic claim,
 resolve the full guest address against NSO rodata and trace how the body uses

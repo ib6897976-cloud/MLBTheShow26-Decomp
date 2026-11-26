@@ -2,10 +2,10 @@
 """Complete a name-only QA file with conservative verdicts for unsampled blanks.
 
 Every proposed name must have an independent verdict. For blank proposals,
-the partial review must include at least one sampled blank per batch; remaining
-blank rows receive an explicit automatic needs_more_evidence verdict and can
-never add a semantic name. Prototype/field claims are rejected because they
-require full independent review.
+the partial review must include the requested number of sampled blanks;
+remaining blank rows receive an explicit automatic needs_more_evidence verdict
+and can never add a semantic name. Prototype/field claims are rejected because
+they require full independent review.
 """
 from __future__ import annotations
 
@@ -39,7 +39,14 @@ def main() -> None:
     parser.add_argument("--proposals", required=True, help="producer JSONL basename in staging")
     parser.add_argument("--partial", required=True, help="reviewer JSONL basename containing inspected rows")
     parser.add_argument("--output", required=True, help="complete review JSONL basename to write in staging")
+    parser.add_argument(
+        "--minimum-blank-samples", type=int, default=1,
+        help="minimum independently reviewed blank proposals (default: 1; use 2 when the producer proposed no names)",
+    )
     args = parser.parse_args()
+
+    if args.minimum_blank_samples < 0:
+        raise SystemExit("--minimum-blank-samples must be nonnegative")
 
     paths = [STAGING / name for name in (args.proposals, args.partial, args.output)]
     if any(path.parent.resolve() != STAGING.resolve() for path in paths):
@@ -77,8 +84,13 @@ def main() -> None:
     if missing_names:
         raise SystemExit(f"Every proposed name must be reviewed; missing={sorted(missing_names)}")
     blank_addresses = set(by_address) - named
-    if blank_addresses and not (blank_addresses & reviewed.keys()):
-        raise SystemExit("At least one blank proposal must be sampled independently")
+    sampled_blanks = blank_addresses & reviewed.keys()
+    required_samples = min(len(blank_addresses), args.minimum_blank_samples)
+    if len(sampled_blanks) < required_samples:
+        raise SystemExit(
+            f"Need at least {required_samples} independently reviewed blank proposals; "
+            f"found {len(sampled_blanks)}"
+        )
 
     complete = []
     automatic = 0
@@ -110,7 +122,7 @@ def main() -> None:
     )
     print(
         f"complete={len(complete)} inspected={len(reviewed)} automatic_blank={automatic} "
-        f"proposed_names={len(named)} sampled_blanks={len(blank_addresses & reviewed.keys())}"
+        f"proposed_names={len(named)} sampled_blanks={len(sampled_blanks)}"
     )
 
 
