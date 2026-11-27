@@ -1,0 +1,19 @@
+{
+  "wave": 150,
+  "status": "evidence_reviewed",
+  "audit_type": "name_only_queue_batch",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "verdict_counts": {
+    "confirmed": 1,
+    "corrected": 2,
+    "needs_more_evidence": 9
+  },
+  "accepted_names": 3,
+  "semantic_name_rows_after": 13515,
+  "prototype_rows_after": 174,
+  "field_rows_after": 875,
+  "producer_targets_per_hour": null,
+  "note": "Two producers × 6 targets. Reciprocal cross-review: all names and deterministic blanks checked; all blanks in producer 2 inspected. Follow-up on producer 1 inspected its proposed name and one deterministic blank; other four blanks auto-retained. Two labels narrowed by reviewer evidence."
+}
