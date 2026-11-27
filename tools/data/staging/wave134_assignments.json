@@ -1,0 +1,678 @@
+{
+  "wave": 134,
+  "method": "Rank-first complexity lane: current top-1000 queue, >=1 semantic callee, <=120 body lines, <=140 lifted loads+stores; select 50 smallest body_lines + lifted_ops/3 and balance ten gpt-6-luna-low producers. QA every proposed name and one blank sample per group.",
+  "screened_ranked_functions": 1000,
+  "eligible_candidates": 73,
+  "assigned_targets": 50,
+  "selection_constraints": {
+    "max_rank": 1000,
+    "max_body_lines": 120,
+    "max_lifted_loads_plus_stores": 140,
+    "minimum_semantic_callees": 1,
+    "selection_order": "body_lines + lifted_ops/3 ascending"
+  },
+  "average_body_lines": 100.3,
+  "average_lifted_loads_plus_stores": 33.0,
+  "assignments": [
+    {
+      "agent": "wave134_01",
+      "estimated_effort": 584.0,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000aaae34",
+          "generated_name": "f_7000aaae34",
+          "score": 2034,
+          "rank": 584,
+          "body_lines": 115,
+          "lifted_loads": 21,
+          "lifted_stores": 13,
+          "semantic_callee_count": 2,
+          "estimated_effort": 126.33
+        },
+        {
+          "module": "main",
+          "address": "0x700111eed0",
+          "generated_name": "f_700111eed0",
+          "score": 2035,
+          "rank": 582,
+          "body_lines": 110,
+          "lifted_loads": 24,
+          "lifted_stores": 11,
+          "semantic_callee_count": 2,
+          "estimated_effort": 121.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000dd9728",
+          "generated_name": "f_7000dd9728",
+          "score": 1125,
+          "rank": 1000,
+          "body_lines": 102,
+          "lifted_loads": 40,
+          "lifted_stores": 10,
+          "semantic_callee_count": 1,
+          "estimated_effort": 118.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000ce86ec",
+          "generated_name": "f_7000ce86ec",
+          "score": 2026,
+          "rank": 595,
+          "body_lines": 100,
+          "lifted_loads": 17,
+          "lifted_stores": 9,
+          "semantic_callee_count": 2,
+          "estimated_effort": 108.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000ce8850",
+          "generated_name": "f_7000ce8850",
+          "score": 2026,
+          "rank": 596,
+          "body_lines": 100,
+          "lifted_loads": 17,
+          "lifted_stores": 9,
+          "semantic_callee_count": 2,
+          "estimated_effort": 108.67
+        }
+      ]
+    },
+    {
+      "agent": "wave134_02",
+      "estimated_effort": 535.67,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000ab3a38",
+          "generated_name": "f_7000ab3a38",
+          "score": 2028,
+          "rank": 591,
+          "body_lines": 117,
+          "lifted_loads": 18,
+          "lifted_stores": 10,
+          "semantic_callee_count": 2,
+          "estimated_effort": 126.33
+        },
+        {
+          "module": "main",
+          "address": "0x700042a840",
+          "generated_name": "f_700042a840",
+          "score": 1271,
+          "rank": 696,
+          "body_lines": 105,
+          "lifted_loads": 37,
+          "lifted_stores": 9,
+          "semantic_callee_count": 1,
+          "estimated_effort": 120.33
+        },
+        {
+          "module": "main",
+          "address": "0x7000ce8570",
+          "generated_name": "f_7000ce8570",
+          "score": 2031,
+          "rank": 590,
+          "body_lines": 109,
+          "lifted_loads": 18,
+          "lifted_stores": 13,
+          "semantic_callee_count": 2,
+          "estimated_effort": 119.33
+        },
+        {
+          "module": "main",
+          "address": "0x70017a12b4",
+          "generated_name": "f_70017a12b4",
+          "score": 1141,
+          "rank": 928,
+          "body_lines": 102,
+          "lifted_loads": 28,
+          "lifted_stores": 13,
+          "semantic_callee_count": 1,
+          "estimated_effort": 115.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000abdc30",
+          "generated_name": "f_7000abdc30",
+          "score": 2018,
+          "rank": 601,
+          "body_lines": 48,
+          "lifted_loads": 11,
+          "lifted_stores": 7,
+          "semantic_callee_count": 2,
+          "estimated_effort": 54.0
+        }
+      ]
+    },
+    {
+      "agent": "wave134_03",
+      "estimated_effort": 536.33,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x70018980fc",
+          "generated_name": "f_70018980fc",
+          "score": 2042,
+          "rank": 564,
+          "body_lines": 112,
+          "lifted_loads": 7,
+          "lifted_stores": 35,
+          "semantic_callee_count": 2,
+          "estimated_effort": 126.0
+        },
+        {
+          "module": "main",
+          "address": "0x7000446a70",
+          "generated_name": "f_7000446a70",
+          "score": 1537,
+          "rank": 626,
+          "body_lines": 110,
+          "lifted_loads": 26,
+          "lifted_stores": 11,
+          "semantic_callee_count": 1,
+          "estimated_effort": 122.33
+        },
+        {
+          "module": "main",
+          "address": "0x70017a5058",
+          "generated_name": "f_70017a5058",
+          "score": 1307,
+          "rank": 665,
+          "body_lines": 107,
+          "lifted_loads": 22,
+          "lifted_stores": 10,
+          "semantic_callee_count": 1,
+          "estimated_effort": 117.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000710bfc",
+          "generated_name": "f_7000710bfc",
+          "score": 1134,
+          "rank": 950,
+          "body_lines": 104,
+          "lifted_loads": 27,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1,
+          "estimated_effort": 115.33
+        },
+        {
+          "module": "main",
+          "address": "0x7000abdcd4",
+          "generated_name": "f_7000abdcd4",
+          "score": 2018,
+          "rank": 602,
+          "body_lines": 49,
+          "lifted_loads": 11,
+          "lifted_stores": 7,
+          "semantic_callee_count": 2,
+          "estimated_effort": 55.0
+        }
+      ]
+    },
+    {
+      "agent": "wave134_04",
+      "estimated_effort": 567.33,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000c72840",
+          "generated_name": "f_7000c72840",
+          "score": 2039,
+          "rank": 574,
+          "body_lines": 113,
+          "lifted_loads": 32,
+          "lifted_stores": 7,
+          "semantic_callee_count": 2,
+          "estimated_effort": 126.0
+        },
+        {
+          "module": "main",
+          "address": "0x7000446bec",
+          "generated_name": "f_7000446bec",
+          "score": 1287,
+          "rank": 682,
+          "body_lines": 110,
+          "lifted_loads": 26,
+          "lifted_stores": 11,
+          "semantic_callee_count": 1,
+          "estimated_effort": 122.33
+        },
+        {
+          "module": "main",
+          "address": "0x70007215f8",
+          "generated_name": "f_70007215f8",
+          "score": 1260,
+          "rank": 701,
+          "body_lines": 106,
+          "lifted_loads": 18,
+          "lifted_stores": 17,
+          "semantic_callee_count": 1,
+          "estimated_effort": 117.67
+        },
+        {
+          "module": "main",
+          "address": "0x70006c3e30",
+          "generated_name": "f_70006c3e30",
+          "score": 2027,
+          "rank": 593,
+          "body_lines": 106,
+          "lifted_loads": 17,
+          "lifted_stores": 10,
+          "semantic_callee_count": 2,
+          "estimated_effort": 115.0
+        },
+        {
+          "module": "main",
+          "address": "0x700049758c",
+          "generated_name": "f_700049758c",
+          "score": 1128,
+          "rank": 976,
+          "body_lines": 77,
+          "lifted_loads": 20,
+          "lifted_stores": 8,
+          "semantic_callee_count": 1,
+          "estimated_effort": 86.33
+        }
+      ]
+    },
+    {
+      "agent": "wave134_05",
+      "estimated_effort": 576.33,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000ce4430",
+          "generated_name": "f_7000ce4430",
+          "score": 1186,
+          "rank": 788,
+          "body_lines": 114,
+          "lifted_loads": 23,
+          "lifted_stores": 13,
+          "semantic_callee_count": 1,
+          "estimated_effort": 126.0
+        },
+        {
+          "module": "main",
+          "address": "0x7000ce0bf0",
+          "generated_name": "f_7000ce0bf0",
+          "score": 2038,
+          "rank": 578,
+          "body_lines": 109,
+          "lifted_loads": 25,
+          "lifted_stores": 13,
+          "semantic_callee_count": 2,
+          "estimated_effort": 121.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000cb2a4c",
+          "generated_name": "f_7000cb2a4c",
+          "score": 2020,
+          "rank": 599,
+          "body_lines": 112,
+          "lifted_loads": 14,
+          "lifted_stores": 6,
+          "semantic_callee_count": 2,
+          "estimated_effort": 118.67
+        },
+        {
+          "module": "main",
+          "address": "0x7001865740",
+          "generated_name": "f_7001865740",
+          "score": 2041,
+          "rank": 570,
+          "body_lines": 108,
+          "lifted_loads": 7,
+          "lifted_stores": 9,
+          "semantic_callee_count": 2,
+          "estimated_effort": 113.33
+        },
+        {
+          "module": "main",
+          "address": "0x700040f264",
+          "generated_name": "f_700040f264",
+          "score": 1126,
+          "rank": 985,
+          "body_lines": 88,
+          "lifted_loads": 18,
+          "lifted_stores": 8,
+          "semantic_callee_count": 1,
+          "estimated_effort": 96.67
+        }
+      ]
+    },
+    {
+      "agent": "wave134_06",
+      "estimated_effort": 565.67,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000791830",
+          "generated_name": "f_7000791830",
+          "score": 1151,
+          "rank": 883,
+          "body_lines": 117,
+          "lifted_loads": 19,
+          "lifted_stores": 7,
+          "semantic_callee_count": 1,
+          "estimated_effort": 125.67
+        },
+        {
+          "module": "main",
+          "address": "0x70007d1578",
+          "generated_name": "f_70007d1578",
+          "score": 2037,
+          "rank": 579,
+          "body_lines": 110,
+          "lifted_loads": 20,
+          "lifted_stores": 17,
+          "semantic_callee_count": 2,
+          "estimated_effort": 122.33
+        },
+        {
+          "module": "main",
+          "address": "0x700069b384",
+          "generated_name": "f_700069b384",
+          "score": 1236,
+          "rank": 721,
+          "body_lines": 106,
+          "lifted_loads": 31,
+          "lifted_stores": 5,
+          "semantic_callee_count": 1,
+          "estimated_effort": 118.0
+        },
+        {
+          "module": "main",
+          "address": "0x700076c360",
+          "generated_name": "f_700076c360",
+          "score": 1630,
+          "rank": 618,
+          "body_lines": 105,
+          "lifted_loads": 21,
+          "lifted_stores": 9,
+          "semantic_callee_count": 1,
+          "estimated_effort": 115.0
+        },
+        {
+          "module": "main",
+          "address": "0x700134b360",
+          "generated_name": "f_700134b360",
+          "score": 1126,
+          "rank": 990,
+          "body_lines": 76,
+          "lifted_loads": 17,
+          "lifted_stores": 9,
+          "semantic_callee_count": 1,
+          "estimated_effort": 84.67
+        }
+      ]
+    },
+    {
+      "agent": "wave134_07",
+      "estimated_effort": 536.33,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x70007bb5a0",
+          "generated_name": "f_70007bb5a0",
+          "score": 2032,
+          "rank": 587,
+          "body_lines": 114,
+          "lifted_loads": 20,
+          "lifted_stores": 12,
+          "semantic_callee_count": 2,
+          "estimated_effort": 124.67
+        },
+        {
+          "module": "main",
+          "address": "0x70003ee738",
+          "generated_name": "f_70003ee738",
+          "score": 1160,
+          "rank": 849,
+          "body_lines": 112,
+          "lifted_loads": 32,
+          "lifted_stores": 3,
+          "semantic_callee_count": 1,
+          "estimated_effort": 123.67
+        },
+        {
+          "module": "main",
+          "address": "0x700075e19c",
+          "generated_name": "f_700075e19c",
+          "score": 1146,
+          "rank": 898,
+          "body_lines": 102,
+          "lifted_loads": 23,
+          "lifted_stores": 23,
+          "semantic_callee_count": 1,
+          "estimated_effort": 117.33
+        },
+        {
+          "module": "main",
+          "address": "0x7000cbbd70",
+          "generated_name": "f_7000cbbd70",
+          "score": 2038,
+          "rank": 577,
+          "body_lines": 104,
+          "lifted_loads": 27,
+          "lifted_stores": 11,
+          "semantic_callee_count": 2,
+          "estimated_effort": 116.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000abdd7c",
+          "generated_name": "f_7000abdd7c",
+          "score": 2018,
+          "rank": 603,
+          "body_lines": 48,
+          "lifted_loads": 11,
+          "lifted_stores": 7,
+          "semantic_callee_count": 2,
+          "estimated_effort": 54.0
+        }
+      ]
+    },
+    {
+      "agent": "wave134_08",
+      "estimated_effort": 545.33,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x700186ea50",
+          "generated_name": "f_700186ea50",
+          "score": 1132,
+          "rank": 963,
+          "body_lines": 114,
+          "lifted_loads": 20,
+          "lifted_stores": 12,
+          "semantic_callee_count": 1,
+          "estimated_effort": 124.67
+        },
+        {
+          "module": "main",
+          "address": "0x70002e8390",
+          "generated_name": "f_70002e8390",
+          "score": 2034,
+          "rank": 583,
+          "body_lines": 112,
+          "lifted_loads": 25,
+          "lifted_stores": 9,
+          "semantic_callee_count": 2,
+          "estimated_effort": 123.33
+        },
+        {
+          "module": "main",
+          "address": "0x7000202f40",
+          "generated_name": "f_7000202f40",
+          "score": 1233,
+          "rank": 728,
+          "body_lines": 107,
+          "lifted_loads": 18,
+          "lifted_stores": 15,
+          "semantic_callee_count": 1,
+          "estimated_effort": 118.0
+        },
+        {
+          "module": "main",
+          "address": "0x7000ce7488",
+          "generated_name": "f_7000ce7488",
+          "score": 1130,
+          "rank": 969,
+          "body_lines": 105,
+          "lifted_loads": 22,
+          "lifted_stores": 8,
+          "semantic_callee_count": 1,
+          "estimated_effort": 115.0
+        },
+        {
+          "module": "main",
+          "address": "0x7000d0bfec",
+          "generated_name": "f_7000d0bfec",
+          "score": 2037,
+          "rank": 581,
+          "body_lines": 52,
+          "lifted_loads": 6,
+          "lifted_stores": 31,
+          "semantic_callee_count": 2,
+          "estimated_effort": 64.33
+        }
+      ]
+    },
+    {
+      "agent": "wave134_09",
+      "estimated_effort": 535.67,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x7000ceedac",
+          "generated_name": "f_7000ceedac",
+          "score": 2086,
+          "rank": 413,
+          "body_lines": 112,
+          "lifted_loads": 20,
+          "lifted_stores": 16,
+          "semantic_callee_count": 2,
+          "estimated_effort": 124.0
+        },
+        {
+          "module": "main",
+          "address": "0x7001071af8",
+          "generated_name": "f_7001071af8",
+          "score": 1129,
+          "rank": 975,
+          "body_lines": 106,
+          "lifted_loads": 26,
+          "lifted_stores": 28,
+          "semantic_callee_count": 1,
+          "estimated_effort": 124.0
+        },
+        {
+          "module": "main",
+          "address": "0x7001610c80",
+          "generated_name": "f_7001610c80",
+          "score": 1635,
+          "rank": 616,
+          "body_lines": 106,
+          "lifted_loads": 26,
+          "lifted_stores": 9,
+          "semantic_callee_count": 1,
+          "estimated_effort": 117.67
+        },
+        {
+          "module": "main",
+          "address": "0x70001864c0",
+          "generated_name": "f_70001864c0",
+          "score": 1132,
+          "rank": 959,
+          "body_lines": 106,
+          "lifted_loads": 28,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1,
+          "estimated_effort": 116.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000aad4a4",
+          "generated_name": "f_7000aad4a4",
+          "score": 2019,
+          "rank": 600,
+          "body_lines": 47,
+          "lifted_loads": 12,
+          "lifted_stores": 7,
+          "semantic_callee_count": 2,
+          "estimated_effort": 53.33
+        }
+      ]
+    },
+    {
+      "agent": "wave134_10",
+      "estimated_effort": 582.33,
+      "targets": [
+        {
+          "module": "main",
+          "address": "0x70007c0bd0",
+          "generated_name": "f_70007c0bd0",
+          "score": 2045,
+          "rank": 551,
+          "body_lines": 109,
+          "lifted_loads": 22,
+          "lifted_stores": 23,
+          "semantic_callee_count": 2,
+          "estimated_effort": 124.0
+        },
+        {
+          "module": "main",
+          "address": "0x7000dce778",
+          "generated_name": "f_7000dce778",
+          "score": 1235,
+          "rank": 724,
+          "body_lines": 112,
+          "lifted_loads": 32,
+          "lifted_stores": 3,
+          "semantic_callee_count": 1,
+          "estimated_effort": 123.67
+        },
+        {
+          "module": "main",
+          "address": "0x70002eaca0",
+          "generated_name": "f_70002eaca0",
+          "score": 1150,
+          "rank": 886,
+          "body_lines": 102,
+          "lifted_loads": 46,
+          "lifted_stores": 4,
+          "semantic_callee_count": 1,
+          "estimated_effort": 118.67
+        },
+        {
+          "module": "main",
+          "address": "0x7000658994",
+          "generated_name": "f_7000658994",
+          "score": 1125,
+          "rank": 994,
+          "body_lines": 102,
+          "lifted_loads": 17,
+          "lifted_stores": 8,
+          "semantic_callee_count": 1,
+          "estimated_effort": 110.33
+        },
+        {
+          "module": "main",
+          "address": "0x7000794920",
+          "generated_name": "f_7000794920",
+          "score": 1129,
+          "rank": 974,
+          "body_lines": 96,
+          "lifted_loads": 16,
+          "lifted_stores": 13,
+          "semantic_callee_count": 1,
+          "estimated_effort": 105.67
+        }
+      ]
+    }
+  ]
+}
