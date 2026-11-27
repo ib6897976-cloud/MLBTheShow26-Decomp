@@ -34,19 +34,53 @@ def main() -> None:
     args = parser.parse_args()
 
     annotations = [r for r in read_tsv(ANNOTATIONS) if r["module"] == "main"]
-    known_addresses = {r["address"] for r in annotations}
-    # A reviewed function with inconclusive evidence should not be sent to workers
-    # again just because it has no semantic rename. Staged rows are the audit log.
+    known_addresses = {r["address"].lower() for r in annotations}
+    # Staging filenames have evolved beyond the original *_waveNN.jsonl form.
+    # Exclude every target row in current JSONL/JSON staging files so reviewed,
+    # sampled, and already-assigned functions do not keep resurfacing near the
+    # top of the queue. Read only each row's top-level address for JSONL packet
+    # files; their nested caller/callee addresses are not target assignments.
+    staged_addresses: set[str] = set()
     if STAGING.exists():
-        for path in STAGING.glob("*.jsonl"):
-            if not re.fullmatch(r".+_wave\d+\.jsonl", path.name):
+        for path in STAGING.iterdir():
+            if not path.is_file() or path.suffix.lower() not in {".jsonl", ".json"}:
                 continue
-            for line in path.read_text(encoding="utf-8").splitlines():
-                if line.strip():
-                    item = json.loads(line)
-                    address = item.get("address")
-                    if address:
-                        known_addresses.add(address.lower())
+            try:
+                with path.open("r", encoding="utf-8-sig") as stream:
+                    if path.suffix.lower() == ".jsonl":
+                        for line in stream:
+                            if not line.strip():
+                                continue
+                            try:
+                                item = json.loads(line)
+                            except json.JSONDecodeError:
+                                # Preserve target exclusions even for malformed
+                                # review scratch lines whose first field is address.
+                                for match in re.finditer(r'"address"\s*:\s*"(0x[0-9a-fA-F]+)"', line):
+                                    staged_addresses.add(match.group(1).lower())
+                                continue
+                            if isinstance(item, dict):
+                                address = item.get("address")
+                                if isinstance(address, str) and address.lower().startswith("0x"):
+                                    staged_addresses.add(address.lower())
+                    else:
+                        try:
+                            item = json.load(stream)
+                        except json.JSONDecodeError:
+                            continue
+                        pending = [item]
+                        while pending:
+                            value = pending.pop()
+                            if isinstance(value, dict):
+                                address = value.get("address")
+                                if isinstance(address, str) and address.lower().startswith("0x"):
+                                    staged_addresses.add(address.lower())
+                                pending.extend(value.values())
+                            elif isinstance(value, list):
+                                pending.extend(value)
+            except (OSError, UnicodeError):
+                continue
+    known_addresses.update(staged_addresses)
     # Deterministic wrapper labels describe exact local behavior, but they are
     # not domain-semantic helpers. Counting them here would push callers of
     # thousands of no-op/delete stubs ahead of functions tied to game behavior.
@@ -127,7 +161,10 @@ def main() -> None:
         for rank, row in enumerate(selected, 1):
             writer.writerow({"rank": rank, **row})
     temporary.replace(args.output)
-    print(f"Ranked {len(targets)} unannotated main functions; wrote top {len(selected)} to {args.output}")
+    print(
+        f"Ranked {len(targets)} unannotated main functions after excluding "
+        f"{len(staged_addresses)} staged targets; wrote top {len(selected)} to {args.output}"
+    )
 
 
 if __name__ == "__main__":

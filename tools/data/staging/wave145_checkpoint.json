@@ -1,0 +1,30 @@
+{
+  "wave": 145,
+  "status": "reviewed_merged",
+  "updated_at": "2026-11-27T09:48:29Z",
+  "selection": "Top 12 unique unannotated candidates from the expanded ranked queue after excluding addresses in all staging JSON/JSONL target rows.",
+  "unique_ranked_candidates_before_wave": 172,
+  "unique_ranked_candidates_after_wave": 164,
+  "staged_target_addresses_excluded": 18124,
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "initial_name_proposals": 3,
+  "accepted_names": 3,
+  "rejected_names": 0,
+  "review_verdict_counts": {
+    "needs_more_evidence": 9,
+    "confirmed": 3
+  },
+  "manually_inspected_rows": 5,
+  "automatic_blank_carrythrough": 7,
+  "semantic_name_rows_before_wave": 13505,
+  "semantic_name_rows_after_wave": 13508,
+  "prototype_rows_after_wave": 175,
+  "field_rows_after_wave": 885,
+  "producer_stage_elapsed_seconds": 97.512,
+  "producer_stage_targets_per_hour": 443.0,
+  "producer_stage_confirmed_names_per_hour": 110.8,
+  "timing_note": "Producer start/finish events were recorded when each worker completed. Producer-stage rate excludes independent QA, serial merge, index refresh and Pages deployment; end-to-end throughput is not represented by this rate.",
+  "notes": "QA confirmed handle_ui_text_matrix_lighting_callbacks at 0x70008b22d0 and 0x70008aabe0, and process_shader_sprite_buffer at 0x7001971f10. The other nine candidates remain unnamed. The all-blank second group had its first deterministic blank inspected and no name was supported."
+}
