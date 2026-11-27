@@ -2416,3 +2416,11 @@
 {"event":"producer_started","wave":144,"agent":"wave144_prod02","timestamp":"2026-11-27T09:24:23.689Z","target_count":6,"selection":"Top 12 unannotated entries from annotation_target_queue.tsv; compact evidence packets; semantic names only; GPT-6-Luna low-effort producers."}
 {"event":"producer_finished","wave":144,"agent":"wave144_prod01","timestamp":"2026-11-27T09:25:25.508Z","target_count":6,"proposed_names":1}
 {"event":"producer_finished","wave":144,"agent":"wave144_prod02","timestamp":"2026-11-27T09:25:37.152Z","target_count":6,"proposed_names":2}
+{"event":"producer_started","wave":145,"agent":"wave145_prod01","timestamp":"2026-11-27T09:41:51.221Z","target_count":6,"selection":"Top 12 unique unannotated candidates after excluding all staging JSON/JSONL target rows; GPT-6-Luna low-effort."}
+{"event":"producer_started","wave":145,"agent":"wave145_prod02","timestamp":"2026-11-27T09:41:51.221Z","target_count":6,"selection":"Top 12 unique unannotated candidates after excluding all staging JSON/JSONL target rows; GPT-6-Luna low-effort."}
+{"event":"producer_finished","wave":145,"agent":"wave145_prod01","timestamp":"2026-11-27T09:43:17.819Z","target_count":6,"proposed_names":3}
+{"event":"reviewer_started","wave":145,"agent":"wave145_qa01","timestamp":"2026-11-27T09:43:17.819Z","target_count":6,"selection":"review all nonblank proposals and deterministic first blank sample"}
+{"event":"producer_finished","wave":145,"agent":"wave145_prod02","timestamp":"2026-11-27T09:43:28.733Z","target_count":6,"proposed_names":0}
+{"event":"reviewer_started","wave":145,"agent":"wave145_qa02","timestamp":"2026-11-27T09:43:28.733Z","target_count":6,"selection":"all-blank batch; inspect first deterministic blank and adapt only if it supports a name"}
+{"event":"reviewer_finished","wave":145,"agent":"wave145_qa01","timestamp":"2026-11-27T09:44:24.665Z","target_count":6,"manually_inspected":4,"timing_source":"partial_review_file_write_time"}
+{"event":"reviewer_finished","wave":145,"agent":"wave145_qa02","timestamp":"2026-11-27T09:44:05.737Z","target_count":6,"manually_inspected":1,"timing_source":"partial_review_file_write_time"}

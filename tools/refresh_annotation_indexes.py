@@ -34,7 +34,7 @@ def main() -> None:
     run("demangle_symbols.py")
     run("refresh_behavior_names.py")
     run("index_command_callbacks.py")
-    run("rank_annotation_targets.py", "--limit", "1000")
+    run("rank_annotation_targets.py", "--limit", "5000")
     run("rank_callback_targets.py")
 
     annotations = row_count(ROOT / "tools" / "data" / "function_annotations.tsv")
