@@ -10,6 +10,10 @@ Each object uses this shape:
 
 Use generated names or an empty semantic name when evidence does not support a rename. Only include field rows when access widths and offsets are directly visible. The main TSV files are updated by a single sequential merge after all workers finish.
 
+Do not add annotation rows for uncovered layout gaps or guessed padding. Those
+bytes are not observed fields; keep a possible-gap note in a subsystem layout
+only when it helps explain the surrounding measured offsets.
+
 Cross-checkers write one review object per examined proposal to a separate
 `*_review.jsonl` file. Use this shape:
 
