@@ -4,9 +4,12 @@ import base64
 import csv
 import hashlib
 import json
+import os
+import tempfile
 import threading
 import time
 from collections import Counter, defaultdict, deque
+from contextlib import contextmanager
 from datetime import datetime, timezone
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -39,6 +42,37 @@ TIMELINE_SCAN_FILES = [
     ROOT / "tools" / "data" / "function_prototype_candidates.tsv",
     ROOT / "tools" / "data" / "field_annotations.tsv",
 ]
+
+
+@contextmanager
+def timeline_process_lock():
+    """Serialize timeline scans across the live server and static exporter."""
+    identity = hashlib.sha256(str(TIMELINE_STATE.resolve()).encode("utf-8")).hexdigest()[:20]
+    lock_path = Path(tempfile.gettempdir()) / f"mlbts_progress_timeline_{identity}.lock"
+    descriptor = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)
+    try:
+        if os.name == "nt":
+            import msvcrt
+
+            if os.fstat(descriptor).st_size == 0:
+                os.write(descriptor, b"\0")
+            os.lseek(descriptor, 0, os.SEEK_SET)
+            msvcrt.locking(descriptor, msvcrt.LK_LOCK, 1)
+            try:
+                yield
+            finally:
+                os.lseek(descriptor, 0, os.SEEK_SET)
+                msvcrt.locking(descriptor, msvcrt.LK_UNLCK, 1)
+        else:
+            import fcntl
+
+            fcntl.flock(descriptor, fcntl.LOCK_EX)
+            try:
+                yield
+            finally:
+                fcntl.flock(descriptor, fcntl.LOCK_UN)
+    finally:
+        os.close(descriptor)
 
 
 def read_tsv(path: Path):
@@ -110,7 +144,7 @@ def refresh_timeline():
     global _TIMELINE_SCAN_STAMP, _TIMELINE_PENDING_STAMP, _TIMELINE_PENDING_SINCE
     TIMELINE_STATE.parent.mkdir(parents=True, exist_ok=True)
     stamp = tuple((path.stat().st_mtime_ns, path.stat().st_size) for path in TIMELINE_SCAN_FILES)
-    with _TIMELINE_LOCK:
+    with _TIMELINE_LOCK, timeline_process_lock():
         if stamp == _TIMELINE_SCAN_STAMP:
             return
         now = time.monotonic()

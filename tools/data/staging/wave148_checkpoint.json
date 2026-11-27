@@ -1,0 +1,37 @@
+{
+  "wave": 148,
+  "status": "reviewed_merged",
+  "audit_type": "semantic_name_recovery",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "independent_reviewer_count": 1,
+  "primary_manual_sample_count": 1,
+  "verdict_counts": {
+    "confirmed": 1,
+    "needs_more_evidence_inspected": 2,
+    "automatic_blank_carrythrough": 9
+  },
+  "names_added": 1,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "semantic_name_rows_after": 13512,
+  "prototype_candidates_after": 174,
+  "prototype_confidence_after": {
+    "high": 30,
+    "medium": 141,
+    "low": 3
+  },
+  "field_rows_after": 885,
+  "producer_elapsed_seconds": 124.4,
+  "producer_targets_per_hour": 347.3,
+  "dispatch_through_QA_elapsed_seconds": 253.725,
+  "dispatch_through_QA_targets_per_hour": 170.3,
+  "timing_note": "Producer finish times use proposal file mtimes. Dispatch through QA ends at root sample review file mtime. Rates exclude serial TSV merge, index refresh, and Pages export/deploy. One reviewer follow-up failed to start; primary reviewer independently inspected one blank for that all-blank batch. Wave 147 was the deliberate one-target-per-agent capacity test; Wave 148 uses two six-target batches.",
+  "accepted_names": [
+    "get_or_create_attribute_context_entry@0x7000ec48b0"
+  ],
+  "semantic_names_by_module": {
+    "main": 13509,
+    "sdk": 3
+  }
+}
