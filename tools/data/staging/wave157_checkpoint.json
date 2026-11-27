@@ -1,0 +1,17 @@
+{
+  "wave": 157,
+  "status": "evidence_reviewed",
+  "audit_type": "name_only_queue_batch",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "verdict_counts": {
+    "confirmed": 1,
+    "needs_more_evidence": 11
+  },
+  "accepted_names": 1,
+  "semantic_name_rows_after": 13531,
+  "prototype_rows_after": 174,
+  "field_rows_after": 875,
+  "note": "Single proposed flag-population label confirmed. Deterministic blank samples in both groups remained unnamed."
+}
