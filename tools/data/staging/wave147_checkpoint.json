@@ -1,0 +1,31 @@
+{
+  "wave": 147,
+  "status": "reviewed_merged",
+  "audit_type": "semantic_name_recovery_and_concurrency_limit_check",
+  "assigned_targets": 9,
+  "producer_count": 9,
+  "reviewer_count": 1,
+  "verdict_counts": {
+    "confirmed": 3,
+    "needs_more_evidence_inspected": 1,
+    "automatic_blank_carrythrough": 5
+  },
+  "names_added": 3,
+  "prototypes_added": 0,
+  "fields_added": 0,
+  "semantic_names_after": 13511,
+  "prototype_candidates_after": 174,
+  "field_rows_after": 885,
+  "configured_worker_cap": 10,
+  "primary_plus_subagents_tested": 10,
+  "concurrency_test": "all nine bounded workers launched and completed",
+  "producer_wall_seconds": null,
+  "through_qa_wall_seconds": null,
+  "targets_per_hour": null,
+  "timing_note": "No dispatch timestamp was recorded at the start, so no Wave 147 throughput rate is claimed. This cap test had one target per worker and is not a recommended steady-state batch size.",
+  "accepted_names": [
+    "compute_lookup_table_interpolated_value@0x700166bb54",
+    "process_contextual_attribute_change@0x70003bd0e0",
+    "update_context_event_state@0x70017b7b10"
+  ]
+}
