@@ -1,0 +1,87 @@
+{
+  "wave": 166,
+  "created_utc": "2026-11-27T22:02:46.199005+00:00",
+  "selection": "top 10 unannotated main targets after Wave 165 refresh",
+  "assignments": [
+    {
+      "agent": "wave166_01",
+      "module": "main",
+      "address": "0x70015322e0",
+      "queue_rank": "1",
+      "output": "wave166_01_wave166.jsonl",
+      "score": "1047"
+    },
+    {
+      "agent": "wave166_02",
+      "module": "main",
+      "address": "0x70009c0db0",
+      "queue_rank": "2",
+      "output": "wave166_02_wave166.jsonl",
+      "score": "1046"
+    },
+    {
+      "agent": "wave166_03",
+      "module": "main",
+      "address": "0x70007aee60",
+      "queue_rank": "3",
+      "output": "wave166_03_wave166.jsonl",
+      "score": "1045"
+    },
+    {
+      "agent": "wave166_04",
+      "module": "main",
+      "address": "0x7000f999e0",
+      "queue_rank": "4",
+      "output": "wave166_04_wave166.jsonl",
+      "score": "1045"
+    },
+    {
+      "agent": "wave166_05",
+      "module": "main",
+      "address": "0x7000fe70a0",
+      "queue_rank": "5",
+      "output": "wave166_05_wave166.jsonl",
+      "score": "1045"
+    },
+    {
+      "agent": "wave166_06",
+      "module": "main",
+      "address": "0x7001039c20",
+      "queue_rank": "6",
+      "output": "wave166_06_wave166.jsonl",
+      "score": "1045"
+    },
+    {
+      "agent": "wave166_07",
+      "module": "main",
+      "address": "0x700075890c",
+      "queue_rank": "7",
+      "output": "wave166_07_wave166.jsonl",
+      "score": "1043"
+    },
+    {
+      "agent": "wave166_08",
+      "module": "main",
+      "address": "0x7000c75824",
+      "queue_rank": "8",
+      "output": "wave166_08_wave166.jsonl",
+      "score": "1043"
+    },
+    {
+      "agent": "wave166_09",
+      "module": "main",
+      "address": "0x7000ec3f58",
+      "queue_rank": "9",
+      "output": "wave166_09_wave166.jsonl",
+      "score": "1043"
+    },
+    {
+      "agent": "wave166_10",
+      "module": "main",
+      "address": "0x7000bdcbe0",
+      "queue_rank": "10",
+      "output": "wave166_10_wave166.jsonl",
+      "score": "1042"
+    }
+  ]
+}
