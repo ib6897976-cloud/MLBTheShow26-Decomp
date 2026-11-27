@@ -1,0 +1,65 @@
+{
+  "wave": 146,
+  "work_type": "prototype_candidate_abi_audit",
+  "selection": "All low-confidence prototype candidates in the current reviewed index",
+  "assignments": [
+    {
+      "worker": "producer_01",
+      "targets": [
+        {
+          "address": "0x7000743840",
+          "candidate_prototype": "void compute_attribute_driven_result_table(void)"
+        },
+        {
+          "address": "0x7000716690",
+          "candidate_prototype": "int16_t process_attribute_candidate_set(uint32_t mode)"
+        },
+        {
+          "address": "0x70007b03a0",
+          "candidate_prototype": "void update_global_attribute_records(void)"
+        },
+        {
+          "address": "0x7000692550",
+          "candidate_prototype": "void ensure_global_attribute_registry_and_register_ids(void **out, void *context, uint32_t value)"
+        },
+        {
+          "address": "0x700072e860",
+          "candidate_prototype": "bool build_attribute_comparison_table(void *context, uint32_t mode)"
+        },
+        {
+          "address": "0x70010e3ef0",
+          "candidate_prototype": "void update_mode_dependent_record(void *object, uint32_t value)"
+        }
+      ]
+    },
+    {
+      "worker": "producer_02",
+      "targets": [
+        {
+          "address": "0x700079cf60",
+          "candidate_prototype": "void build_sorted_attribute_float_table(void *input_or_context)"
+        },
+        {
+          "address": "0x7000ea6530",
+          "candidate_prototype": "void build_end_game_pitcher_summary(void *game_summary_context)"
+        },
+        {
+          "address": "0x7000cefe20",
+          "candidate_prototype": "void find_matching_players_or_build_results(void *search_or_result_context)"
+        },
+        {
+          "address": "0x7000773da0",
+          "candidate_prototype": "uint32_t build_attribute_value_list(void *context, void *output, void *secondary_context, uint32_t flags)"
+        },
+        {
+          "address": "0x700028a8e0",
+          "candidate_prototype": "void update_swing_hit_power_vector(void *state_or_context)"
+        },
+        {
+          "address": "0x700043663c",
+          "candidate_prototype": "void apply_contextual_attribute_deltas(void *context)"
+        }
+      ]
+    }
+  ]
+}

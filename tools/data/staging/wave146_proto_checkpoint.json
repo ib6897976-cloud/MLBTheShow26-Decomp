@@ -1,0 +1,33 @@
+{
+  "wave": 146,
+  "status": "reviewed_merged",
+  "updated_at": "2026-11-27T10:05:48Z",
+  "audit_type": "low_confidence_prototype_abi_audit",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "verdict_counts": {
+    "confirm": 3,
+    "correct": 2,
+    "needs_more_evidence": 3,
+    "corrected": 4
+  },
+  "candidates_updated": 8,
+  "unsupported_candidate_removed": 1,
+  "candidates_retained_low_confidence": 3,
+  "prototype_candidates_before": 175,
+  "prototype_candidates_after": 174,
+  "prototype_confidence_after": {
+    "high": 30,
+    "medium": 141,
+    "low": 3
+  },
+  "semantic_name_rows_after": 13508,
+  "field_rows_after": 885,
+  "producer_stage_elapsed_seconds": 148.514,
+  "producer_stage_targets_per_hour": 290.9,
+  "through_QA_elapsed_seconds": 280.601,
+  "through_QA_targets_per_hour": 154.0,
+  "timing_note": "Rates use recorded producer dispatch/completion and reviewer completion events. Producer-only and through-QA figures exclude serial TSV reconciliation, index refresh, and Pages deployment.",
+  "notes": "Eight signatures were strengthened or corrected from body/caller evidence. Three remain low-confidence pending fuller entry/caller evidence. The candidate at 0x700079cf60 was removed because its proposed return class was unresolved and the old one-argument signature contradicted observed x0-x3 use. For 0x7000773da0, the reviewer signature retained an unsupported pointer type for x0; parent verified the body/caller and corrected it to uint32_t arg0, void *arg1, uint64_t arg2, uint32_t arg3."
+}
