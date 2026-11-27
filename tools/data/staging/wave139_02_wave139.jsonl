@@ -1,0 +1,10 @@
+{"module":"main","address":"0x70010a919c","semantic_name":"","confidence":"low","evidence":"main_0121.c:34285-34316 Source: decompiled/main/main_0013.c:14483-14526."}
+{"module":"main","address":"0x7000c9c7f8","semantic_name":"handle_context_status_transition","confidence":"medium","evidence":"main_0087.c:3328-3361"}
+{"module":"main","address":"0x700108ef90","semantic_name":"check_postgame_session_state","confidence":"low","evidence":"main_0121.c:2362-2397; caller main_0121.c:2256-2258 — "}
+{"module":"main","address":"0x70010f1324","semantic_name":"check_context_status_allowed","confidence":"medium","evidence":"main_0124.c:13777-13816 — uses context status 0x13 plus multiple state tests to set caller-provided result flag."}
+{"module":"main","address":"0x700167fdd4","semantic_name":"","confidence":"low","evidence":"main_0160.c:436-456; caller main_0160.c:51192-51195 Source: decompiled/main/main_0013.c:14483-14526."}
+{"module":"main","address":"0x7000fea294","semantic_name":"","confidence":"low","evidence":"main_0116.c:12512-12550; caller main_0116.c:2987-2991 Source: decompiled/main/main_0013.c:14483-14526."}
+{"module":"main","address":"0x7000b172f0","semantic_name":"initialize_player_resource_and_release_reference","confidence":"medium","evidence":"main_0078.c:27765-27802; caller main_0078.c:29361-29364 — "}
+{"module":"main","address":"0x70006ce7f0","semantic_name":"dispatch_minigame_result_and_check_completion","confidence":"low","evidence":"main_0053.c:12188-12225; caller main_0053.c:2284-2288 — "}
+{"module":"main","address":"0x7001467f50","semantic_name":"","confidence":"low","evidence":"main_0147.c:21955-21988; caller main_0147.c:21038-21042 Source: decompiled/main/main_0013.c:14483-14526."}
+{"module":"main","address":"0x70010f5994","semantic_name":"compute_context_status_attribute_adjustment","confidence":"low","evidence":"main_0124.c:19534-19570"}
