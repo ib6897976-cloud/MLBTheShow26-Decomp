@@ -1,0 +1,34 @@
+{
+  "wave": 143,
+  "method": "Audit 12 currently low/medium-low prototype candidates with relatively compact lifted bodies; inspect argument registers, return registers, full bodies and caller sites. Three producers and three independent reviewers, four candidates per group. Only revise signatures when direct ABI evidence supports it; opaque pointee types remain void pointers.",
+  "assigned_targets": 12,
+  "groups": [
+    {
+      "agent": "wave143_proto_01",
+      "addresses": [
+        "0x700049ac08",
+        "0x7000bfa2f0",
+        "0x70006fa040",
+        "0x7000e3d830"
+      ]
+    },
+    {
+      "agent": "wave143_proto_02",
+      "addresses": [
+        "0x7001844880",
+        "0x70016bc530",
+        "0x7000675970",
+        "0x7000e9b0d0"
+      ]
+    },
+    {
+      "agent": "wave143_proto_03",
+      "addresses": [
+        "0x70017b4ca4",
+        "0x7000f247fc",
+        "0x700049a708",
+        "0x700070de78"
+      ]
+    }
+  ]
+}
