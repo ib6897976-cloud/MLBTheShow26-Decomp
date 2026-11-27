@@ -45,8 +45,12 @@ def load_proposals(paths: list[Path] | None = None) -> list[dict]:
             except json.JSONDecodeError as exc:
                 raise ValueError(f"{path.name}:{line_number}: invalid JSON: {exc}") from exc
             address = str(item.get("address", "")).lower()
-            if not address.startswith("0x") or item.get("module") != "main":
+            if not address.startswith("0x") or item.get("module") not in {"main", "sdk"}:
                 raise ValueError(f"{path.name}:{line_number}: invalid module/address")
+            if item.get("module") == "sdk" and (
+                item.get("candidate_prototype") or item.get("fields")
+            ):
+                raise ValueError(f"{path.name}:{line_number}: SDK prototype/field proposals require separate review")
             if address in seen:
                 raise ValueError(f"Duplicate staged function address: {address}")
             seen.add(address)
@@ -111,11 +115,13 @@ def merge(path: Path, headers: list[str], staged: list[dict], kind: str) -> int:
             name = str(item.get("semantic_name", "")).strip()
             if name:
                 values.append({
-                    "module": "main", "address": item["address"],
+                    "module": item["module"], "address": item["address"],
                     "semantic_name": name, "confidence": item["confidence"],
                     "evidence": item["evidence"],
                 })
         elif kind == "prototype":
+            if item["module"] != "main":
+                continue
             proto = str(item.get("candidate_prototype", "")).strip()
             evidence = str(item.get("prototype_evidence", "")).strip()
             confidence = item.get("prototype_confidence")
@@ -126,6 +132,8 @@ def merge(path: Path, headers: list[str], staged: list[dict], kind: str) -> int:
                     "evidence": evidence,
                 })
         else:
+            if item["module"] != "main":
+                continue
             for field in item.get("fields", []):
                 if not isinstance(field, dict):
                     raise ValueError(f"Invalid field proposal at {item['address']}")

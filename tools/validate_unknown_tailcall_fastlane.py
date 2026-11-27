@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import argparse
 import json
 import random
 import re
@@ -10,13 +11,13 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BATCH = ROOT / "tools/data/staging/wave68_auto_unknown_tailcalls_wave68.jsonl"
-REPORT = ROOT / "tools/data/staging/wave68_unknown_tailcall_review.md"
+DEFAULT_BATCH = ROOT / "tools/data/staging/wave68_auto_unknown_tailcalls_wave68.jsonl"
+DEFAULT_REPORT = ROOT / "tools/data/staging/wave68_unknown_tailcall_review.md"
 DEF = re.compile(r"^void f_([0-9a-fA-F]+)\(Cpu \*c\) \{$")
 MARK = re.compile(r"^\s*FN_ENTER\(0x([0-9a-fA-F]+)ull\);\s*$")
 TAIL = re.compile(r"^\s*__attribute__\(\(musttail\)\) return f_([0-9a-fA-F]+)\(c\);\s*$")
 EVIDENCE = re.compile(
-    r"Exact lifted body in (decompiled/main/[^:]+):(\d+)-(\d+) contains FN_ENTER and only "
+    r"Exact lifted body in decompiled/([^/]+)/([^:]+):(\d+)-(\d+) contains FN_ENTER and only "
     r"the musttail return to (0x[0-9a-fA-F]+)\. The target label is '([^']+)' from "
     r"(accepted semantic annotation|exact exported ELF symbol demangling|"
     r"exact guest function address; no source symbol is inferred)\."
@@ -35,9 +36,9 @@ def slug(value: str) -> str:
     return re.sub(r"[^A-Za-z0-9]+", "_", value).strip("_").lower()
 
 
-def body_index():
+def body_index(module):
     out = {}
-    for path in sorted((ROOT / "decompiled/main").glob("main_[0-9][0-9][0-9][0-9].c")):
+    for path in sorted((ROOT / "decompiled" / module).glob(f"{module}_[0-9][0-9][0-9][0-9].c")):
         lines = path.read_text(encoding="utf-8").splitlines()
         i = 0
         while i < len(lines):
@@ -57,11 +58,19 @@ def body_index():
     return out
 
 
-rows = [json.loads(line) for line in BATCH.read_text(encoding="utf-8").splitlines() if line.strip()]
-names = {r["address"].lower(): r for r in tsv(ROOT / "decompiled/function_name_index.tsv") if r["module"] == "main"}
-known = {r["address"].lower() for r in tsv(ROOT / "tools/data/function_annotations.tsv") if r["module"] == "main"}
-behavior = {r["address"].lower(): r for r in tsv(ROOT / "decompiled/function_behavior.tsv") if r["module"] == "main"}
-bodies = body_index()
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--batch", type=Path, default=DEFAULT_BATCH)
+parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
+parser.add_argument("--module", choices=("main", "sdk"), default="main")
+args = parser.parse_args()
+batch = args.batch if args.batch.is_absolute() else ROOT / args.batch
+report_path = args.report if args.report.is_absolute() else ROOT / args.report
+module = args.module
+rows = [json.loads(line) for line in batch.read_text(encoding="utf-8").splitlines() if line.strip()]
+names = {r["address"].lower(): r for r in tsv(ROOT / "decompiled/function_name_index.tsv") if r["module"] == module}
+known = {r["address"].lower() for r in tsv(ROOT / "tools/data/function_annotations.tsv") if r["module"] == module}
+behavior = {r["address"].lower(): r for r in tsv(ROOT / "decompiled/function_behavior.tsv") if r["module"] == module}
+bodies = body_index(module)
 seen: set[str] = set()
 bad: list[str] = []
 chunk_counts: Counter[str] = Counter()
@@ -84,11 +93,13 @@ for row in rows:
     if not evidence:
         bad.append(f"{address}: evidence sentence/path not parseable")
         continue
-    rel, start_s, end_s, callee_s, target_name, evidence_kind = evidence.groups()
+    rel_module, rel_file, start_s, end_s, callee_s, target_name, evidence_kind = evidence.groups()
     start, end = int(start_s), int(end_s)
     callee = f"0x{int(callee_s, 16):x}"
     if evidence_kind.startswith("exact guest function address") and target_name != f"address_{int(callee, 16):x}":
         bad.append(f"{address}: address-only target label differs from cited callee")
+    if rel_module != module or row.get("module") != module:
+        bad.append(f"{address}: module mismatch")
     if row.get("semantic_name") != f"tailcall_forward_to_{slug(target_name)}":
         bad.append(f"{address}: synthetic name does not encode exact target")
     if row.get("confidence") != "high":
@@ -100,7 +111,7 @@ for row in rows:
         bad.append(f"{address}: generated body missing")
         continue
     file_name, actual_start, actual_end, lines = body
-    if rel.split("/")[-1] != file_name or start != actual_start or end not in (actual_end, actual_end + 1):
+    if rel_file != file_name or start != actual_start or end not in (actual_end, actual_end + 1):
         bad.append(f"{address}: cited source range does not match parsed body")
     if len(lines) != 4 or not MARK.match(lines[1]) or not TAIL.match(lines[2]):
         bad.append(f"{address}: body is not exactly FN_ENTER plus one musttail statement")
@@ -142,7 +153,7 @@ for row in sample:
         bad.append(f"{row['address']}: deterministic manual sample found unexpected body shape")
 
 summary = [
-    "# Wave 68 exact-address tail-call batch QA",
+    f"# {batch.stem} exact-address tail-call batch QA",
     "",
     f"- Proposals examined: {len(rows):,}",
     f"- Unique addresses: {len(seen):,}",
@@ -158,7 +169,7 @@ summary = [
     "",
     "These labels identify exact forwarding behavior and guest target addresses. They are synthetic and are not recovered original symbols.",
 ]
-REPORT.write_text("\n".join(summary) + "\n", encoding="utf-8")
+report_path.write_text("\n".join(summary) + "\n", encoding="utf-8")
 print(f"rows={len(rows)} unique={len(seen)} mismatches={len(bad)} sample={len(sample)} targets={len(targets)}")
 if bad:
     print("\n".join(bad[:30]))

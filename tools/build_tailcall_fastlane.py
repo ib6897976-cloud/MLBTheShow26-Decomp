@@ -32,15 +32,26 @@ def main():
     ap.add_argument('--wave', type=int, required=True)
     ap.add_argument('--output', type=Path)
     ap.add_argument('--limit', type=int, default=0, help='optional cap; zero means all eligible functions')
+    ap.add_argument('--module', choices=('main', 'sdk'), default='main')
     ap.add_argument('--include-unknown-targets', action='store_true',
                     help='label unnamed callees by exact guest address')
     args=ap.parse_args()
     decomp=ROOT/'decompiled'
-    names={r['address'].lower():r for r in read_tsv(decomp/'function_name_index.tsv') if r['module']=='main'}
-    known={r['address'].lower():r for r in read_tsv(ROOT/'tools/data/function_annotations.tsv') if r['module']=='main'}
-    behavior={r['address'].lower():r for r in read_tsv(decomp/'function_behavior.tsv') if r['module']=='main'}
+    module=args.module
+    names={r['address'].lower():r for r in read_tsv(decomp/'function_name_index.tsv') if r['module']==module}
+    known={r['address'].lower():r for r in read_tsv(ROOT/'tools/data/function_annotations.tsv') if r['module']==module}
+    behavior={r['address'].lower():r for r in read_tsv(decomp/'function_behavior.tsv') if r['module']==module}
+    already_staged=set()
+    for staged_path in (ROOT/'tools/data/staging').glob('*.jsonl'):
+        if not re.fullmatch(r'.+_wave\d+\.jsonl', staged_path.name):
+            continue
+        for line in staged_path.read_text(encoding='utf-8').splitlines():
+            if line.strip():
+                staged_row=json.loads(line)
+                if staged_row.get('module')==module and staged_row.get('address'):
+                    already_staged.add(staged_row['address'].lower())
     lines_by_addr={}
-    for path in sorted((decomp/'main').glob('main_[0-9][0-9][0-9][0-9].c')):
+    for path in sorted((decomp/module).glob(f'{module}_[0-9][0-9][0-9][0-9].c')):
         lines=path.read_text(encoding='utf-8').splitlines()
         current=None; start=None; body=[]
         def save(end_line):
@@ -58,7 +69,7 @@ def main():
     proposals=[]
     for addr,(source,start,end,body_lines) in sorted(lines_by_addr.items()):
         indexed=names.get(addr,{})
-        if addr in known or indexed.get('raw_elf_name'):
+        if addr in known or addr in already_staged or indexed.get('raw_elf_name'):
             continue
         actual=[]; marker_seen=False
         for number,line in body_lines:
@@ -96,9 +107,16 @@ def main():
         if direct and direct != {callee}:
             continue
         semantic=f'tailcall_forward_to_{callee_slug}'
+        body_end=end
+        depth=1
+        for line_number,line in body_lines:
+            depth+=line.count('{')-line.count('}')
+            if depth==0:
+                body_end=line_number
+                break
         proposals.append({
-          'module':'main','address':addr,'semantic_name':semantic,'confidence':'high',
-          'evidence':f'Exact lifted body in decompiled/main/{source}:{start}-{end} contains FN_ENTER and only the musttail return to {callee}. The target label is {target_name!r} from {target_evidence}. This synthetic label records only the proven forwarding behavior; it does not infer a source symbol, parameter type, or field type.'
+          'module':module,'address':addr,'semantic_name':semantic,'confidence':'high',
+          'evidence':f'Exact lifted body in decompiled/{module}/{source}:{start}-{body_end} contains FN_ENTER and only the musttail return to {callee}. The target label is {target_name!r} from {target_evidence}. This synthetic label records only the proven forwarding behavior; it does not infer a source symbol, parameter type, or field type.'
         })
     if args.limit:
         proposals=proposals[:args.limit]

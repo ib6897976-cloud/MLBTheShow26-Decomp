@@ -42,11 +42,13 @@ def main() -> None:
     parser.add_argument("--wave", type=int, required=True)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--module", choices=("main", "sdk"), default="main")
     args = parser.parse_args()
 
     decomp = ROOT / "decompiled"
-    names = {r["address"].lower(): r for r in read_tsv(decomp / "function_name_index.tsv") if r["module"] == "main"}
-    annotated = {r["address"].lower() for r in read_tsv(ROOT / "tools/data/function_annotations.tsv") if r["module"] == "main"}
+    module = args.module
+    names = {r["address"].lower(): r for r in read_tsv(decomp / "function_name_index.tsv") if r["module"] == module}
+    annotated = {r["address"].lower() for r in read_tsv(ROOT / "tools/data/function_annotations.tsv") if r["module"] == module}
     already_staged = set()
     staging = ROOT / "tools/data/staging"
     for path in staging.glob("*.jsonl"):
@@ -55,11 +57,11 @@ def main() -> None:
         for line in path.read_text(encoding="utf-8").splitlines():
             if line.strip():
                 row = json.loads(line)
-                if row.get("module") == "main" and row.get("address"):
+                if row.get("module") == module and row.get("address"):
                     already_staged.add(row["address"].lower())
 
     proposals = []
-    for source in sorted((decomp / "main").glob("main_[0-9][0-9][0-9][0-9].c")):
+    for source in sorted((decomp / module).glob(f"{module}_[0-9][0-9][0-9][0-9].c")):
         lines = source.read_text(encoding="utf-8").splitlines()
         address = None
         start = 0
@@ -91,12 +93,19 @@ def main() -> None:
                 behavior = f"After FN_ENTER, the exact lifted body overwrites guest x0 with the immediate 0x{value:x} using a {width} cast and returns; no other guest state is changed."
             else:
                 return
+            body_end_line = end_line
+            depth = 1
+            for body_line, text in body:
+                depth += text.count("{") - text.count("}")
+                if depth == 0:
+                    body_end_line = body_line
+                    break
             proposals.append({
-                "module": "main",
+                "module": module,
                 "address": address,
                 "semantic_name": semantic_name,
                 "confidence": "high",
-                "evidence": f"{behavior} Exact function body: decompiled/main/{source.name}:{start}-{end_line}. This synthetic label describes the lifted behavior; it does not infer an original source symbol or prototype.",
+                "evidence": f"{behavior} Exact function body: decompiled/{module}/{source.name}:{start}-{body_end_line}. This synthetic label describes the lifted behavior; it does not infer an original source symbol or prototype.",
             })
 
         for line_number, line in enumerate(lines, 1):

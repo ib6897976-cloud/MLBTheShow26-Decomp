@@ -83,7 +83,7 @@ evidence remain candidates for audit.
 ## Deterministic fast lanes
 
 `tools/build_tailcall_fastlane.py` stages a narrow class of stripped functions
-only when the entire lifted body is `FN_ENTER` plus one `musttail` return to an
+only when the entire lifted body is `FN_ENTER` plus one `musttail` return to a
 single function. By default, the target must have an accepted semantic label or
 readable exact ELF name. `--include-unknown-targets` also emits
 `tailcall_forward_to_address_<guest-address>` when the destination has no
@@ -105,3 +105,9 @@ immediate, store it, return). It emits `guest_state_noop_stub` or
 validate every generated row and manually inspect a random sample before merge.
 The profiling hook in `FN_ENTER` is host instrumentation, not guest-state
 behavior.
+
+Both builders support `--module main` and `--module sdk`; the default remains
+`main`. The independent trivial and address-inclusive tail-call validators
+accept matching `--module`, `--batch`, and `--report` arguments. The merge tool
+preserves the module for names while keeping prototype and field claims limited
+to `main`.
