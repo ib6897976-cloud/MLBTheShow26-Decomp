@@ -1,0 +1,17 @@
+{
+  "wave": 158,
+  "status": "evidence_reviewed",
+  "audit_type": "name_only_queue_batch",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "verdict_counts": {
+    "confirmed": 1,
+    "needs_more_evidence": 11
+  },
+  "accepted_names": 1,
+  "semantic_name_rows_after": 13532,
+  "prototype_rows_after": 174,
+  "field_rows_after": 875,
+  "note": "Confirmed build_attribute_candidate_score_pairs; deterministic blank in each group remained unnamed."
+}
