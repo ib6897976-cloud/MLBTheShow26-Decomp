@@ -1,0 +1,32 @@
+{
+  "wave": 142,
+  "status": "reviewed_merged",
+  "updated_at": "2026-11-27T09:10:00Z",
+  "assigned_targets": 50,
+  "producer_count": 5,
+  "reviewer_count": 5,
+  "ranked_candidates": 1000,
+  "eligible_candidates": 224,
+  "annotated_exclusions": 13497,
+  "staged_exclusions": 15357,
+  "annotation_rows_before_wave": 13497,
+  "prototype_rows_before_wave": 177,
+  "field_rows_before_wave": 885,
+  "next_step": "Strengthen producer QA prompts and target evidence requirements: compactness/callers alone still gave a 50% rejection rate. Continue selecting unique unannotated/unclaimed addresses and periodically prioritize structure/prototype recovery.",
+  "reviewed_targets": 50,
+  "initial_name_proposals": 10,
+  "accepted_names": 5,
+  "rejected_names": 5,
+  "review_verdict_counts": {
+    "confirmed": 5,
+    "corrected": 0,
+    "reject_name": 5,
+    "needs_more_evidence": 40
+  },
+  "new_annotations_added": 5,
+  "annotation_rows_after_wave": 13502,
+  "prototype_rows_after_wave": 177,
+  "field_rows_after_wave": 885,
+  "timing_note": "No trustworthy completion timestamps were recorded, so throughput is not calculated.",
+  "notes": "Wave 142 processed 50 unique compact caller-linked routines. Ten names were initially proposed; independent body/caller review confirmed five and rejected five, yielding five new annotations. Each group also had a deterministic blank reviewed; all remained unnamed. No prototype/field claims. One rejected proposal had briefly entered the index before its group review completed; it was then removed from the TSV and timeline, and indexes were refreshed. Final counts reflect only the five confirmed names."
+}
