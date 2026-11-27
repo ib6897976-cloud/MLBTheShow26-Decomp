@@ -1,0 +1,28 @@
+{
+  "wave": 144,
+  "status": "reviewed_merged",
+  "updated_at": "2026-11-27T09:31:24Z",
+  "selection": "Top 12 unannotated entries from the refreshed annotation_target_queue.tsv; score range 10385\u20137181.",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "initial_name_proposals": 3,
+  "accepted_names": 3,
+  "rejected_names": 0,
+  "review_verdict_counts": {
+    "confirmed": 2,
+    "corrected": 1,
+    "reject_name": 0,
+    "needs_more_evidence": 9
+  },
+  "manually_inspected_rows": 5,
+  "automatic_blank_carrythrough": 7,
+  "semantic_name_rows_before_wave": 13502,
+  "semantic_name_rows_after_wave": 13505,
+  "prototype_rows_after_wave": 175,
+  "field_rows_after_wave": 885,
+  "producer_stage_elapsed_seconds": 73.463,
+  "producer_stage_functions_per_hour": 588.1,
+  "timing_note": "Producer-stage throughput uses actual producer start/finish timestamps and counts all 12 targets. It excludes independent QA, serial merge, index refresh and publication; do not treat it as end-to-end rate.",
+  "notes": "Independent QA confirmed two names and corrected one from initialize_catcher_throw_state to update_catcher_throw_state. Both deterministic blank samples remained unnamed; the other seven blanks were conservatively carried through. No prototype or field claims."
+}

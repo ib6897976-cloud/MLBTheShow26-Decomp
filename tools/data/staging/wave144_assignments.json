@@ -1,0 +1,76 @@
+{
+  "wave": 144,
+  "work_type": "semantic_name_candidates",
+  "assignments": [
+    {
+      "worker": "producer_01",
+      "targets": [
+        {
+          "rank": 1,
+          "address": "0x7000f87020",
+          "score": 10385
+        },
+        {
+          "rank": 2,
+          "address": "0x700100f620",
+          "score": 10211
+        },
+        {
+          "rank": 3,
+          "address": "0x700029caf0",
+          "score": 9650
+        },
+        {
+          "rank": 4,
+          "address": "0x7001067ccc",
+          "score": 8843
+        },
+        {
+          "rank": 5,
+          "address": "0x700106d4c4",
+          "score": 8393
+        },
+        {
+          "rank": 6,
+          "address": "0x7001028e0c",
+          "score": 8140
+        }
+      ]
+    },
+    {
+      "worker": "producer_02",
+      "targets": [
+        {
+          "rank": 7,
+          "address": "0x700030182c",
+          "score": 7744
+        },
+        {
+          "rank": 8,
+          "address": "0x7000e6a0a0",
+          "score": 7679
+        },
+        {
+          "rank": 9,
+          "address": "0x7000d064b0",
+          "score": 7669
+        },
+        {
+          "rank": 10,
+          "address": "0x7000fb9e00",
+          "score": 7538
+        },
+        {
+          "rank": 11,
+          "address": "0x70002398ac",
+          "score": 7383
+        },
+        {
+          "rank": 12,
+          "address": "0x70000acfe8",
+          "score": 7181
+        }
+      ]
+    }
+  ]
+}
