@@ -1,0 +1,18 @@
+{
+  "wave": 143,
+  "status": "reviewed_merged",
+  "updated_at": "2026-11-27T09:14:05Z",
+  "audit_type": "prototype_candidate_abi_review",
+  "reviewed_targets": 12,
+  "verdict_counts": {
+    "confirmed": 6,
+    "corrected": 4,
+    "needs_more_evidence": 2
+  },
+  "prototype_candidates_before": 177,
+  "prototype_candidates_after": 175,
+  "semantic_name_rows_after": 13502,
+  "field_rows_after": 885,
+  "timing_note": "Completion timestamps are not reliable enough for a throughput estimate.",
+  "notes": "Ten candidates were confirmed or corrected using independent body/caller ABI review. Two unsupported candidates were removed pending stronger evidence. Pointer pointee types remain opaque where structure evidence was insufficient."
+}
