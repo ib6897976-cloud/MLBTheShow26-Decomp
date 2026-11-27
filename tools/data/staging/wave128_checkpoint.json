@@ -6,9 +6,9 @@
   "producer_proposed_names_before_qa": 28,
   "accepted_names_after_qa": 28,
   "review_verdicts": {
-    "needs_more_evidence": 22,
+    "confirmed": 26,
     "corrected": 2,
-    "confirmed": 26
+    "needs_more_evidence": 22
   },
   "prototypes_added": 0,
   "fields_added": 0,
@@ -20,11 +20,18 @@
   "indexed_functions": 135060,
   "eligible_candidates_before_wave": 332,
   "selected_average_lifted_loads_plus_stores": 11.64,
-  "producer_window_seconds": 562.99,
-  "producer_targets_per_hour": 319.7,
-  "pipeline_through_qa_seconds": 562.9,
-  "pipeline_targets_per_hour": 319.8,
-  "accepted_names_per_hour": 179.1,
-  "workflow_note": "Ten gpt-6-luna-low producers handled five targets each, selected by low lifted loads+stores; all 28 names were independently checked plus one deterministic blank sample in nine groups (37 independent inspections; 13 other blank rows carried through automatically). Reviewer edits to two names and one evidence mapping were applied before serial merge. No prototypes or fields. Timing ends at last producer/review file mtime, excluding merge/index/publish.",
-  "next_step": "Wave128 was slower than Wave127: target throughput fell 26% and accepted-name throughput fell 37%. Change selection to the composite body_lines + lifted_memory_ops/3 score. The refreshed top-3000 pool contains 1,332 eligible candidates; its easiest 50 average 32.1 body lines and 14.0 loads+stores."
+  "producer_window_seconds": 283.374,
+  "producer_targets_per_hour": 635.2,
+  "pipeline_through_qa_seconds": 538.929,
+  "pipeline_targets_per_hour": 334.0,
+  "accepted_names_per_hour": 187.0,
+  "workflow_note": "Ten gpt-6-luna-low producers selected by low lifted memory-op count. 28 names from 50; QA confirmed 26 and corrected 2, 13 blank rows carried automatically. No prototypes/fields. Creation timestamps show producer 636 targets/hour and full QA 334 targets/hour.",
+  "next_step": "Wave128 was slower than Wave127: target throughput fell 26% and accepted-name throughput fell 37%. Change selection to the composite body_lines + lifted_memory_ops/3 score. The refreshed top-3000 pool contains 1,332 eligible candidates; its easiest 50 average 32.1 body lines and 14.0 loads+stores.",
+  "names_recovered_from_sampled_blanks": 0,
+  "producer_name_proposals_per_hour": 355.7,
+  "producer_window_start": "2026-11-26T22:52:10.076Z",
+  "producer_window_end": "2026-11-26T22:56:53.450Z",
+  "qa_window_end": "2026-11-26T23:01:09.004Z",
+  "timing_source": "Windows file CreationTime: proposal JSONL for producer finish; review_partial JSONL for independent QA finish. LastWriteTime is unsuitable after apply_staging_reviews rewrites proposal files.",
+  "average_body_lines": 61.3
 }
