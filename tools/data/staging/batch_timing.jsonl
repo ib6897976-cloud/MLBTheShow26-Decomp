@@ -2424,3 +2424,11 @@
 {"event":"reviewer_started","wave":145,"agent":"wave145_qa02","timestamp":"2026-11-27T09:43:28.733Z","target_count":6,"selection":"all-blank batch; inspect first deterministic blank and adapt only if it supports a name"}
 {"event":"reviewer_finished","wave":145,"agent":"wave145_qa01","timestamp":"2026-11-27T09:44:24.665Z","target_count":6,"manually_inspected":4,"timing_source":"partial_review_file_write_time"}
 {"event":"reviewer_finished","wave":145,"agent":"wave145_qa02","timestamp":"2026-11-27T09:44:05.737Z","target_count":6,"manually_inspected":1,"timing_source":"partial_review_file_write_time"}
+{"event":"producer_started","wave":146,"agent":"wave146_proto_prod01","timestamp":"2026-11-27T09:51:33.428Z","target_count":6,"selection":"All 12 low-confidence ABI prototype candidates; body/caller register audit; generic pointer types where necessary."}
+{"event":"producer_started","wave":146,"agent":"wave146_proto_prod02","timestamp":"2026-11-27T09:51:33.428Z","target_count":6,"selection":"All 12 low-confidence ABI prototype candidates; body/caller register audit; generic pointer types where necessary."}
+{"event":"producer_finished","wave":146,"agent":"wave146_proto_prod01","timestamp":"2026-11-27T09:52:43.905Z","target_count":6,"actions":{"keep":3,"update":2,"needs_more_evidence":1}}
+{"event":"reviewer_started","wave":146,"agent":"wave146_proto_qa01","timestamp":"2026-11-27T09:52:43.905Z","target_count":6,"selection":"full independent prototype/ABI review"}
+{"event":"reviewer_finished","wave":146,"agent":"wave146_proto_qa01","timestamp":"2026-11-27T09:53:45.248Z","target_count":6}
+{"event":"producer_finished","wave":146,"agent":"wave146_proto_prod02","timestamp":"2026-11-27T09:54:01.942Z","target_count":6,"actions":{"update":2,"keep":4}}
+{"event":"reviewer_started","wave":146,"agent":"wave146_proto_qa02","timestamp":"2026-11-27T09:54:01.942Z","target_count":6,"selection":"full independent prototype/ABI review"}
+{"event":"reviewer_finished","wave":146,"agent":"wave146_proto_qa02","timestamp":"2026-11-27T09:56:14.029Z","target_count":6}

@@ -36,15 +36,16 @@ def main() -> None:
     annotations = [r for r in read_tsv(ANNOTATIONS) if r["module"] == "main"]
     known_addresses = {r["address"].lower() for r in annotations}
     # Staging filenames have evolved beyond the original *_waveNN.jsonl form.
-    # Exclude every target row in current JSONL/JSON staging files so reviewed,
-    # sampled, and already-assigned functions do not keep resurfacing near the
-    # top of the queue. Read only each row's top-level address for JSONL packet
-    # files; their nested caller/callee addresses are not target assignments.
+    # Exclude semantic-name targets from current proposal files and name
+    # assignments so reviewed or assigned functions do not resurface. Prototype
+    # and field audits are separate work types; they must not block later name
+    # recovery for the same guest function.
     staged_addresses: set[str] = set()
     if STAGING.exists():
         for path in STAGING.iterdir():
             if not path.is_file() or path.suffix.lower() not in {".jsonl", ".json"}:
                 continue
+            legacy_name_batch = bool(re.fullmatch(r".+_wave\d+\.jsonl", path.name)) and "proto" not in path.name.lower() and "field" not in path.name.lower()
             try:
                 with path.open("r", encoding="utf-8-sig") as stream:
                     if path.suffix.lower() == ".jsonl":
@@ -54,19 +55,30 @@ def main() -> None:
                             try:
                                 item = json.loads(line)
                             except json.JSONDecodeError:
-                                # Preserve target exclusions even for malformed
-                                # review scratch lines whose first field is address.
-                                for match in re.finditer(r'"address"\s*:\s*"(0x[0-9a-fA-F]+)"', line):
-                                    staged_addresses.add(match.group(1).lower())
+                                # Malformed legacy proposal lines may still contain
+                                # the name target address; never use packet callees.
+                                if legacy_name_batch or '"semantic_name"' in line:
+                                    match = re.search(r'"address"\s*:\s*"(0x[0-9a-fA-F]+)"', line)
+                                    if match:
+                                        staged_addresses.add(match.group(1).lower())
                                 continue
                             if isinstance(item, dict):
                                 address = item.get("address")
-                                if isinstance(address, str) and address.lower().startswith("0x"):
+                                if (
+                                    isinstance(address, str) and address.lower().startswith("0x")
+                                    and ("semantic_name" in item or legacy_name_batch)
+                                ):
                                     staged_addresses.add(address.lower())
                     else:
                         try:
                             item = json.load(stream)
                         except json.JSONDecodeError:
+                            continue
+                        work_type = str(item.get("work_type", "")).lower() if isinstance(item, dict) else ""
+                        is_name_assignment = ("semantic" in work_type or "name" in work_type)
+                        if not work_type and "assign" in path.stem.lower():
+                            is_name_assignment = "proto" not in path.stem.lower() and "field" not in path.stem.lower()
+                        if not is_name_assignment:
                             continue
                         pending = [item]
                         while pending:
@@ -163,7 +175,7 @@ def main() -> None:
     temporary.replace(args.output)
     print(
         f"Ranked {len(targets)} unannotated main functions after excluding "
-        f"{len(staged_addresses)} staged targets; wrote top {len(selected)} to {args.output}"
+        f"{len(staged_addresses)} staged semantic-name targets; wrote top {len(selected)} to {args.output}"
     )
 
 
