@@ -1,0 +1,18 @@
+{
+  "wave": 152,
+  "status": "evidence_reviewed",
+  "audit_type": "name_only_queue_batch",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "verdict_counts": {
+    "confirmed": 3,
+    "corrected": 1,
+    "needs_more_evidence": 8
+  },
+  "accepted_names": 4,
+  "semantic_name_rows_after": 13521,
+  "prototype_rows_after": 174,
+  "field_rows_after": 875,
+  "note": "Reciprocal review of all four proposed names and a deterministic blank in each group. Corrected rating-tier claim to observed threshold-bucket mapping. Other blanks retained conservatively."
+}
