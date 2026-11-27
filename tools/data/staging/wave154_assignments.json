@@ -1,0 +1,20 @@
+{
+  "wave": 154,
+  "selection": "top 12 unique semantic queue targets after Wave 153 refresh",
+  "producer_01": [
+    "0x700075ab0c",
+    "0x70004cade0",
+    "0x7000689a48",
+    "0x7001027a00",
+    "0x700071e5ac",
+    "0x70010036e8"
+  ],
+  "producer_02": [
+    "0x7000a15b10",
+    "0x7000668c90",
+    "0x7000db8fa8",
+    "0x7000682b80",
+    "0x7000f90934",
+    "0x70017bdcd0"
+  ]
+}

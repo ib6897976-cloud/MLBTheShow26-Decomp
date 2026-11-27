@@ -1,0 +1,17 @@
+{
+  "wave": 154,
+  "status": "evidence_reviewed",
+  "audit_type": "name_only_queue_batch",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 2,
+  "verdict_counts": {
+    "confirmed": 2,
+    "needs_more_evidence": 10
+  },
+  "accepted_names": 2,
+  "semantic_name_rows_after": 13527,
+  "prototype_rows_after": 174,
+  "field_rows_after": 875,
+  "note": "Two names confirmed. Producer 1 had no proposed names; deterministic blank sample remained blank. Other rows conservatively retained blank."
+}
