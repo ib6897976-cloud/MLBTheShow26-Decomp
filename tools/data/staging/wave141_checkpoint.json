@@ -1,0 +1,31 @@
+{
+  "wave": 141,
+  "status": "reviewed_merged",
+  "updated_at": "2026-11-27T08:47:00Z",
+  "assigned_targets": 50,
+  "producer_count": 5,
+  "reviewer_count": 5,
+  "ranked_candidates": 1000,
+  "eligible_under_filters": 568,
+  "excluded_annotated_addresses": 13490,
+  "excluded_staged_addresses": 15307,
+  "annotation_rows_before_wave": 13490,
+  "prototype_rows_before_wave": 177,
+  "field_rows_before_wave": 885,
+  "next_step": "Prefer compact functions with semantically distinctive exact strings and caller evidence; maintain annotation/staging exclusions, then periodically focus on prototype and structure recovery.",
+  "named_proposals": 7,
+  "reviewed_targets": 50,
+  "qa_verdict_counts": {
+    "confirmed": 7,
+    "corrected": 0,
+    "reject_name": 0,
+    "needs_more_evidence": 43
+  },
+  "new_annotations_added": 7,
+  "annotation_rows_after_wave": 13497,
+  "prototype_rows_after_wave": 177,
+  "field_rows_after_wave": 885,
+  "notes": "All 50 targets independently received at least one review row, with nonblank proposals individually checked and deterministic blank samples. Seven names were confirmed; no correction, rejection, prototype, or field additions. The target filter produced a lower name yield than Wave 140, though selected labels were independently supported. Durations are coarse windows based on tracked dispatch/finish markers; no token telemetry.",
+  "timing_note": "Completion timestamps are not reliable enough for throughput calculation; only dispatch events are retained.",
+  "accepted_names": 7
+}
