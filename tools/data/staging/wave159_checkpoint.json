@@ -1,0 +1,18 @@
+{
+  "wave": 159,
+  "status": "evidence_reviewed_primary_manual",
+  "audit_type": "name_only_queue_batch",
+  "assigned_targets": 12,
+  "producer_count": 2,
+  "reviewer_count": 0,
+  "primary_manual_review": true,
+  "verdict_counts": {
+    "confirmed": 5,
+    "needs_more_evidence": 7
+  },
+  "accepted_names": 5,
+  "semantic_name_rows_after": 13537,
+  "prototype_rows_after": 174,
+  "field_rows_after": 875,
+  "note": "Both intended cross-review tasks failed when subagents hit the account usage limit. Primary manually inspected all five proposed names and one deterministic blank in each group against bodies/callers; all names supported, both blanks retained. Dispatch-through-QA rate is omitted because the long gap before resumed manual QA would make it misleading."
+}
