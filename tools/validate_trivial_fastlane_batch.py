@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Independently validate the exact body shapes in a trivial fast-lane batch."""
+import argparse
 import csv
 import json
 import random
@@ -13,7 +14,7 @@ REPORT = ROOT / "tools/data/staging/wave66_trivial_review.md"
 DEF = re.compile(r"^void f_([0-9a-fA-F]+)\(Cpu \*c\) \{$")
 MARK = re.compile(r"^\s*FN_ENTER\(0x([0-9a-fA-F]+)ull\);\s*$")
 CONST = re.compile(r"^x0 = \((uint32_t|uint64_t)\)\(0x([0-9a-fA-F]+)ull\);$")
-EVIDENCE = re.compile(r"Exact function body: decompiled/main/([^:]+):(\d+)-(\d+)\.")
+EVIDENCE = re.compile(r"Exact function body: decompiled/([^/]+)/([^:]+):(\d+)-(\d+)\.")
 
 
 def tsv(path):
@@ -21,9 +22,9 @@ def tsv(path):
         return list(csv.DictReader(stream, delimiter="\t"))
 
 
-def parse_bodies():
+def parse_bodies(module):
     result = {}
-    for path in sorted((ROOT / "decompiled/main").glob("main_[0-9][0-9][0-9][0-9].c")):
+    for path in sorted((ROOT / "decompiled" / module).glob(f"{module}_[0-9][0-9][0-9][0-9].c")):
         lines = path.read_text(encoding="utf-8").splitlines()
         i = 0
         while i < len(lines):
@@ -63,20 +64,28 @@ def statements(lines, address, errors):
 
 
 def main():
-    rows = [json.loads(line) for line in BATCH.read_text(encoding="utf-8").splitlines() if line.strip()]
-    names = {row["address"].lower(): row for row in tsv(ROOT / "decompiled/function_name_index.tsv") if row["module"] == "main"}
-    annotated = {row["address"].lower() for row in tsv(ROOT / "tools/data/function_annotations.tsv") if row["module"] == "main"}
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--batch", type=Path, default=BATCH)
+    parser.add_argument("--report", type=Path, default=REPORT)
+    parser.add_argument("--module", choices=("main", "sdk"), default="main")
+    args = parser.parse_args()
+    batch = args.batch if args.batch.is_absolute() else ROOT / args.batch
+    report_path = args.report if args.report.is_absolute() else ROOT / args.report
+    module = args.module
+    rows = [json.loads(line) for line in batch.read_text(encoding="utf-8").splitlines() if line.strip()]
+    names = {row["address"].lower(): row for row in tsv(ROOT / "decompiled/function_name_index.tsv") if row["module"] == module}
+    annotated = {row["address"].lower() for row in tsv(ROOT / "tools/data/function_annotations.tsv") if row["module"] == module}
     prior_staged = set()
     staging = ROOT / "tools/data/staging"
     for path in staging.glob("*.jsonl"):
-        if not re.fullmatch(r".+_wave\d+\.jsonl", path.name) or path == BATCH:
+        if not re.fullmatch(r".+_wave\d+\.jsonl", path.name) or path.resolve() == batch.resolve():
             continue
         for line in path.read_text(encoding="utf-8").splitlines():
             if line.strip():
                 row = json.loads(line)
-                if row.get("module") == "main" and row.get("address"):
+                if row.get("module") == module and row.get("address"):
                     prior_staged.add(row["address"].lower())
-    bodies = parse_bodies()
+    bodies = parse_bodies(module)
     errors = []
     seen = set()
     classes = Counter()
@@ -97,7 +106,7 @@ def main():
             continue
         if indexed.get("raw_elf_name"):
             errors.append(f"{address}: exact exported name exists")
-        if row.get("module") != "main" or row.get("confidence") != "high":
+        if row.get("module") != module or row.get("confidence") != "high":
             errors.append(f"{address}: invalid module or confidence")
         if any(key in row for key in ("candidate_prototype", "prototype_confidence", "fields")):
             errors.append(f"{address}: unexpected prototype/field claim")
@@ -106,14 +115,14 @@ def main():
         if not evidence or not body:
             errors.append(f"{address}: missing source citation or parsed body")
             continue
-        rel_file, cited_start, cited_end = evidence.groups()
+        rel_module, rel_file, cited_start, cited_end = evidence.groups()
         file_name, actual_start, actual_close, lines = body
         cited_start, cited_end = int(cited_start), int(cited_end)
-        if rel_file != file_name or cited_start != actual_start:
+        if rel_module != module or rel_file != file_name or cited_start != actual_start:
             errors.append(f"{address}: source path/start does not match parsed body")
         if cited_end not in (actual_close, actual_close + 1):
             errors.append(f"{address}: cited end does not match function boundary")
-        source = ROOT / "decompiled/main" / file_name
+        source = ROOT / "decompiled" / module / file_name
         source_lines = source.read_text(encoding="utf-8").splitlines()
         if cited_end == actual_close + 1 and (cited_end > len(source_lines) or source_lines[cited_end - 1].strip()):
             errors.append(f"{address}: extra cited line after body is not blank")
@@ -147,7 +156,7 @@ def main():
             errors.append(f"{address}: sampled immediate mismatch")
 
     report = [
-        "# Wave 66 no-op and immediate-return batch QA", "",
+        f"# {batch.stem} no-op and immediate-return batch QA", "",
         f"- Proposals examined: {len(rows):,}",
         f"- Unique addresses: {len(seen):,}",
         f"- Independent mechanical checks: {'PASS' if not errors else 'FAIL'} ({len(errors)} mismatches)",
@@ -159,7 +168,7 @@ def main():
     ]
     report.extend([f"- {error}" for error in errors] or ["None."])
     report += ["", "## Limits", "", "This validates guest-state behavior for these exact body patterns. FN_ENTER may invoke the host profiling hook. The labels are synthetic behavior descriptions; they do not recover source symbols, prototypes, or types."]
-    REPORT.write_text("\n".join(report) + "\n", encoding="utf-8")
+    report_path.write_text("\n".join(report) + "\n", encoding="utf-8")
     print(f"rows={len(rows)} unique={len(seen)} noops={classes['no-op stubs']} immediate_returns={classes['immediate returns']} mismatches={len(errors)} sample={len(sample)}")
     if errors:
         for error in errors[:40]:
