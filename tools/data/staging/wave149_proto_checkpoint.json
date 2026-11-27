@@ -1,0 +1,35 @@
+{
+  "wave": 149,
+  "status": "evidence_reviewed",
+  "audit_type": "prototype_candidate_correction_and_unobserved_field_gap_cleanup",
+  "assigned_targets": 1,
+  "producer_count": 0,
+  "reviewer_count": 1,
+  "verdict_counts": {
+    "corrected": 1,
+    "still_low_confidence": 1
+  },
+  "candidates_updated": 1,
+  "prototype_candidates_after": 174,
+  "prototype_confidence_after": {
+    "high": 30,
+    "medium": 141,
+    "low": 3
+  },
+  "remaining_low_confidence": [
+    "0x7000692550",
+    "0x7000ea6530",
+    "0x7000cefe20"
+  ],
+  "semantic_name_rows_after": 13512,
+  "field_rows_after": 875,
+  "note": "Corrected 0x7000ea6530 to include its live incoming x1 as opaque uint64_t. Kept confidence low because the forwarded value type and return contract are unresolved.",
+  "field_rows_removed": 10,
+  "field_cleanup_note": "Removed ten low-confidence byte-gap placeholders because no direct accesses supported those ranges; exact prior rows are preserved in wave149_field_gap_triage.jsonl.",
+  "field_candidates_reviewed": 10,
+  "field_confidence_after": {
+    "high": 493,
+    "medium": 257,
+    "low": 125
+  }
+}

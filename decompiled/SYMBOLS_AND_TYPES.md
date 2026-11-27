@@ -58,7 +58,7 @@ state and dispatches guest addresses.
   row by row and manually spot-checked. These labels describe observed wrapper
   behavior, not recovered original symbols, and infer no parameter or field
   types.
-  `tools/data/field_annotations.tsv` contains 885 typed candidate-field rows.
+  `tools/data/field_annotations.tsv` contains 875 typed candidate-field rows.
   Partial layouts are in `recovered/pitch_types.h`,
   `recovered/pitch_fatigue_types.h`, `recovered/swing_types.h`,
   `recovered/hit_types.h`, `recovered/stadium_lighting_types.h`,
